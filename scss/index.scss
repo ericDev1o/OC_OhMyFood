@@ -3,7 +3,7 @@ $secondary-color: #ff79da;
 $tertiary-color: #99e2d0;
 
 .title-h1h4 {
-    font-family: Shrikhand;
+    font-family: 'Shrikhand', sans-serif;
     font-style: italic;
 
     &__h1 {
@@ -18,7 +18,7 @@ $tertiary-color: #99e2d0;
 }
 
 .title-h2h3 {
-    font-family: Roboto;
+    font-family: 'Roboto', sans-serif;
     font-weight: 700;
 
     &__h2 { 
@@ -33,7 +33,7 @@ $tertiary-color: #99e2d0;
 }
 
 .paragraph {
-    font-family: Roboto;
+    font-family: 'Roboto', sans-serif;
 
     &__card {
         font-weight: 300;

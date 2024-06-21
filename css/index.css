@@ -1,0 +1,41 @@
+.title-h1h4 {
+  font-family: "Shrikhand", sans-serif;
+  font-style: italic;
+}
+.title-h1h4__h1 {
+  font-size: 1.875rem;
+  line-height: 2.734rem;
+}
+.title-h1h4__h4 {
+  font-size: 1.125rem;
+  line-height: 1.64rem;
+}
+
+.title-h2h3 {
+  font-family: "Roboto", sans-serif;
+  font-weight: 700;
+}
+.title-h2h3__h2 {
+  font-size: 1.5rem;
+  line-height: 1.758rem;
+}
+.title-h2h3__h3 {
+  font-size: 1.125rem;
+  line-height: 1.318rem;
+}
+
+.paragraph {
+  font-family: "Roboto", sans-serif;
+}
+.paragraph__card {
+  font-weight: 300;
+  font-size: 1.0625rem;
+  line-height: 1.245rem;
+}
+.paragraph__button-footer {
+  font-weight: 500;
+  font-size: 1rem;
+  line-height: 1.172rem;
+}
+
+/*# sourceMappingURL=index.css.map */
