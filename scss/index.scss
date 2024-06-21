@@ -1,3 +1,49 @@
 $primary-color: #9356dc;
 $secondary-color: #ff79da;
 $tertiary-color: #99e2d0;
+
+.title-h1h4 {
+    font-family: Shrikhand;
+    font-style: italic;
+
+    &__h1 {
+        font-size: 1.875rem;
+        line-height: 2.734rem;
+    }
+    
+    &__h4 {
+        font-size: 1.125rem;
+        line-height: 1.64rem;
+    }
+}
+
+.title-h2h3 {
+    font-family: Roboto;
+    font-weight: 700;
+
+    &__h2 { 
+        font-size: 1.5rem;
+        line-height: 1.758rem;
+    }
+    
+    &__h3 {
+        font-size: 1.125rem;
+        line-height: 1.318rem;
+    }
+}
+
+.paragraph {
+    font-family: Roboto;
+
+    &__card {
+        font-weight: 300;
+        font-size: 1.0625rem;
+        line-height: 1.245rem;
+    }
+    
+    &__button-footer {
+        font-weight: 500;
+        font-size: 1rem;
+        line-height: 1.172rem;
+    }
+}
