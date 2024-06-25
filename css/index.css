@@ -38,4 +38,8 @@
   line-height: 1.172rem;
 }
 
+.restaurant-card img {
+  object-fit: cover;
+}
+
 /*# sourceMappingURL=index.css.map */
