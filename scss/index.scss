@@ -1,10 +1,16 @@
+/****** général ******/
 $primary-color: #9356dc;
 $secondary-color: #ff79da;
 $tertiary-color: #99e2d0;
+$main-backgrd-color: #f6f6f6;
+
+* {
+    font-family: "Roboto", sans-serif;
+  }
 
 .title-h1h4 {
     font-family: 'Shrikhand', sans-serif;
-    font-style: italic;
+    font-weight: 400;
 
     &__h1 {
         font-size: 1.875rem;
@@ -14,11 +20,11 @@ $tertiary-color: #99e2d0;
     &__h4 {
         font-size: 1.125rem;
         line-height: 1.64rem;
+        color: white;
     }
 }
 
 .title-h2h3 {
-    font-family: 'Roboto', sans-serif;
     font-weight: 700;
 
     &__h2 { 
@@ -33,7 +39,8 @@ $tertiary-color: #99e2d0;
 }
 
 .paragraph {
-    font-family: 'Roboto', sans-serif;
+    font-size: 1.125rem;
+    line-height: 1.318;
 
     &__card {
         font-weight: 300;
@@ -45,9 +52,71 @@ $tertiary-color: #99e2d0;
         font-weight: 500;
         font-size: 1rem;
         line-height: 1.172rem;
+        color: white;
     }
 }
 
+/****** header ******/
+.header {
+    text-align: center;
+}
+
+/****** localisation ******/
+.localisation {
+    text-align: center;
+    height: 50px;
+    background-color: #eaeaea;
+    align-items: center;
+    justify-content: center;
+}
+
+/****** réservation ******/
+.reservation {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    background-color: $main-backgrd-color;
+}
+
+/****** fonctionnement *****/
+.fonctionnement .fa-store {
+    color: $primary-color;
+}
+
+/****** restaurants ******/
+.restaurants {
+    background-color: $main-backgrd-color;
+}
+
 .restaurant-card img {
-    object-fit: cover;
+    object-fit: contain;
+}
+
+/****** footer ******/
+.footer {
+    background-color: #353535;
+    color: white;
+    padding: 22px 0 22px 25px;
+}
+
+.footer i {
+    margin-right: 11px;
+}
+
+.footer-section {
+    display: flex;
+    flex-direction: column;
+    color: white;
+    text-decoration: none;
+}
+
+.proposer-restaurant {
+    display: flex;
+    align-items: center;
+}
+
+.devenir-partenaire {
+    display: flex;
+    align-items: center;
 }
