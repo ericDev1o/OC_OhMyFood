@@ -11,6 +11,7 @@ $main-backgrd-color: #f6f6f6;
 .title-h1h4 {
     font-family: 'Shrikhand', sans-serif;
     font-weight: 400;
+    margin-top: 0;
 
     &__h1 {
         font-size: 1.875rem;
@@ -53,6 +54,8 @@ $main-backgrd-color: #f6f6f6;
         font-size: 1rem;
         line-height: 1.172rem;
         color: white;
+        margin: 0;
+        padding: 0;
     }
 }
 
