@@ -94,7 +94,7 @@ $main-backgrd-color: #f6f6f6;
     height: 50px;
     width: 58%;
     border-radius: 20px;
-    background-color: $secondary-color;
+    background: linear-gradient(to top, $primary-color, $secondary-color);
 }
 
 /****** fonctionnement *****/

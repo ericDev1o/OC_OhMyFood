@@ -84,7 +84,7 @@
   height: 50px;
   width: 58%;
   border-radius: 20px;
-  background-color: #ff79da;
+  background: linear-gradient(to top, #9356dc, #ff79da);
 }
 
 /****** fonctionnement *****/
