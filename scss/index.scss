@@ -114,7 +114,9 @@ $function-button-color: #7e7e7e;
 }
 
 .button-function {
-    padding: 0 0 0 33px;
+    padding: 0 20px 0 33px;
+    display: flex;
+    justify-content: stretch;
 }
 
 .button-choose {
