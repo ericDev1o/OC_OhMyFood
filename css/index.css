@@ -21,6 +21,7 @@
 
 .title-h2h3 {
   font-weight: 700;
+  padding-left: 20px;
 }
 .title-h2h3__h2 {
   font-size: 1.5rem;
@@ -34,11 +35,12 @@
 .paragraph {
   font-size: 1.125rem;
   line-height: 1.318;
+  font-weight: 300;
 }
 .paragraph__card {
-  font-weight: 300;
   font-size: 1.0625rem;
   line-height: 1.245rem;
+  padding-left: 20px;
 }
 .paragraph__button-footer {
   font-weight: 500;
@@ -86,6 +88,7 @@
   border-radius: 20px;
   background: linear-gradient(to bottom, #ff79da, #9356dc);
   border: none;
+  box-shadow: 0 8px 4px rgba(0, 0, 0, 0.1);
 }
 
 /****** fonctionnement *****/

@@ -27,6 +27,7 @@ $main-backgrd-color: #f6f6f6;
 
 .title-h2h3 {
     font-weight: 700;
+    padding-left: 20px;
 
     &__h2 { 
         font-size: 1.5rem;
@@ -42,11 +43,12 @@ $main-backgrd-color: #f6f6f6;
 .paragraph {
     font-size: 1.125rem;
     line-height: 1.318;
+    font-weight: 300;
 
     &__card {
-        font-weight: 300;
         font-size: 1.0625rem;
         line-height: 1.245rem;
+        padding-left: 20px;
     }
     
     &__button-footer {
@@ -96,6 +98,7 @@ $main-backgrd-color: #f6f6f6;
     border-radius: 20px;
     background: linear-gradient(to bottom,  $secondary-color, $primary-color);
     border: none;
+    box-shadow: 0 8px 4px rgba(0, 0, 0, 0.1);
 }
 
 /****** fonctionnement *****/
