@@ -42,7 +42,7 @@
   line-height: 1.245rem;
   padding-left: 20px;
 }
-.paragraph__button-footer {
+.paragraph__button {
   font-weight: 500;
   font-size: 1rem;
   line-height: 1.172rem;
@@ -97,7 +97,17 @@
 }
 
 .button-function {
-  padding-left: 20px;
+  padding: 25px 20px;
+}
+
+.button-function button {
+  background: #f6f6f6;
+}
+
+.button-choose {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .fonctionnement .fa-store {
@@ -107,6 +117,21 @@
 .fonctionnement .fa-mobile-screen-button,
 .fonctionnement .fa-list-ul {
   color: #7e7e7e;
+}
+
+.fonctionnement .paragraph__button {
+  color: black;
+}
+
+.icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  background-color: #9356dc;
+  color: white;
 }
 
 /****** restaurants ******/
