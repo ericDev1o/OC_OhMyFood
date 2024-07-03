@@ -3,6 +3,7 @@ $primary-color: #9356dc;
 $secondary-color: #ff79da;
 $tertiary-color: #99e2d0;
 $main-backgrd-color: #f6f6f6;
+$function-button-color: #7e7e7e;
 
 * {
     font-family: "Roboto", sans-serif;
@@ -106,8 +107,18 @@ $main-backgrd-color: #f6f6f6;
     padding: 48px 0;
 }
 
+.button-function {
+    padding-left: 20px;
+}
+
 .fonctionnement .fa-store {
     color: $primary-color;
+}
+
+.fonctionnement 
+.fa-mobile-screen-button, 
+.fonctionnement .fa-list-ul {
+    color: $function-button-color;
 }
 
 /****** restaurants ******/

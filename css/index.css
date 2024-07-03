@@ -96,8 +96,17 @@
   padding: 48px 0;
 }
 
+.button-function {
+  padding-left: 20px;
+}
+
 .fonctionnement .fa-store {
   color: #9356dc;
+}
+
+.fonctionnement .fa-mobile-screen-button,
+.fonctionnement .fa-list-ul {
+  color: #7e7e7e;
 }
 
 /****** restaurants ******/
