@@ -77,6 +77,14 @@ $function-button-color: #7e7e7e;
     justify-content: center;
 }
 
+.localisation p {
+    display: none;
+}
+
+html:lang(fr) p[lang='fr'] {
+    display: inline;
+}
+
 /****** réservation ******/
 .reservation {
     display: flex;
