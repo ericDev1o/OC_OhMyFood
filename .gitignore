@@ -1,3 +1,7 @@
 *.txt
 *.ps1
 *.map
+package-lock.json
+*.js
+*.ts
+node_modules*

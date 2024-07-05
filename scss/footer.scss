@@ -1,0 +1,27 @@
+/****** footer ******/
+.footer {
+    background-color: #353535;
+    color: white;
+    padding: 22px 0 22px 25px;
+}
+
+.footer i {
+    margin-right: 11px;
+}
+
+.footer-section {
+    display: flex;
+    flex-direction: column;
+    color: white;
+    text-decoration: none;
+}
+
+.proposer-restaurant {
+    display: flex;
+    align-items: center;
+}
+
+.devenir-partenaire {
+    display: flex;
+    align-items: center;
+}

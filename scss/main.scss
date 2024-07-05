@@ -1,0 +1,210 @@
+/****** général ******/
+$primary-color: #9356dc;
+$secondary-color: #ff79da;
+$tertiary-color: #99e2d0;
+$main-backgrd-color: #f6f6f6;
+$function-button-color: #7e7e7e;
+
+* {
+    font-family: "Roboto", sans-serif;
+  }
+
+.title-h1h4 {
+    font-family: 'Shrikhand', sans-serif;
+    font-weight: 400;
+    margin-top: 0;
+
+    &__h1 {
+        font-size: 1.875rem;
+        line-height: 2.734rem;
+    }
+    
+    &__h4 {
+        font-size: 1.125rem;
+        line-height: 1.64rem;
+        color: white;
+    }
+}
+
+.title-h2h3 {
+    font-weight: 700;
+    padding-left: 20px;
+
+    &__h2 { 
+        font-size: 1.5rem;
+        line-height: 1.758rem;
+    }
+    
+    &__h3 {
+        font-size: 1.125rem;
+        line-height: 1.318rem;
+    }
+}
+
+.paragraph {
+    font-size: 1.125rem;
+    line-height: 1.318;
+    font-weight: 300;
+
+    &__card {
+        font-size: 1.0625rem;
+        line-height: 1.245rem;
+        padding-left: 20px;
+    }
+    
+    &__button {
+        font-weight: 500;
+        font-size: 1rem;
+        line-height: 1.172rem;
+        color: white;
+        margin: 0;
+        padding: 0;
+    }
+}
+
+/****** header ******/
+.header {
+    text-align: center;
+}
+
+/****** localisation ******/
+.localisation {
+    text-align: center;
+    height: 50px;
+    background-color: #eaeaea;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.localisation p {
+    display: none;
+}
+
+html:lang(fr) p[lang='fr'] {
+    display: inline;
+}
+
+/****** réservation ******/
+.reservation {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    background-color: $main-backgrd-color;
+    padding: 48px 0;
+}
+
+.explore {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.button-explore {
+    border-radius: 20px;
+    border: none;
+    box-shadow: 0 8px 4px rgba(0, 0, 0, 0.1);
+}
+
+.button-explore-size {
+    height: 50px;
+    width: 58%;
+}
+
+.button-explore-color {
+    background: linear-gradient(to bottom,  $secondary-color, $primary-color);
+}
+
+/****** fonctionnement *****/
+.fonctionnement {
+    padding: 48px 0;
+}
+
+.button-function {
+    padding: 0 20px 0 33px;
+    display: flex;
+    justify-content: stretch;
+}
+
+.button-choose {
+    display: block;
+    width: 100%;
+    box-sizing: border-box;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 25px 20px;
+    margin: 25px 0;
+    background: $main-backgrd-color;
+}
+
+.button-choose span {
+    margin-left: 25px;
+}
+
+.fonctionnement .fa-store {
+    color: $primary-color;
+}
+
+.fonctionnement 
+.fa-mobile-screen-button, 
+.fonctionnement .fa-list-ul {
+    color: $function-button-color;
+}
+
+.fonctionnement .paragraph__button {
+    color: black;
+}
+
+.icon {
+    position: absolute;
+    left: -12.5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    background-color: $primary-color;
+    color: white;
+}
+
+/****** restaurants ******/
+.restaurants {
+    background-color: $main-backgrd-color;
+    padding: 48px 0;
+}
+
+.restaurant-cards {
+    padding: 0 15px;
+}
+
+.restaurant-card {
+    width: 100%;
+    height: 250px;
+    overflow: hidden;
+    padding: 12px 0;
+}
+
+.restaurant-card img {
+    width: 100%;
+    height: 65%;
+    object-fit: cover;
+    border-radius: 15px;
+}
+
+.restaurant-card .card-content {
+    height: 20%;
+}
+
+/****** page restaurant ******/
+.restaurant-page {
+    width: 100%;
+}
+
+.restaurant-page img {
+    width: 100%;
+    object-fit: cover;
+}
