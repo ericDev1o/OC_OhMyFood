@@ -32,6 +32,13 @@
   line-height: 1.318rem;
 }
 
+.menu-title {
+  font-size: 1.125rem;
+  line-height: 1.318rem;
+  font-weight: 500;
+  margin: 0;
+}
+
 .paragraph {
   font-size: 1.125rem;
   line-height: 1.318;
@@ -49,6 +56,10 @@
   color: white;
   margin: 0;
   padding: 0;
+}
+.paragraph__menu {
+  font-size: 1rem;
+  line-height: 1.172rem;
 }
 
 /****** header ******/
