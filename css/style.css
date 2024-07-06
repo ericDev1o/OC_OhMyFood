@@ -31,10 +31,7 @@
   font-size: 1.125rem;
   line-height: 1.318rem;
 }
-
-.title-h2h3__h3__menu-title {
-  font-size: 1.125rem;
-  line-height: 1.318rem;
+.title-h2h3__h3__title-h2h3__h3__menu-title {
   font-weight: 500;
   margin: 0;
 }
@@ -100,27 +97,6 @@ html:lang(fr) p[lang=fr] {
   text-align: center;
   background-color: #f6f6f6;
   padding: 48px 0;
-}
-
-.explore {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-}
-
-.button-explore {
-  border-radius: 20px;
-  border: none;
-  box-shadow: 0 8px 4px rgba(0, 0, 0, 0.1);
-}
-
-.button-explore-size {
-  height: 50px;
-  width: 58%;
-}
-
-.button-explore-color {
-  background: linear-gradient(to bottom, #ff79da, #9356dc);
 }
 
 /****** fonctionnement *****/
@@ -213,6 +189,31 @@ html:lang(fr) p[lang=fr] {
 .restaurant-page img {
   width: 100%;
   object-fit: cover;
+}
+
+.command {
+  padding: 40px 0;
+}
+
+.explore-command {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.button-explore-command {
+  border-radius: 20px;
+  border: none;
+  box-shadow: 0 8px 4px rgba(0, 0, 0, 0.1);
+}
+
+.button-explore-command-size {
+  height: 50px;
+  width: 58%;
+}
+
+.button-explore-command-color {
+  background: linear-gradient(to bottom, #ff79da, #9356dc);
 }
 
 /****** footer ******/

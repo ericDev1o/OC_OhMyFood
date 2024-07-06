@@ -1,0 +1,21 @@
+
+.explore-command {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.button-explore-command {
+    border-radius: 20px;
+    border: none;
+    box-shadow: 0 8px 4px rgba(0, 0, 0, 0.1);
+}
+
+.button-explore-command-size {
+    height: 50px;
+    width: 58%;
+}
+
+.button-explore-command-color {
+    background: linear-gradient(to bottom,  $secondary-color, $primary-color);
+}

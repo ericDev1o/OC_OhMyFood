@@ -114,27 +114,6 @@ html:lang(fr) p[lang='fr'] {
     padding: 48px 0;
 }
 
-.explore {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-}
-
-.button-explore {
-    border-radius: 20px;
-    border: none;
-    box-shadow: 0 8px 4px rgba(0, 0, 0, 0.1);
-}
-
-.button-explore-size {
-    height: 50px;
-    width: 58%;
-}
-
-.button-explore-color {
-    background: linear-gradient(to bottom,  $secondary-color, $primary-color);
-}
-
 /****** fonctionnement *****/
 .fonctionnement {
     padding: 48px 0;
@@ -226,4 +205,8 @@ html:lang(fr) p[lang='fr'] {
 .restaurant-page img {
     width: 100%;
     object-fit: cover;
+}
+
+.command {
+    padding: 40px 0;
 }
