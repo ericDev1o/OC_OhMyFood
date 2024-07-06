@@ -205,6 +205,7 @@ html:lang(fr) p[lang='fr'] {
 /****** page restaurant ******/
 .restaurant-page {
     width: 100%;
+    background-color: $main-backgrd-color;
 }
 
 .restaurant-page img {
@@ -214,4 +215,12 @@ html:lang(fr) p[lang='fr'] {
 
 .command {
     padding: 40px 0;
+}
+
+.menu-item {
+    margin: 13px;
+    padding: 12px 0 12px 15px;
+    background-color: white;
+    border-radius: 15px;
+    box-shadow: 0 8px 4px rgba(0, 0, 0, 0.1);
 }
