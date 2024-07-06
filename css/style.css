@@ -61,6 +61,13 @@
   font-size: 1rem;
   line-height: 1.172rem;
 }
+.paragraph__menutext {
+  font-size: 0.94rem;
+  line-height: 1.102rem;
+}
+.paragraph__menutext__price {
+  font-weight: 700;
+}
 
 /****** header ******/
 .header {
