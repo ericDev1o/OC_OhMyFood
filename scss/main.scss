@@ -41,7 +41,6 @@ $function-button-color: #7e7e7e;
 
         &__title-h2h3__h3__menu-title {
             font-weight: 500;
-            margin: 0;
         }
     }
 }
@@ -223,8 +222,15 @@ html:lang(fr) p[lang='fr'] {
 
 .menu-item {
     margin: 13px 0;
-    padding: 12px 0 12px 15px;
+    padding: 0 0 12px 15px;
     background-color: white;
     border-radius: 15px;
     box-shadow: 0 8px 4px rgba(0, 0, 0, 0.1);
+}
+
+.align-price {
+    padding: 0 17px 0 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
