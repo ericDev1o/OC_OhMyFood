@@ -201,8 +201,12 @@ html:lang(fr) p[lang=fr] {
   padding: 40px 0;
 }
 
+.menu {
+  padding: 32px 17px 0 17px;
+}
+
 .menu-item {
-  margin: 13px;
+  margin: 13px 0;
   padding: 12px 0 12px 15px;
   background-color: white;
   border-radius: 15px;
