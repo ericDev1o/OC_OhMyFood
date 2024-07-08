@@ -9,6 +9,13 @@ $function-button-color: #7e7e7e;
     font-family: "Roboto", sans-serif;
   }
 
+body, html {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    height: 100%;
+}
+
 .title-h1h4 {
     font-family: 'Shrikhand', sans-serif;
     font-weight: 400;
@@ -207,9 +214,29 @@ html:lang(fr) p[lang='fr'] {
     background-color: $main-backgrd-color;
 }
 
+.cover-img-container {
+    width: 100%;
+    position: relative;
+    margin: auto;
+}
+
 .restaurant-page img {
     width: 100%;
     object-fit: cover;
+}
+
+.img-cover {
+    background-color: $main-backgrd-color;
+    position: absolute;
+    bottom: 0;
+    top: 220px;
+    left: 0;
+    width: 100%;
+    box-sizing: border-box;
+    border-top-left-radius: 25px;
+    border-top-right-radius: 25px;
+    padding-top: 32px;
+    padding-left: 17px;
 }
 
 .command {
@@ -217,6 +244,7 @@ html:lang(fr) p[lang='fr'] {
 }
 
 .menu {
+    margin-top: 32px;
     padding: 32px 17px 0 17px;
 }
 
