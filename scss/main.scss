@@ -256,6 +256,13 @@ html:lang(fr) p[lang='fr'] {
     border-top-right-radius: 25px;
     padding-top: 32px;
     padding-left: 17px;
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+}
+
+.img-cover i {
+    padding-right: 21px;
 }
 
 .command {
