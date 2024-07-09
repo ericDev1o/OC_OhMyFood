@@ -193,6 +193,25 @@ html:lang(fr) p[lang=fr] {
 }
 
 /****** page restaurant ******/
+.header-page {
+  display: flex;
+  align-items: center;
+}
+
+.header-page a {
+  padding-left: 23px;
+}
+
+.header-page h1 {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  flex: 1;
+  padding-right: 23px;
+  padding-top: 14px;
+  margin-bottom: 0;
+}
+
 .restaurant-page {
   width: 100%;
   background-color: #f6f6f6;
