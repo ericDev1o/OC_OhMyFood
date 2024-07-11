@@ -208,6 +208,20 @@ html:lang(fr) p[lang='fr'] {
     height: 20%;
 }
 
+.card-content .heart-right {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+}
+
+.heart-right .text-left p {
+    line-height: 0;
+}
+
+.heart-right i {
+    padding-right: 25px;
+}
+
 /****** page restaurant ******/
 .header-page {
     display: flex;
