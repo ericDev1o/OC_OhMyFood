@@ -246,6 +246,10 @@ html:lang(fr) p[lang=fr] {
 .img-cover {
   width: 100%;
   position: absolute;
+  margin-top: -55px;
+  padding-top: 31px;
+  border-top-left-radius: 40px;
+  border-top-right-radius: 40px;
   background-color: #f6f6f6;
   padding-left: 17px;
   padding-right: 17px;
@@ -264,12 +268,8 @@ html:lang(fr) p[lang=fr] {
 }
 
 .menu {
-  position: relative;
   background-color: #f6f6f6;
-  margin-top: -55px;
-  padding-top: 31px;
-  border-top-left-radius: 40px;
-  border-top-right-radius: 40px;
+  padding-top: 55px;
 }
 
 .menu-item {
