@@ -267,6 +267,7 @@ html:lang(fr) p[lang='fr'] {
 }
 
 .img-cover {
+    width: 100%;
     position: absolute;
     background-color: $main-backgrd-color;
     padding-left: 17px;
