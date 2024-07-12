@@ -2,10 +2,10 @@
 $primary-color: #9356dc;
 $primary-color-light: #a880da;
 $secondary-color: #ff79da;
-$secondary-color: #f5a8df;
+$secondary-color-light: #f8ace2;
 $tertiary-color: #99e2d0;
 $main-backgrd-color: #f6f6f6;
-$main-backgrd-color-light: white;
+$main-backgrd-color-light: #fafafa;
 $function-button-color: #7e7e7e;
 
 * {
@@ -23,6 +23,11 @@ body, html {
     font-family: 'Shrikhand', sans-serif;
     font-weight: 400;
     margin-top: 0;
+
+    /*&__restaurant-name {
+        font-size: 1.75rem;
+        line-height: 2.55rem;
+    }*/
 
     &__h1 {
         font-size: 1.875rem;
@@ -155,7 +160,7 @@ html:lang(fr) p[lang='fr'] {
 }
 
 .button-choose:hover {
-    
+    background: $main-backgrd-color-light;
 }
 
 .button-choose span {
@@ -230,6 +235,14 @@ html:lang(fr) p[lang='fr'] {
 .heart-right i {
     padding-right: 25px;
 }
+
+/*.heart-right .fa-regular:hover {
+    display: none;
+}
+
+.heart-right .fa-solid {
+    color: linear-gradient(to top,  $secondary-color, $primary-color);
+}*/
 
 /****** page restaurant ******/
 .header-page {

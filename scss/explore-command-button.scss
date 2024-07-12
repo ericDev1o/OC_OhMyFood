@@ -12,7 +12,7 @@
 }
 
 .button-explore-command:hover {
-    
+    box-shadow: 0 8px 4px rgba(0, 0, 0, 0.5);
 }
 
 .button-explore-command-size {
@@ -22,4 +22,8 @@
 
 .button-explore-command-color {
     background: linear-gradient(to bottom,  $secondary-color, $primary-color);
+}
+
+.button-explore-command-color:hover {
+    background: linear-gradient(to bottom, $secondary-color-light, $primary-color-light);
 }
