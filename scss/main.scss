@@ -1,8 +1,11 @@
 /****** général ******/
 $primary-color: #9356dc;
+$primary-color-light: #a880da;
 $secondary-color: #ff79da;
+$secondary-color: #f5a8df;
 $tertiary-color: #99e2d0;
 $main-backgrd-color: #f6f6f6;
+$main-backgrd-color-light: white;
 $function-button-color: #7e7e7e;
 
 * {
@@ -73,6 +76,8 @@ body, html {
     }
 
     &__menu {
+        padding-left: 13px;
+        margin-top: 40px;
         font-size: 1rem;
         line-height: 1.172rem;
     }
@@ -147,6 +152,10 @@ html:lang(fr) p[lang='fr'] {
     padding: 25px 20px;
     margin: 25px 0;
     background: $main-backgrd-color;
+}
+
+.button-choose:hover {
+    
 }
 
 .button-choose span {
@@ -247,29 +256,26 @@ html:lang(fr) p[lang='fr'] {
     background-color: $main-backgrd-color;
 }
 
-.cover-img-container {
+/*.cover-img-container {
     width: 100%;
     position: relative;
     margin: auto;
+}*/
+
+.img-container {
+    width: 100%;
 }
 
-.restaurant-page img {
+.img-container img {
     width: 100%;
     object-fit: cover;
 }
 
 .img-cover {
     background-color: $main-backgrd-color;
-    position: absolute;
-    bottom: 0;
-    top: 220px;
-    left: 0;
-    width: 100%;
-    box-sizing: border-box;
-    border-top-left-radius: 25px;
-    border-top-right-radius: 25px;
-    padding-top: 32px;
     padding-left: 17px;
+    padding-right: 17px;
+    box-sizing: border-box;
     display: flex;
     justify-content: space-between;
     align-items: baseline;
@@ -284,13 +290,22 @@ html:lang(fr) p[lang='fr'] {
 }
 
 .menu {
-    margin-top: 32px;
-    padding: 32px 17px 0 17px;
+    /*position: absolute;
+    bottom: 0;
+    top: 220px;
+    left: 0;
+    width: 100%;*/
+    margin-top: -40px;
+    padding-top: 31px;
+    border-top-left-radius: 40px;
+    /*border-top-right-radius: 25px;*/
+    /*padding: 32px 17px 0 17px;*/
 }
 
 .menu-item {
-    margin: 13px 0;
-    padding: 1px 0 15px 15px;
+    margin: 13px 13px 0 13px;
+    /*padding: 1px 0 15px 15px;*/
+    width: 90%;
     background-color: white;
     border-radius: 15px;
     box-shadow: 0 8px 4px rgba(0, 0, 0, 0.1);

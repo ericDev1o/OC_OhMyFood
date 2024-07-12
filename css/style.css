@@ -61,6 +61,8 @@ body, html {
   padding: 0;
 }
 .paragraph__menu {
+  padding-left: 13px;
+  margin-top: 40px;
   font-size: 1rem;
   line-height: 1.172rem;
 }
@@ -231,29 +233,25 @@ html:lang(fr) p[lang=fr] {
   background-color: #f6f6f6;
 }
 
-.cover-img-container {
+/*.cover-img-container {
+    width: 100%;
+    position: relative;
+    margin: auto;
+}*/
+.img-container {
   width: 100%;
-  position: relative;
-  margin: auto;
 }
 
-.restaurant-page img {
+.img-container img {
   width: 100%;
   object-fit: cover;
 }
 
 .img-cover {
   background-color: #f6f6f6;
-  position: absolute;
-  bottom: 0;
-  top: 220px;
-  left: 0;
-  width: 100%;
-  box-sizing: border-box;
-  border-top-left-radius: 25px;
-  border-top-right-radius: 25px;
-  padding-top: 32px;
   padding-left: 17px;
+  padding-right: 17px;
+  box-sizing: border-box;
   display: flex;
   justify-content: space-between;
   align-items: baseline;
@@ -268,13 +266,22 @@ html:lang(fr) p[lang=fr] {
 }
 
 .menu {
-  margin-top: 32px;
-  padding: 32px 17px 0 17px;
+  /*position: absolute;
+  bottom: 0;
+  top: 220px;
+  left: 0;
+  width: 100%;*/
+  margin-top: -40px;
+  padding-top: 31px;
+  border-top-left-radius: 40px;
+  /*border-top-right-radius: 25px;*/
+  /*padding: 32px 17px 0 17px;*/
 }
 
 .menu-item {
-  margin: 13px 0;
-  padding: 1px 0 15px 15px;
+  margin: 13px 13px 0 13px;
+  /*padding: 1px 0 15px 15px;*/
+  width: 90%;
   background-color: white;
   border-radius: 15px;
   box-shadow: 0 8px 4px rgba(0, 0, 0, 0.1);
@@ -305,7 +312,7 @@ html:lang(fr) p[lang=fr] {
 }
 
 .button-explore-command-color {
-  background: linear-gradient(to bottom, #ff79da, #9356dc);
+  background: linear-gradient(to bottom, #f5a8df, #9356dc);
 }
 
 /****** footer ******/
