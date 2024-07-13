@@ -225,11 +225,15 @@ html:lang(fr) p[lang='fr'] {
 .card-content .heart-right {
     display: flex;
     justify-content: space-between;
-    align-items: baseline;
+    align-items: center;
 }
 
 .heart-right .text-left p {
     line-height: 0;
+}
+
+.heart-right .text-left h3 {
+    margin-bottom: 0;
 }
 
 .heart {
