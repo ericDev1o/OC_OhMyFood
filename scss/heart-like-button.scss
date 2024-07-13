@@ -1,0 +1,26 @@
+/****** Bouton J'aime ******/
+.heart {
+    padding-right: 25px;
+    width: 22px;
+    height: 21px;
+    fill: white;
+    stroke: black;
+    stroke-width: 1;
+    transition: fill 0.3s, stroke 1s;
+}
+
+.heart:hover {
+    fill: url(#gradient);
+}
+
+.heart-gradient {
+    transition: stop-color 1s;
+}
+
+.heart:hover .heart-gradient-stop1 {
+    stop-color: $secondary-color;
+}
+
+.heart:hover .heart-gradient-stop2 {
+    stop-color: $primary-color;
+}
