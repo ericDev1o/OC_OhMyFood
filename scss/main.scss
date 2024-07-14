@@ -1,4 +1,5 @@
-/****** général ******/
+/****** general ******/
+/****** colors ******/
 $primary-color: #9356dc;
 $primary-color-light: #a880da;
 $secondary-color: #ff79da;
@@ -8,8 +9,51 @@ $main-backgrd-color: #f6f6f6;
 $main-backgrd-color-light: #fafafa;
 $function-button-color: #7e7e7e;
 
+/****** fonts system ******/
+/***** variables ******/
+/****** family ******/
+$font-family-primary: 'Shrikhand', sans-serif;
+$font-family-secondary: 'Roboto', sans-serif;
+/****** weight ******/
+$font-weight-light: 300;
+$font-weight-medium: 500;
+$font-weight-bold: 700;
+
+/****** mixins ******/
+/****** family ******/
+@mixin font-family($family) {
+    font-family: $family;
+}
+/****** weight ******/
+@mixin font-weight($weight) {
+    font-weight: $weight;
+}
+
+/****** placeholders ******/
+%font-title {
+    @include font-family($font-family-primary)
+}
+
+%font-base {
+    @include font-family($font-family-secondary);
+}
+
+%font-bold {
+    @include font-weight($font-weight-bold);
+}
+
+%font-medium {
+    @include font-weight($font-weight-medium);
+}
+
+%font-light {
+    @include font-weight($font-weight-light);
+}
+
+/****** end fonts system ******/
+
 * {
-    font-family: "Roboto", sans-serif;
+    @extend %font-base;
   }
 
 body, html {
@@ -19,19 +63,22 @@ body, html {
     height: 100%;
 }
 
+/****** fonts ******/
 .title-h1h4 {
-    font-family: 'Shrikhand', sans-serif;
+    @extend %font-title;
     font-weight: 400;
     margin-top: 0;
 
-    /*&__restaurant-name {
-        font-size: 1.75rem;
-        line-height: 2.55rem;
-    }*/
-
-    &__h1 {
+    &__h1t {
         font-size: 1.875rem;
         line-height: 2.734rem;
+
+        &__restaurant-name {
+        @extend %font-title;
+        font-weight: 400;
+        font-size: 1.75rem;
+        line-height: 2.55rem;
+        }
     }
     
     &__h4 {
@@ -42,7 +89,7 @@ body, html {
 }
 
 .title-h2h3 {
-    font-weight: 700;
+    @extend %font-bold;
     padding-left: 20px;
 
     &__h2 { 
@@ -55,7 +102,7 @@ body, html {
         line-height: 1.318rem;
 
         &__menu-title {
-            font-weight: 500;
+            @extend %font-medium;
         }
     }
 }
@@ -63,7 +110,7 @@ body, html {
 .paragraph {
     font-size: 1.125rem;
     line-height: 1.318;
-    font-weight: 300;
+    @extend %font-light;
 
     &__card {
         font-size: 1.0625rem;
@@ -72,7 +119,7 @@ body, html {
     }
     
     &__button {
-        font-weight: 500;
+        @extend %font-medium;
         font-size: 1rem;
         line-height: 1.172rem;
         color: white;
@@ -92,7 +139,7 @@ body, html {
         line-height: 1.102rem;
 
         &__price {
-            font-weight: 700;
+            @extend %font-bold;
         }
     }
 }
