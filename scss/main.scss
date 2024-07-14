@@ -334,8 +334,8 @@ html:lang(fr) p[lang='fr'] {
     align-items: baseline;
 }
 
-.img-cover i {
-    padding-right: 21px;
+.img-cover .title-h1h4__h1t__restaurant-name {
+    margin: 0;
 }
 
 .command {
@@ -344,7 +344,7 @@ html:lang(fr) p[lang='fr'] {
 
 .menu {
     background-color: $main-backgrd-color;
-    padding-top: 55px;;
+    padding-top: 5px;
 }
 
 .menu-item h3 {
