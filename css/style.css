@@ -111,6 +111,10 @@ a {
   text-align: center;
 }
 
+.header .title-h1h4 {
+  margin-bottom: 0;
+}
+
 /****** localisation ******/
 .localisation {
   text-align: center;
