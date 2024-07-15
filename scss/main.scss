@@ -191,12 +191,12 @@ html:lang(fr) p[lang='fr'] {
     justify-content: center;
     text-align: center;
     background-color: $main-backgrd-color;
-    padding: 48px 0;
+    padding: 20px 0 55px 0;
 }
 
 /****** fonctionnement *****/
 .fonctionnement {
-    padding: 48px 0;
+    padding: 28px 0;
 }
 
 .button-function {
@@ -256,7 +256,7 @@ html:lang(fr) p[lang='fr'] {
 /****** restaurants ******/
 .restaurants {
     background-color: $main-backgrd-color;
-    padding: 48px 0;
+    padding: 34px 0 58px 0;
 }
 
 .restaurant-cards {
@@ -300,7 +300,9 @@ html:lang(fr) p[lang='fr'] {
 }
 
 .restaurant-card .card-content {
-    height: 20%;
+    height: 35%;
+    background-color: white;
+    border-radius: 0 0 15px 15px;
 }
 
 .card-content .heart-right {
