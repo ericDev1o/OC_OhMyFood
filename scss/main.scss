@@ -131,7 +131,6 @@ body {
     }
 
     &__menu {
-        padding-left: 13px;
         margin-top: 40px;
         font-size: 1rem;
         line-height: 1.172rem;
@@ -381,6 +380,17 @@ html:lang(fr) p[lang='fr'] {
 .menu {
     background-color: $main-backgrd-color;
     padding-top: 5px;
+    padding-left: 13px;
+}
+
+.menu .paragraph__menu {
+    margin-bottom: 4px;
+}
+
+.line {
+    width: 40px;
+    height: 3px;
+    background-color: $tertiary-color;
 }
 
 .menu-item h3 {
@@ -389,7 +399,7 @@ html:lang(fr) p[lang='fr'] {
 }
 
 .menu-item {
-    margin: 13px 13px 0 13px;
+    margin: 13px 13px 0 0;
     padding: 12px 0 12px 15px;
     background-color: white;
     border-radius: 15px;
