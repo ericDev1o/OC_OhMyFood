@@ -5,6 +5,7 @@ $primary-color-light: #a880da;
 $secondary-color: #ff79da;
 $secondary-color-light: #f8ace2;
 $tertiary-color: #99e2d0;
+$new-color: #008766;
 $main-backgrd-color: #f6f6f6;
 $main-backgrd-color-light: #fafafa;
 $function-button-color: #7e7e7e;
@@ -56,11 +57,13 @@ $font-weight-bold: 700;
     @extend %font-base;
   }
 
-body, html {
+body {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    width: 100%;
     height: 100%;
+    max-width: 767.98px;
 }
 
 /****** fonts ******/
@@ -141,6 +144,11 @@ body, html {
         &__price {
             @extend %font-bold;
         }
+    }
+
+    &__new {
+        font-size: 0.875rem;
+        line-height: 1.0256rem;
     }
 }
 
@@ -254,15 +262,37 @@ html:lang(fr) p[lang='fr'] {
 .restaurant-card {
     width: 100%;
     height: 250px;
-    overflow: hidden;
     padding: 12px 0;
+    position: relative;
 }
 
 .restaurant-card img {
     width: 100%;
     height: 65%;
     object-fit: cover;
-    border-radius: 15px;
+    border-radius: 15px 15px 0 0;
+}
+
+.restaurant-card .new-container {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    top: 25px;
+    right: 15px;
+    width: 80px;
+    height: 29px;
+    padding-top: 3px;
+    color: $new-color;
+    border-radius: 2px;
+    background-color: $tertiary-color;
+}
+
+.restaurant-card .paragraph__new {
+    width: 61.37px;
+    height: 16px;
+    margin: 0;
+    text-align: center;
 }
 
 .restaurant-card .card-content {
@@ -355,7 +385,6 @@ html:lang(fr) p[lang='fr'] {
 .menu-item {
     margin: 13px 13px 0 13px;
     padding: 12px 0 12px 15px;
-    width: 90%;
     background-color: white;
     border-radius: 15px;
     box-shadow: 0 8px 4px rgba(0, 0, 0, 0.1);
@@ -366,4 +395,10 @@ html:lang(fr) p[lang='fr'] {
     display: flex;
     justify-content: space-between;
     align-items: center;
+}
+
+/****** Media queries ******/
+/* Medium and large devices */
+@media (max-width: 1439.98px) {
+
 }
