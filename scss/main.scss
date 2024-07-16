@@ -3,7 +3,7 @@
 $primary-color: #9356dc;
 $primary-color-light: #a880da;
 $secondary-color: #ff79da;
-$secondary-color-light: #f8ace2;
+$secondary-color-light: #9356dc;
 $tertiary-color: #99e2d0;
 $new-color: #008766;
 $main-backgrd-color: #f6f6f6;
@@ -63,7 +63,11 @@ body {
     box-sizing: border-box;
     width: 100%;
     height: 100%;
-    max-width: 767.98px;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
 }
 
 /****** fonts ******/
@@ -149,11 +153,6 @@ body {
         font-size: 0.875rem;
         line-height: 1.0256rem;
     }
-}
-
-a {
-    text-decoration: none;
-    color: inherit;
 }
 
 /****** header ******/
@@ -420,6 +419,18 @@ html:lang(fr) p[lang='fr'] {
 
 /****** Media queries ******/
 /* Medium and large devices */
-@media (max-width: 1439.98px) {
+@media (min-width: 1023.98px) {
+    
+}
 
+@media (min-width: 1439.98px) {
+    .function-buttons {
+        display: flex;
+    }
+
+    .restaurant-cards {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
 }

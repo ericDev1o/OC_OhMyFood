@@ -36,7 +36,11 @@ body {
   box-sizing: border-box;
   width: 100%;
   height: 100%;
-  max-width: 767.98px;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
 }
 
 /****** fonts ******/
@@ -98,11 +102,6 @@ body {
 .paragraph__new {
   font-size: 0.875rem;
   line-height: 1.0256rem;
-}
-
-a {
-  text-decoration: none;
-  color: inherit;
 }
 
 /****** header ******/
@@ -368,6 +367,16 @@ html:lang(fr) p[lang=fr] {
 
 /****** Media queries ******/
 /* Medium and large devices */
+@media (min-width: 1439.98px) {
+  .function-buttons {
+    display: flex;
+  }
+  .restaurant-cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+}
 /****** Explorer nos restaurants
 ****** and 
 ****** Commander 
@@ -398,7 +407,7 @@ html:lang(fr) p[lang=fr] {
 }
 
 .button-explore-command-color:hover {
-  background: linear-gradient(to bottom, #f8ace2, #a880da);
+  background: linear-gradient(to bottom, #9356dc, #a880da);
 }
 
 /****** like button ******/
