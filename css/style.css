@@ -144,7 +144,7 @@ html:lang(fr) p[lang=fr] {
 
 /****** fonctionnement *****/
 .fonctionnement {
-  padding: 28px 0 38px 0;
+  padding: 28px 0 54px 0;
 }
 
 .button-function {
@@ -162,7 +162,7 @@ html:lang(fr) p[lang=fr] {
   justify-content: center;
   align-items: center;
   padding: 25px 20px;
-  margin: 25px 0;
+  margin: 12px 0;
   background: #f6f6f6;
 }
 
