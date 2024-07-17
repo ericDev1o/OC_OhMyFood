@@ -410,6 +410,13 @@ html:lang(fr) p[lang=fr] {
   background: linear-gradient(to bottom, #9356dc, #a880da);
 }
 
+/****** Media queries ******/
+/* Medium and large devices */
+@media (min-width: 1439.98px) {
+  .button-explore-command-size {
+    width: 13%;
+  }
+}
 /****** like button ******/
 .heart {
   padding-right: 25px;

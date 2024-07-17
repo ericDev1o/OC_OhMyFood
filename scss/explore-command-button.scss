@@ -30,3 +30,15 @@
 .button-explore-command-color:hover {
     background: linear-gradient(to bottom, $secondary-color-light, $primary-color-light);
 }
+
+/****** Media queries ******/
+/* Medium and large devices */
+@media (min-width: 1023.98px) {
+    
+}
+
+@media (min-width: 1439.98px) {
+    .button-explore-command-size {
+        width: 13%;
+    }
+}
