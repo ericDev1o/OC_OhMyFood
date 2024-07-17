@@ -371,6 +371,18 @@ html:lang(fr) p[lang=fr] {
   .function-buttons {
     display: flex;
   }
+  .reservation {
+    gap: 12px;
+    padding-bottom: 28px;
+    padding-top: 12px;
+  }
+  .reservation .title-h2h3 {
+    font-size: 2.5rem;
+    line-height: 2.93rem;
+  }
+  .reservation .paragraph {
+    margin-top: 2px;
+  }
   .restaurant-cards {
     display: flex;
     flex-wrap: wrap;
