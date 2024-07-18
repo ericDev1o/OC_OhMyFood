@@ -19,6 +19,8 @@ $font-family-secondary: 'Roboto', sans-serif;
 $font-weight-light: 300;
 $font-weight-medium: 500;
 $font-weight-bold: 700;
+/****** size *****/
+$font-size-large: 2.5rem;
 
 /****** mixins ******/
 /****** family ******/
@@ -28,6 +30,11 @@ $font-weight-bold: 700;
 /****** weight ******/
 @mixin font-weight($weight) {
     font-weight: $weight;
+}
+
+/****** size ******/
+@mixin font-size($size) {
+    font-size: $font-size-large;
 }
 
 /****** placeholders ******/
@@ -49,6 +56,10 @@ $font-weight-bold: 700;
 
 %font-light {
     @include font-weight($font-weight-light);
+}
+
+%font-large {
+    @include font-size($font-size-large);
 }
 
 /****** end fonts system ******/
@@ -102,6 +113,11 @@ a {
     &__h2 { 
         font-size: 1.5rem;
         line-height: 1.758rem;
+    }
+
+    &__center {
+        margin-left: 0;
+        padding-left: 0;
     }
     
     &__h3t {
@@ -424,37 +440,23 @@ html:lang(fr) p[lang='fr'] {
 }
 
 @media (min-width: 1023.98px) {
-    .title-h2h3 {
-        padding-left: 20px;
-    }
-
-    .paragraph {
-        /*font-size: 1.125rem;
-        line-height: 1.318;
-        @extend %font-light;*/
-    
-        &__card {
-            /*font-size: 1.0625rem;
-            line-height: 1.245rem;*/
-            padding-left: 180px;
-        }
-    }
-
     .function-buttons {
         display: flex;
     }
 
     .button-function {
-        padding: 0 180px 0 33px;
+        padding-left: 180px;
     }
 
     .reservation {
         gap: 12px;
         padding-bottom: 28px;
         padding-top: 12px;
+        display: flex;
+        justify-content: center;
     }
 
-    .reservation .title-h2h3 {
+    .reservation .title-h2h3__center {
         font-size: 2.5rem;
         line-height: 2.93rem;
     }
@@ -467,5 +469,6 @@ html:lang(fr) p[lang='fr'] {
         display: flex;
         flex-wrap: wrap;
         justify-content: space-between;
+        padding-left: 180px;
     }
 }
