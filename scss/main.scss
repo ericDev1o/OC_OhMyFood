@@ -419,13 +419,33 @@ html:lang(fr) p[lang='fr'] {
 
 /****** Media queries ******/
 /* Medium and large devices */
-@media (min-width: 1023.98px) {
+@media (min-width: 767.98px) {
     
 }
 
-@media (min-width: 1439.98px) {
+@media (min-width: 1023.98px) {
+    .title-h2h3 {
+        padding-left: 20px;
+    }
+
+    .paragraph {
+        /*font-size: 1.125rem;
+        line-height: 1.318;
+        @extend %font-light;*/
+    
+        &__card {
+            /*font-size: 1.0625rem;
+            line-height: 1.245rem;*/
+            padding-left: 180px;
+        }
+    }
+
     .function-buttons {
         display: flex;
+    }
+
+    .button-function {
+        padding: 0 180px 0 33px;
     }
 
     .reservation {
