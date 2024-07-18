@@ -380,11 +380,19 @@ html:lang(fr) p[lang=fr] {
 /****** Media queries ******/
 /* Medium and large devices */
 @media (min-width: 1023.98px) {
+  .localisation-reservation {
+    width: 100%;
+  }
+  .fonctionnement {
+    width: 76%;
+    padding: 0 207 0 180;
+  }
   .function-buttons {
     display: flex;
+    justify-content: space-between;
   }
   .button-function {
-    padding-left: 180px;
+    width: 20%;
   }
   .reservation {
     gap: 12px;
@@ -447,7 +455,7 @@ html:lang(fr) p[lang=fr] {
 /* Medium and large devices */
 @media (min-width: 1023.98px) {
   .button-explore-command-size {
-    width: 35%;
+    width: 15%;
   }
 }
 /****** like button ******/
