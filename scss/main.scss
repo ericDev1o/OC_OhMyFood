@@ -171,6 +171,12 @@ a {
     }
 }
 
+.main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
 /****** header ******/
 .header {
     text-align: center;
@@ -463,6 +469,10 @@ html:lang(fr) p[lang='fr'] {
 
     .reservation .paragraph {
         margin-top: 2px;
+    }
+
+    .restaurants {
+        padding: 0 175.68 0 175.68;
     }
 
     .restaurant-cards {
