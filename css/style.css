@@ -385,14 +385,15 @@ html:lang(fr) p[lang=fr] {
   }
   .fonctionnement {
     width: 76%;
-    padding: 0 207 0 180;
+    padding: 0 207 0 192.5;
   }
   .function-buttons {
+    width: 100%;
     display: flex;
     justify-content: space-between;
   }
   .button-function {
-    width: 20%;
+    width: 46%;
   }
   .reservation {
     gap: 12px;
