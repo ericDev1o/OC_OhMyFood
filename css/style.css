@@ -385,7 +385,7 @@ html:lang(fr) p[lang=fr] {
   }
   .fonctionnement {
     width: 76%;
-    padding: 0 207 0 192.5;
+    padding: 30 207 39 192.5;
   }
   .function-buttons {
     width: 100%;
@@ -394,6 +394,9 @@ html:lang(fr) p[lang=fr] {
   }
   .button-function {
     width: 46%;
+  }
+  .button-choose {
+    margin-top: 4px;
   }
   .reservation {
     gap: 12px;
