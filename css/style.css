@@ -380,6 +380,9 @@ html:lang(fr) p[lang=fr] {
 /****** Media queries ******/
 /* Medium and large devices */
 @media (min-width: 1023.98px) {
+  .main {
+    width: 100%;
+  }
   .localisation-reservation {
     width: 100%;
   }
@@ -413,13 +416,21 @@ html:lang(fr) p[lang=fr] {
     margin-top: 2px;
   }
   .restaurants {
-    padding: 0 175.68 0 175.68;
+    width: 100%;
+    padding: 13px 0;
+  }
+  .restaurants .title-h2h3 {
+    padding-left: 185px;
   }
   .restaurant-cards {
+    width: 100%;
     display: flex;
-    flex-wrap: wrap;
+    flex-flow: wrap;
     justify-content: space-between;
-    padding-left: 180px;
+    gap: 10px 15px;
+  }
+  .text-left .title-h2h3 {
+    padding-left: 20px;
   }
 }
 /****** Explorer nos restaurants ******
