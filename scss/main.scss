@@ -500,7 +500,7 @@ html:lang(fr) p[lang='fr'] {
     }
 
     .restaurant-cards {
-        width: 100%;
+        width: 76%;
         height: auto;
         display: flex;
         flex-wrap: wrap;
@@ -510,7 +510,7 @@ html:lang(fr) p[lang='fr'] {
 
     .restaurant-cards .restaurant-card {
         flex: 1 1 calc(63% - 10px);
-        padding: 12px 0;
+        padding: 12px 0 12px 170px;
         margin-bottom: 20px;
         box-sizing: border-box;
     }
