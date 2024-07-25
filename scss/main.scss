@@ -367,7 +367,7 @@ html:lang(fr) p[lang='fr'] {
 
 .restaurant-page {
     width: 100%;
-    background-color: $main-backgrd-color;
+    //background-color: $main-backgrd-color;
 }
 
 .img-container {
@@ -382,7 +382,7 @@ html:lang(fr) p[lang='fr'] {
 
 .img-cover {
     width: 100%;
-    position: absolute;
+    //position: absolute;
     margin-top: -55px;
     padding-top: 31px;
     border-top-left-radius: 40px;
@@ -402,6 +402,12 @@ html:lang(fr) p[lang='fr'] {
 
 .command {
     padding: 40px 0;
+}
+
+.menu-container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
 }
 
 .menu {
