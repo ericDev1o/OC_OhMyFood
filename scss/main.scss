@@ -345,6 +345,7 @@ html:lang(fr) p[lang='fr'] {
 }
 
 /****** page restaurant ******/
+/****** header ******/
 .header-page {
     display: flex;
     align-items: center;
@@ -453,7 +454,7 @@ html:lang(fr) p[lang='fr'] {
     .localisation-reservation {
         width: 100%;
     }
-
+/****** fonctionnement ******/
     .fonctionnement {
         width: 76%;
         padding: 30 207 39 192.5;
@@ -472,7 +473,7 @@ html:lang(fr) p[lang='fr'] {
     .button-choose {
         margin-top: 4px;
     }
-
+/****** reservation ******/
     .reservation {
         gap: 12px;
         padding-bottom: 28px;
@@ -489,10 +490,13 @@ html:lang(fr) p[lang='fr'] {
     .reservation .paragraph {
         margin-top: 2px;
     }
-
+/****** restaurants ******/
     .restaurants {
         width: 100%;
         padding: 13px 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
     }
 
     .restaurants .title-h2h3 {
@@ -500,19 +504,29 @@ html:lang(fr) p[lang='fr'] {
     }
 
     .restaurant-cards {
-        width: 76%;
+        position: relative;
+        display: grid;
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 10px 15px;
+        width: 100%;
+        float: left;
         height: auto;
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: space-between;
-        gap: 5px 10px;
     }
 
     .restaurant-cards .restaurant-card {
-        flex: 1 1 calc(63% - 10px);
-        padding: 12px 0 12px 170px;
+        top: 15%;
+        width: calc(67% - 10px);
+        padding: 12px 0 12px 0px;
         margin-bottom: 20px;
         box-sizing: border-box;
+    }
+
+    .restaurant-card img:nth-child(3) {
+        grid-row-start: 2;
+    }
+
+    .restaurant-card img:nth-child(4) {
+        grid-row-start: 2;
     }
 
     .restaurant-card img {
