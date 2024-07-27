@@ -466,6 +466,29 @@ html:lang(fr) p[lang=fr] {
   .text-left .title-h2h3 {
     padding-left: 20px;
   }
+  .img-cover {
+    background-color: blueviolet;
+    padding-left: 13px;
+    display: flex;
+    justify-content: center;
+  }
+  .img-cover .title-h1h4__h1t__restaurant-name {
+    margin-right: 2%;
+  }
+  .menu {
+    background-color: bisque;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .menu .paragraph__menu {
+    background-color: brown;
+    justify-content: left;
+  }
+  .menu-item {
+    width: 87%;
+  }
 }
 /****** Explorer nos restaurants ******
 * and 
