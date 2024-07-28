@@ -467,6 +467,7 @@ html:lang(fr) p[lang=fr] {
     padding-left: 20px;
   }
   .img-cover {
+    width: 100%;
     background-color: blueviolet;
     padding-left: 13px;
     display: flex;
@@ -476,16 +477,21 @@ html:lang(fr) p[lang=fr] {
     margin-right: 2%;
   }
   .menu {
+    width: 100%;
     background-color: bisque;
     display: flex;
     flex-direction: column;
-    justify-content: center;
+  }
+  .menu-center {
+    background-color: blue;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
     align-items: center;
   }
-  .menu .paragraph__menu {
-    background-color: brown;
-    justify-content: left;
-  }
+  /*.menu .paragraph__menu {
+      background-color: brown;
+  }*/
   .menu-item {
     width: 87%;
   }
