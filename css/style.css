@@ -466,6 +466,9 @@ html:lang(fr) p[lang=fr] {
   .text-left .title-h2h3 {
     padding-left: 20px;
   }
+  .menus {
+    width: 72%;
+  }
   .img-cover {
     width: 100%;
     background-color: blueviolet;
@@ -481,10 +484,12 @@ html:lang(fr) p[lang=fr] {
     background-color: bisque;
     display: flex;
     flex-direction: column;
+    align-items: center;
+    padding-left: 0;
   }
   .menu-center {
     background-color: blue;
-    width: 100%;
+    width: 65%;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -494,6 +499,7 @@ html:lang(fr) p[lang=fr] {
   }*/
   .menu-item {
     width: 87%;
+    margin-right: 0;
   }
 }
 /****** Explorer nos restaurants ******
