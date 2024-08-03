@@ -534,17 +534,17 @@ html:lang(fr) p[lang=fr] {
 }
 
 /****** footer ******/
-.footer {
+footer {
   background-color: #353535;
   color: white;
   padding: 22px 0 22px 25px;
 }
 
-.footer i {
+footer i {
   margin-right: 11px;
 }
 
-.footer-section {
+footer-section {
   display: flex;
   flex-direction: column;
   color: white;

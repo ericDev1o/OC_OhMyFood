@@ -1,7 +1,6 @@
 /****** Explorer nos restaurants ******
-* and 
-* Commander 
-****** buttons ******/
+* et 
+****** Commander ******/
 .explore-command {
     display: flex;
     flex-direction: row;
@@ -33,10 +32,6 @@
 
 /****** Media queries ******/
 /* Medium and large devices */
-@media (min-width: 767.98px) {
-    
-}
-
 @media (min-width: 1023.98px) {
     .button-explore-command-size {
         width: 15%;
