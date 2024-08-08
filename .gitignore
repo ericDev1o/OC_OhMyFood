@@ -5,3 +5,4 @@ package-lock.json
 *.js
 *.ts
 node_modules*
+main.scssc
