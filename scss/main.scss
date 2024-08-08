@@ -242,10 +242,6 @@ html:lang(fr) p[lang='fr'] {
     background: $main-backgrd-color-light;
 }
 
-.button-choose span {
-    margin-left: 25px;
-}
-
 .fonctionnement .fa-store {
     color: $primary-color;
 }
@@ -367,9 +363,7 @@ html:lang(fr) p[lang='fr'] {
 
 .restaurant-page {
     width: 100%;
-    //background-color: $main-backgrd-color;
 }
-
 .img-container {
     width: 100%;
 }
@@ -463,7 +457,7 @@ html:lang(fr) p[lang='fr'] {
 /****** fonctionnement ******/
     .fonctionnement {
         width: 76%;
-        padding: 30 207 39 192.5;
+        padding: 30px 207px 39px 192.5px;
     }
 
     .function-buttons {
