@@ -31,6 +31,23 @@
 }
 
 /****** end fonts system ******/
+@keyframes spin {
+  to {
+    transform: rotate(360deg);
+  }
+}
+.load {
+  animation: spin 2s infinite linear;
+}
+
+.loader:not(.loaded) {
+  animation: spin 2s infinite linear;
+}
+
+.loader.loaded {
+  animation: none;
+}
+
 body {
   margin: 0;
   padding: 0;
@@ -292,6 +309,16 @@ a {
   margin-bottom: 0;
 }
 
+@keyframes dishes-fade-in {
+  0% {
+    opacity: 0;
+    transform: translateY(50px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
 .restaurant-page {
   width: 100%;
 }
@@ -339,6 +366,18 @@ a {
   background-color: #f6f6f6;
   padding-top: 5px;
   padding-left: 13px;
+}
+
+#entrees {
+  animation: dishes-fade-in 1s ease-in-out;
+}
+
+#plats {
+  animation: dishes-fade-in 1s 1s ease-in-out;
+}
+
+#desserts {
+  animation: dishes-fade-in 1s 2s ease-in-out;
 }
 
 .menu .paragraph__menu {
