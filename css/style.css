@@ -32,20 +32,33 @@
 
 /****** end fonts system ******/
 @keyframes spin {
-  to {
+  0% {
+    opacity: 1;
+    visibility: visible;
+  }
+  99% {
+    opacity: 0;
+    visibility: visible;
     transform: rotate(360deg);
+  }
+  100% {
+    /*opacity: 0;*/
+    visibility: hidden;
   }
 }
 .load {
-  animation: spin 2s infinite linear;
-}
-
-.loader:not(.loaded) {
-  animation: spin 2s infinite linear;
+  display: flex;
+  justify-content: center;
+  /*position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  z-index: 9999;*/
 }
 
 .loader.loaded {
-  animation: none;
+  animation: spin 2s 1 forwards;
 }
 
 body {
@@ -312,7 +325,7 @@ a {
 @keyframes dishes-fade-in {
   0% {
     opacity: 0;
-    transform: translateY(50px);
+    transform: translateY(50%);
   }
   100% {
     opacity: 1;
@@ -413,7 +426,7 @@ a {
 /****** Media queries ******/
 /* Medium and large devices */
 @media (min-width: 1023.98px) {
-  .main {
+  main {
     width: 100%;
   }
   .localisation-reservation {
@@ -492,9 +505,8 @@ a {
   }
 }
 /****** Explorer nos restaurants ******
-* and 
-* Commander 
-****** buttons ******/
+* et 
+****** Commander ******/
 .explore-command {
   display: flex;
   flex-direction: row;
@@ -531,7 +543,7 @@ a {
     width: 15%;
   }
 }
-/****** like button ******/
+/****** heart hover ******/
 .heart {
   padding-right: 25px;
   width: 22px;
@@ -558,7 +570,6 @@ a {
   stop-color: #9356dc;
 }
 
-/****** footer ******/
 footer {
   background-color: #353535;
   color: white;
