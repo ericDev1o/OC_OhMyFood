@@ -1,3 +1,4 @@
+<!DOCTYPE html>
 <html lang="fr">
     <head>
         <meta charset="UTF-8">
@@ -10,7 +11,7 @@
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
             integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
             crossorigin="anonymous" referrerpolicy="no-referrer">
-        <link rel="stylesheet" href=".\css\style.css">
+        <link rel="stylesheet" href="./css/style.css">
     </head>
     <body>
         <header>
@@ -19,10 +20,10 @@
         <main>
             <section class="localisation-reservation">
                 <div class="localisation">
-                    <span aria-hidden="true">
+                    <div aria-hidden="true">
                         <i class="fa-solid fa-sharp fa-location-dot"></i>
                         <p class="paragraph" lang="fr">Paris, Belleville</p>
-                    </span>
+                    </div>
                 </div>
                 <div class="reservation">
                     <h2 class="title-h2h3__center">Réservez le menu qui vous convient</h2>
@@ -37,27 +38,21 @@
             <section class="fonctionnement"> 
                 <h2 class="title-h2h3">Fonctionnement</h2>
                 <div class="function-buttons">
-                    <div class="button-function">
-                        <button class="button-choose button-explore-command" type="submit">
-                            <div class="icon">1</div>
-                            <i class="fa-solid fa-mobile-screen-button fa-xl"></i>
-                            <span class="paragraph__button">Choisissez un restaurant</span>
-                        </button>
-                    </div>
-                    <div class="button-function">
-                        <button class="button-choose button-explore-command" type="submit">
-                            <div class="icon">2</div>
-                            <i class="fa-solid fa-list-ul fa-xl"></i>
-                            <span class="paragraph__button">Composez votre menu</span>
-                        </button>
-                    </div>
-                    <div class="button-function">
-                        <button class="button-choose button-explore-command" type="submit">
-                            <div class="icon">3</div>
-                            <i class="fa-solid fa-store fa-xl"></i>
-                            <span class="paragraph__button">Dégustez au restaurant</span>
-                        </button>
-                    </div>
+                    <button class="button-choose button-explore-command" type="submit">
+                        <span class="icon">1</span>
+                        <i class="fa-solid fa-mobile-screen-button fa-xl"></i>
+                        <span class="paragraph__button">Choisissez un restaurant</span>
+                    </button>
+                    <button class="button-choose button-explore-command" type="submit">
+                        <span class="icon">2</span>
+                        <i class="fa-solid fa-list-ul fa-xl"></i>
+                        <span class="paragraph__button">Composez votre menu</span>
+                    </button>
+                    <button class="button-choose button-explore-command" type="submit">
+                        <span class="icon">3</span>
+                        <i class="fa-solid fa-store fa-xl"></i>
+                        <span class="paragraph__button">Dégustez au restaurant</span>
+                    </button>
                 </div>
             </section>
             <section class="restaurants">
@@ -68,7 +63,7 @@
                             <div class="new-container">
                                 <p class="paragraph__new">Nouveau</p>
                             </div>
-                            <img class="image-bottom" src="./images/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg" alt="assiette ronde, couverts, pain et une main vus de 3/4 gauche">
+                            <img class="index-image" src="./images/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg" alt="assiette ronde, couverts, pain et une main vus de 3/4 gauche">
                             <div class="card-content">
                                 <div class="heart-right">
                                     <div class="text-left">
@@ -94,7 +89,7 @@
                                     </div>
                                     <svg class="heart" viewBox="0 0 24 24">
                                         <defs>
-                                            <linearGradient id="gradient" x1="0%" y1="100%" x2="0%" y2="0%">
+                                            <linearGradient x1="0%" y1="100%" x2="0%" y2="0%">
                                                 <stop class="heart-gradient heart-gradient-stop1" offset="0%" stop-color="white"/>
                                                 <stop class="heart-gradient heart-gradient-stop2" offset="100%" stop-color="white"/>
                                             </linearGradient>
@@ -107,7 +102,7 @@
                     </a>
                     <a href="./aLaFrancaise.html">
                         <article class="restaurant-card">
-                            <img class="image-bottom" src="./images/restaurants/toa-heftiba-DQKerTsQwi0-unsplash.jpg" alt="assiette ronde vue de face">
+                            <img class="index-image" src="./images/restaurants/toa-heftiba-DQKerTsQwi0-unsplash.jpg" alt="assiette ronde vue de face">
                             <div class="card-content">
                                 <div class="heart-right">
                                     <div class="text-left">
@@ -116,7 +111,7 @@
                                     </div>
                                     <svg class="heart" viewBox="0 0 24 24">
                                         <defs>
-                                            <linearGradient id="gradient" x1="0%" y1="100%" x2="0%" y2="0%">
+                                            <linearGradient x1="0%" y1="100%" x2="0%" y2="0%">
                                                 <stop class="heart-gradient heart-gradient-stop1" offset="0%" stop-color="white"/>
                                                 <stop class="heart-gradient heart-gradient-stop2" offset="100%" stop-color="white"/>
                                             </linearGradient>
@@ -129,7 +124,7 @@
                     </a>
                     <a href="./leDeliceDesSens.html">
                         <article class="restaurant-card">
-                            <img class="image-bottom" src="./images/restaurants/louis-hansel-shotsoflouis-qNBGVyOCY8Q-unsplash.jpg" alt="assiette allongée vue de 3/4 droite">
+                            <img class="index-image" src="./images/restaurants/louis-hansel-shotsoflouis-qNBGVyOCY8Q-unsplash.jpg" alt="assiette allongée vue de 3/4 droite">
                             <div class="card-content">
                                 <div class="heart-right">
                                     <div class="text-left">
@@ -138,7 +133,7 @@
                                     </div>
                                     <svg class="heart" viewBox="0 0 24 24">
                                         <defs>
-                                            <linearGradient id="gradient" x1="0%" y1="100%" x2="0%" y2="0%">
+                                            <linearGradient x1="0%" y1="100%" x2="0%" y2="0%">
                                                 <stop class="heart-gradient heart-gradient-stop1" offset="0%" stop-color="white"/>
                                                 <stop class="heart-gradient heart-gradient-stop2" offset="100%" stop-color="white"/>
                                             </linearGradient>
