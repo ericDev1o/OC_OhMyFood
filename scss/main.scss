@@ -219,12 +219,6 @@ html:lang(fr) p[lang='fr'] {
     padding: 28px 0 54px 0;
 }
 
-.button-function {
-    padding: 0 20px 0 33px;
-    display: flex;
-    justify-content: stretch;
-}
-
 .button-choose {
     display: block;
     width: 100%;
@@ -234,7 +228,7 @@ html:lang(fr) p[lang='fr'] {
     justify-content: center;
     align-items: center;
     padding: 25px 20px;
-    margin: 12px 0;
+    margin: 12px 20px 12px 33px;
     background: $main-backgrd-color;
 }
 
@@ -459,10 +453,6 @@ a {
         width: 100%;
         display: flex;
         justify-content: space-between;
-    }
-
-    .button-function {
-        width: 46%;
     }
 
     .button-choose {
