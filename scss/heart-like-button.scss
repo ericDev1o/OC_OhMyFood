@@ -1,4 +1,3 @@
-/****** heart hover ******/
 .heart {
     padding-right: 25px;
     width: 22px;
@@ -11,6 +10,7 @@
 
 .heart:hover {
     fill: url(#gradient);
+    stroke: none;
 }
 
 .heart-gradient {

@@ -336,19 +336,16 @@ html:lang(fr) p[lang='fr'] {
     height: 35%;
     background-color: white;
     border-radius: 0 0 15px 15px;
-}
-
-.card-content .heart-right {
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
 
-.heart-right .text-left p {
+.text-left p {
     line-height: 0;
 }
 
-.heart-right .text-left h3 {
+.text-left h3 {
     margin-bottom: 0;
 }
 
@@ -563,9 +560,9 @@ a {
         border-radius: 15px 15px 0 0;
     }
 
-    .text-left .title-h2h3 {
+    /*.text-left .title-h2h3 {
         //padding-left: 20px;
-    }
+    }*/
 
     .menus {
         width: 72%;
