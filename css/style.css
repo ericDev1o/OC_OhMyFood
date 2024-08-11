@@ -191,12 +191,17 @@ html:lang(fr) p[lang=fr] {
   background: #fafafa;
 }
 
-.fonctionnement .fa-store {
+i {
+  position: absolute;
+  left: 22.5px;
+}
+
+.fa-store {
   color: #9356dc;
 }
 
-.fonctionnement .fa-mobile-screen-button,
-.fonctionnement .fa-list-ul {
+.fa-mobile-screen-button,
+.fa-list-ul {
   color: #7e7e7e;
 }
 
@@ -325,6 +330,9 @@ a {
 
 .page-img-container {
   width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .page-img-container img {
@@ -334,12 +342,12 @@ a {
 }
 
 .img-cover {
-  width: 100%;
+  background-color: #f6f6f6;
+  width: 29%;
   margin-top: -55px;
   padding-top: 31px;
   border-top-left-radius: 40px;
   border-top-right-radius: 40px;
-  background-color: #f6f6f6;
   padding-left: 17px;
   padding-right: 17px;
   box-sizing: border-box;
@@ -413,7 +421,7 @@ a {
 /****** Media queries ******/
 /* Medium and large devices */
 @media (min-width: 1023.98px) {
-  .main {
+  main {
     width: 100%;
   }
   .localisation-reservation {
@@ -492,9 +500,8 @@ a {
   }
 }
 /****** Explorer nos restaurants ******
-* and 
-* Commander 
-****** buttons ******/
+* et 
+****** Commander ******/
 .explore-command {
   display: flex;
   flex-direction: row;
@@ -531,7 +538,7 @@ a {
     width: 15%;
   }
 }
-/****** like button ******/
+/****** heart hover ******/
 .heart {
   padding-right: 25px;
   width: 22px;
@@ -558,7 +565,6 @@ a {
   stop-color: #9356dc;
 }
 
-/****** footer ******/
 footer {
   background-color: #353535;
   color: white;
