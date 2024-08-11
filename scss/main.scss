@@ -67,21 +67,18 @@ $font-size-large: 2.5rem;
   }
 
 @keyframes spin {
-    to {
+    100% {
         transform: rotate(360deg);
     }
 }
 
 .load {
-    animation: spin 2s infinite linear;
+    display: flex;
+    justify-content: center;
 }
 
-.loader:not(.loaded) {
-    animation: spin 2s infinite linear;
-}
-
-.loader.loaded {
-    animation: none;
+.loaded {
+    animation: spin 2s 1 forwards;
 }
 
 body {
@@ -378,7 +375,7 @@ a {
 @keyframes dishes-fade-in {
     0% {
         opacity: 0;
-        transform: translateY(+50px);
+        transform: translateY(+50%);
     }
     100% {
         opacity: 1;
@@ -432,6 +429,7 @@ a {
 }
 
 .menu {
+    width: 72%;
     background-color: $main-backgrd-color;
     padding-top: 5px;
     padding-left: 13px;
@@ -570,5 +568,44 @@ a {
 
     .text-left .title-h2h3 {
         padding-left: 20px;
+    }
+
+    .menus {
+        width: 72%;
+    }
+
+    .img-cover {
+        width: 100%;
+        padding-left: 13px;
+        display: flex;
+        justify-content: center;
+    }
+
+    .img-cover .title-h1h4__h1t__restaurant-name {
+        margin-right: 2%;
+    }
+
+    .menu-title {
+        padding-left: 21%;
+    }
+
+    .menu {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding-left: 0;
+    }
+
+    .menu-center {
+        width: 65%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .menu-item {
+        width: 87%;
+        margin-right: 0;
     }
 }
