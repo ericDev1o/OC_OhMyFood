@@ -121,7 +121,7 @@ a {
 
 .title-h2h3 {
     @extend %font-bold;
-    padding-left: 20px;
+    //padding-left: 20px;
 
     &__h2 { 
         font-size: 1.5rem;
@@ -399,7 +399,7 @@ a {
 
 .img-cover {
     background-color: brown;//$main-backgrd-color;
-    width: 29%;
+    width: 58%;
     margin-top: -55px;
     padding-top: 31px;
     border-top-left-radius: 40px;
@@ -522,10 +522,6 @@ a {
         align-items: center;
     }
 
-    .restaurants .title-h2h3 {
-        //padding-left: 185px;
-    }
-
     .restaurant-cards {
         position: relative;
         display: grid;
@@ -560,10 +556,6 @@ a {
         border-radius: 15px 15px 0 0;
     }
 
-    /*.text-left .title-h2h3 {
-        //padding-left: 20px;
-    }*/
-
     .menus {
         width: 72%;
     }
@@ -577,10 +569,6 @@ a {
 
     .img-cover .title-h1h4__h1t__restaurant-name {
         margin-right: 2%;
-    }
-
-    .menu-title {
-        //padding-left: 21%;
     }
 
     .menu {

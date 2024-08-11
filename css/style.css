@@ -78,9 +78,6 @@ a {
   color: white;
 }
 
-.title-h2h3 {
-  padding-left: 20px;
-}
 .title-h2h3__h2 {
   font-size: 1.5rem;
   line-height: 1.758rem;
@@ -338,7 +335,7 @@ a {
 
 .img-cover {
   background-color: brown;
-  width: 29%;
+  width: 58%;
   margin-top: -55px;
   padding-top: 31px;
   border-top-left-radius: 40px;
@@ -484,9 +481,6 @@ a {
     object-position: 50% 60%;
     border-radius: 15px 15px 0 0;
   }
-  /*.text-left .title-h2h3 {
-      //padding-left: 20px;
-  }*/
   .menus {
     width: 72%;
   }
@@ -593,7 +587,7 @@ footer i {
   margin-right: 11px;
 }
 
-footer-section {
+.footer-container {
   display: flex;
   flex-direction: column;
   color: white;
@@ -608,6 +602,16 @@ footer-section {
 .devenir-partenaire {
   display: flex;
   align-items: center;
+}
+
+/****** Media queries ******/
+/* Medium and large devices */
+@media (min-width: 1023.98px) {
+  .footer-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */
