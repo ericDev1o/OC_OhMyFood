@@ -67,35 +67,17 @@ $font-size-large: 2.5rem;
   }
 
 @keyframes spin {
-    0%{
-        opacity: 1;
-        visibility: visible;
-    }
-    99% {
-        opacity: 0;
-        visibility: visible;
-        transform: rotate(360deg);
-    }
     100% {
-        /*opacity: 0;*/
-        visibility: hidden;
+        transform: rotate(360deg);
     }
 }
 
 .load {
     display: flex;
     justify-content: center;
-    /*position: fixed;
-    top: 0;
-    left: 0;
-    width: 100vw;
-    height: 100vh;
-    z-index: 9999;*/
 }
 
-.loader:not(.loaded) {}
-
-.loader.loaded {
+.loaded {
     animation: spin 2s 1 forwards;
 }
 
