@@ -150,6 +150,7 @@ header .title-h1h4 {
 
 .localisation p {
   display: none;
+  margin-left: 12.5px;
 }
 
 html:lang(fr) p[lang=fr] {
@@ -188,7 +189,7 @@ html:lang(fr) p[lang=fr] {
   background: #fafafa;
 }
 
-i {
+.button-choose i {
   position: absolute;
   left: 22.5px;
 }
@@ -306,8 +307,8 @@ a {
   justify-content: center;
   text-align: center;
   flex: 1;
-  padding-right: 23px;
-  padding-top: 14px;
+  /*padding-right: 23px;
+  padding-top: 14px;*/
   margin-bottom: 0;
 }
 
@@ -339,7 +340,7 @@ a {
 }
 
 .img-cover {
-  background-color: #f6f6f6;
+  background-color: brown;
   width: 29%;
   margin-top: -55px;
   padding-top: 31px;
@@ -355,10 +356,6 @@ a {
 
 .img-cover h1 {
   margin: 0;
-}
-
-.command {
-  padding: 40px 0;
 }
 
 .menu-container {
@@ -461,9 +458,6 @@ a {
     justify-content: center;
     align-items: center;
   }
-  .restaurants .title-h2h3 {
-    padding-left: 185px;
-  }
   .restaurant-cards {
     position: relative;
     display: grid;
@@ -493,23 +487,17 @@ a {
     object-position: 50% 60%;
     border-radius: 15px 15px 0 0;
   }
-  .text-left .title-h2h3 {
-    padding-left: 20px;
-  }
   .menus {
     width: 72%;
   }
   .img-cover {
-    width: 100%;
+    width: 72%;
     padding-left: 13px;
     display: flex;
     justify-content: center;
   }
   .img-cover .title-h1h4__h1t__restaurant-name {
     margin-right: 2%;
-  }
-  .menu-title {
-    padding-left: 21%;
   }
   .menu {
     width: 100%;
