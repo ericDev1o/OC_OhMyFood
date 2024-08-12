@@ -28,6 +28,16 @@ footer i {
 /****** Media queries ******/
 /* Medium and large devices */
 @media (min-width: 1023.98px) {
+    footer {
+        display: flex;
+        flex-direction: row-reverse;
+        align-items: baseline;
+    }
+
+    footer h4 {
+        margin-left: 12.5px;
+    }
+    
     .footer-container {
         display: flex;
         flex-direction: row;
