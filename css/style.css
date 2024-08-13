@@ -54,7 +54,7 @@ body {
 }
 
 .load img {
-  margin: 2.4% 0;
+  margin: 3.8% 0;
 }
 
 a {
@@ -163,17 +163,42 @@ html:lang(fr) p[lang=fr] {
 
 /****** reservation ******/
 .reservation {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
   text-align: center;
   background-color: #f6f6f6;
   padding: 20px 0 55px 0;
 }
 
+.reservation h2 {
+  margin-bottom: 2.5%;
+}
+
+.reservation p {
+  margin-top: 0;
+  margin-bottom: 8%;
+}
+
 /****** fonctionnement *****/
 .fonctionnement {
+  width: 100%;
+  margin: 0;
+  padding-left: 0;
+  padding-right: 0;
   padding: 28px 0 54px 0;
+  /*display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  justify-content: center;
+  text-align: center;*/
+}
+
+.fonctionnement h2 {
+  text-align: left;
+}
+
+.function-buttons {
+  margin-left: 8%;
+  margin-right: 5%;
+  gap: 6.5% 0;
 }
 
 .button-choose {
@@ -185,7 +210,6 @@ html:lang(fr) p[lang=fr] {
   justify-content: center;
   align-items: center;
   padding: 25px 20px;
-  margin: 12px 20px 12px 33px;
   background: #f6f6f6;
 }
 
@@ -420,6 +444,9 @@ a {
   }
   .localisation-reservation {
     width: 100%;
+  }
+  .load img {
+    margin: 2.4% 0;
   }
   /****** fonctionnement ******/
   .fonctionnement {
