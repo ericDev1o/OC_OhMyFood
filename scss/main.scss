@@ -245,12 +245,6 @@ html:lang(fr) p[lang='fr'] {
     padding-left: 0;
     padding-right: 0;
     padding: 28px 0 54px 0;
-    /*display: flex;
-    flex-direction: column;
-    align-items: stretch;
-    justify-content: center;
-    text-align: center;*/
-    //gap: 5% 0;
 }
 
 .fonctionnement h2 {
@@ -260,7 +254,6 @@ html:lang(fr) p[lang='fr'] {
 .function-buttons {
     margin-left: 8%;
     margin-right: 5%;
-    gap: 6.5% 0;
 }
 
 .button-choose {
@@ -272,10 +265,11 @@ html:lang(fr) p[lang='fr'] {
     justify-content: center;
     align-items: center;
     padding: 25px 20px;
-    //margin-left: 8%;
-    //margin-right: 6%;
-    //margin: 12px 20px 12px 33px;
     background: $main-backgrd-color;
+}
+
+.button-choose:not(:last-child) {
+    margin-bottom: 7%;
 }
 
 .button-choose:hover {
@@ -315,6 +309,7 @@ html:lang(fr) p[lang='fr'] {
 
 /****** restaurants ******/
 .restaurants {
+    width: 100%;
     background-color: $main-backgrd-color;
     padding: 34px 0 58px 0;
 }
@@ -325,16 +320,16 @@ html:lang(fr) p[lang='fr'] {
 
 .restaurant-card {
     width: 100%;
-    height: 280px;
-    padding: 12px 0;
+    height: 50vh;
+    //padding: 12px 0;
     position: relative;
 }
 
 .restaurant-card img {
     width: 100%;
-    height: 65%;
-    object-fit: cover;
-    object-position: 50% 60%;
+    height: 70%;
+    /*object-fit: cover;
+    object-position: 50% 60%;*/
     border-radius: 15px 15px 0 0;
 }
 
@@ -365,7 +360,7 @@ html:lang(fr) p[lang='fr'] {
 }
 
 .card-content {
-    height: 35%;
+    height: 30%;
     background-color: white;
     border-radius: 0 0 15px 15px;
     display: flex;
@@ -375,9 +370,11 @@ html:lang(fr) p[lang='fr'] {
 
 .text-left p {
     line-height: 0;
+    margin: 0;
 }
 
 .text-left h3 {
+    margin-top: 0;
     margin-bottom: 0;
 }
 
