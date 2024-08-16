@@ -576,15 +576,19 @@ a {
   border-radius: 20px;
   border: none;
   box-shadow: 0 8px 4px rgba(0, 0, 0, 0.1);
+  height: 50px;
 }
 
 .button-explore-command:hover {
   box-shadow: 0 8px 4px rgba(0, 0, 0, 0.5);
 }
 
-.button-explore-command-size {
-  height: 50px;
+.button-explore-command-size-w {
   width: 59%;
+}
+
+.button-explore-command-size-w-rest {
+  width: 70%;
 }
 
 .button-explore-command-color {
@@ -600,6 +604,12 @@ a {
 @media (min-width: 1023.98px) {
   .button-explore-command-size {
     width: 17%;
+  }
+  .button-explore-command-size-w {
+    width: 15%;
+  }
+  .button-explore-command-size-w-rest {
+    width: 100%;
   }
 }
 .heart {
