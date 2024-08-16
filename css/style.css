@@ -584,7 +584,7 @@ a {
 
 .button-explore-command-size {
   height: 50px;
-  width: 46%;
+  width: 59%;
 }
 
 .button-explore-command-color {
@@ -599,7 +599,7 @@ a {
 /* Medium and large devices */
 @media (min-width: 1023.98px) {
   .button-explore-command-size {
-    width: 25%;
+    width: 17%;
   }
 }
 .heart {
