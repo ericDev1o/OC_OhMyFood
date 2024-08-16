@@ -22,11 +22,11 @@
   font-weight: 700;
 }
 
-.paragraph__button, .title-h2h3__h3t__menu-title {
+.paragraph__button, .paragraph, .title-h2h3__h3t__menu-title {
   font-weight: 500;
 }
 
-.paragraph {
+.paragraph__reservation {
   font-weight: 300;
 }
 
@@ -98,8 +98,12 @@ a {
   line-height: 1.318rem;
 }
 .paragraph {
+  font-size: 1rem;
+  line-height: 1.172rem;
+}
+.paragraph__reservation {
   font-size: 1.125rem;
-  line-height: 1.318;
+  line-height: 1.318rem;
 }
 .paragraph__card {
   font-size: 1.0625rem;
@@ -173,7 +177,7 @@ html:lang(fr) p[lang=fr] {
 
 .reservation p {
   margin-top: 0;
-  margin-bottom: 8%;
+  margin-bottom: 7%;
 }
 
 /****** fonctionnement *****/
@@ -216,7 +220,7 @@ html:lang(fr) p[lang=fr] {
 
 .button-choose i {
   position: absolute;
-  left: 22.5px;
+  left: 20.5px;
 }
 
 .fa-store {
@@ -460,41 +464,47 @@ a {
     width: 100%;
     display: flex;
     justify-content: space-between;
+    gap: 3%;
   }
   .button-choose {
     margin-top: 4px;
   }
+  .button-choose:not(:last-child) {
+    margin-bottom: 0;
+  }
   /****** reservation ******/
   .reservation {
-    gap: 12px;
-    padding-bottom: 28px;
     padding-top: 0;
     display: flex;
+    flex-direction: column;
     justify-content: center;
   }
   .title-h2h3__center {
     font-size: 2.5rem;
     line-height: 2.93rem;
   }
-  .reservation .paragraph {
-    margin-top: 2px;
+  .reservation p {
+    margin-top: 2%;
+    margin-bottom: 2.5%;
+  }
+  .reservation:last-child {
+    margin-bottom: 0;
   }
   /****** restaurants ******/
   .restaurants {
     background-color: mediumseagreen;
     width: 100%;
-    /*padding: 13px 0;
-    margin-bottom: 20px;*/
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: flex-start;
   }
   .restaurants h2 {
-    margin-left: 170px;
+    margin-left: 13.5%;
   }
   .restaurant-cards {
     background-color: burlywood;
+    position: relative;
     display: grid;
     grid-template-columns: repeat(2, minmax(0, 1fr));
     width: 100%;
@@ -503,6 +513,7 @@ a {
     height: auto;
   }
   .restaurant-cards .restaurant-card {
+    top: 15%;
     width: calc(67% - 10px);
     padding: 12px 0 12px 0px;
     margin-bottom: 20px;
@@ -556,8 +567,9 @@ a {
 ****** Commander ******/
 .explore-command {
   display: flex;
-  flex-direction: row;
   justify-content: center;
+  padding-bottom: 0;
+  margin-bottom: 0;
 }
 
 .button-explore-command {
@@ -572,7 +584,7 @@ a {
 
 .button-explore-command-size {
   height: 50px;
-  width: 58%;
+  width: 46%;
 }
 
 .button-explore-command-color {
@@ -587,7 +599,7 @@ a {
 /* Medium and large devices */
 @media (min-width: 1023.98px) {
   .button-explore-command-size {
-    width: 15%;
+    width: 25%;
   }
 }
 .heart {
@@ -625,6 +637,7 @@ footer {
 
 footer i {
   margin-right: 11px;
+  margin-left: 5%;
 }
 
 .footer-container {
@@ -653,12 +666,19 @@ footer i {
     align-items: baseline;
   }
   footer h4 {
-    margin-left: 12.5px;
+    margin-left: 10%;
+    margin-right: 10%;
   }
   .footer-container {
     display: flex;
     flex-direction: row;
     justify-content: flex-end;
+  }
+  .footer-container i {
+    margin-right: 4%;
+  }
+  .paragraph__button {
+    margin-left: 1%;
   }
 }
 

@@ -6,6 +6,7 @@ footer {
 
 footer i {
     margin-right: 11px;
+    margin-left: 5%;//toDo
 }
 
 .footer-container {
@@ -35,12 +36,21 @@ footer i {
     }
 
     footer h4 {
-        margin-left: 12.5px;
+        margin-left: 10%;
+        margin-right: 10%;
     }
     
     .footer-container {
         display: flex;
         flex-direction: row;
         justify-content: flex-end;
+    }
+
+    .footer-container i {
+        margin-right: 4%;//toDo
+    }
+
+    .paragraph__button {
+        margin-left: 1%;
     }
 }
