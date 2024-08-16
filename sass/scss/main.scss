@@ -1,5 +1,3 @@
-//<!--toDo loader fullscreen: div absol. sur main-->
-
 /****** general ******/
 /****** colors ******/
 $primary-color: #9356dc;
@@ -76,22 +74,50 @@ $font-size-large: 2.5rem;
     height: 100%;
 }
 
+.landing-page-title {
+    width: 100%;
+    height: inherit;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 999;
+}
+
 @keyframes spin {
     100% {
         transform: rotate(360deg);
     }
 }
 
-.load {
+.loader {
     display: flex;
     justify-content: center;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url(../../assets/images/logo/ohmyfood@2x.svg);
+    background-size: cover;
+    z-index: 998;
+    opacity: 1;
+    transition: opacity 1s ease-in-out;
 }
 
-.loaded {
-    animation: spin 2s 1 forwards;
+.loader.loaded {
+    opacity: 0;
+    z-index: -1;
 }
 
-.load img {
+.loader img {
+    /*position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);*/
+    height: 50px;
+    width: 100vw;
     margin: 3.8% 0;
 }
 
