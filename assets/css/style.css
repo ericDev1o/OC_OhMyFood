@@ -26,7 +26,7 @@
   font-weight: 500;
 }
 
-.paragraph__reservation {
+.paragraph__menu, .paragraph__reservation {
   font-weight: 300;
 }
 
@@ -370,8 +370,8 @@ a {
 }
 
 .img-cover {
-  background-color: brown;
-  width: 58%;
+  background-color: #f6f6f6;
+  width: 100%;
   margin-top: -55px;
   padding-top: 31px;
   border-top-left-radius: 40px;
@@ -388,17 +388,9 @@ a {
   margin: 0;
 }
 
-.menu-container {
-  width: 100%;
-  display: flex;
-  justify-content: center;
-}
-
 .menu {
-  width: 72%;
+  width: 100%;
   background-color: #f6f6f6;
-  padding-top: 5px;
-  padding-left: 13px;
 }
 
 #entrees {
@@ -414,7 +406,7 @@ a {
 }
 
 .menu .paragraph__menu {
-  margin-bottom: 4px;
+  margin-bottom: 1%;
 }
 
 .line {
@@ -423,14 +415,18 @@ a {
   background-color: #99e2d0;
 }
 
+.menu-left {
+  margin-left: 3%;
+}
+
 .menu-item h3 {
   margin-top: 0;
   margin-bottom: 5px;
 }
 
 .menu-item {
-  margin: 13px 13px 0 0;
-  padding: 12px 0 12px 15px;
+  margin: 3%;
+  padding: 2% 0 3% 4%;
   background-color: white;
   border-radius: 15px;
   box-shadow: 0 8px 4px rgba(0, 0, 0, 0.1);
