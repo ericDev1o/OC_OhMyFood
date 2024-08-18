@@ -521,15 +521,19 @@ a {
     }
 /****** fonctionnement ******/
     .fonctionnement {
-        width: 76%;
-        padding: 30px 207px 39px 192.5px;
+        width: 82%;
+        position: relative;
     }
 
     .function-buttons {
-        width: 100%;
+        position: absolute;
+        //top: 0;
+        left: -5.2%;
+        width: 80%;
         display: flex;
-        justify-content: space-between;
-        gap: 3%;
+        //justify-content: space-between;
+        gap: 3.5%;
+        margin-bottom: 20%;
     }
 
     .button-choose {
