@@ -1,5 +1,3 @@
-//<!--toDo loader fullscreen: div absol. sur main-->
-
 /****** general ******/
 /****** colors ******/
 $primary-color: #9356dc;
@@ -69,10 +67,10 @@ $font-size-large: 2.5rem;
   }
 
  body {
+    width: 100%;
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    width: 100%;
     height: 100%;
 }
 
@@ -197,6 +195,7 @@ a {
 }
 
 main {
+    width: 100%;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -212,7 +211,12 @@ header .title-h1h4 {
 }
 
 /****** localisation ******/
+.localisation-reservation {
+    width: 100%;
+}
+
 .localisation {
+    width: 100%;
     text-align: center;
     height: 50px;
     background-color: #eaeaea;
@@ -232,6 +236,7 @@ html:lang(fr) p[lang='fr'] {
 
 /****** reservation ******/
 .reservation {
+    width: 100%;
     text-align: center;
     background-color: $main-backgrd-color;
     padding: 20px 0 55px 0;
@@ -328,15 +333,15 @@ html:lang(fr) p[lang='fr'] {
 
 .restaurant-card {
     width: 100%;
-    height: 50vh;
+    height: 27vh;
     position: relative;
 }
 
 .restaurant-card img {
     width: 100%;
     height: 70%;
-    /*object-fit: cover;
-    object-position: 50% 60%;*/
+    object-fit: cover;
+    object-position: 50% 60%;
     border-radius: 15px 15px 0 0;
 }
 
@@ -527,11 +532,9 @@ a {
 
     .function-buttons {
         position: absolute;
-        //top: 0;
         left: -5.2%;
         width: 80%;
         display: flex;
-        //justify-content: space-between;
         gap: 3.5%;
         margin-bottom: 20%;
     }
@@ -567,7 +570,7 @@ a {
 /****** restaurants ******/
     .restaurants {
         background-color: mediumseagreen;
-        width: 100%;
+        width: 73%;
         display: flex;
         flex-direction: column;
         justify-content: center;
@@ -592,7 +595,8 @@ a {
     .restaurant-cards .restaurant-card {
         top: 15%;
         width: calc(67% - 10px);
-        padding: 12px 0 12px 0px;//toDo
+        height: 34vh;
+        padding: 12px 0;
         margin-bottom: 20px;
         box-sizing: border-box;
     }
@@ -613,12 +617,11 @@ a {
         border-radius: 15px 15px 0 0;
     }
 
-    .menus {
-        width: 72%;//toDO
+    /***** restaurant-page ******/
+    .menu-width {
+        width: 73%;
     }
-
     .img-cover {
-        width: 72%;
         padding-left: 13px;
         display: flex;
         justify-content: center;
@@ -629,22 +632,17 @@ a {
     }
 
     .menu {
-        width: 100%;
         display: flex;
         flex-direction: column;
         align-items: center;
         padding-left: 0;
     }
 
-    .menu-center {
-        width: 65%;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
+    .menu-dish-width {
+        width: 56%;
     }
 
     .menu-item {
-        width: 87%;
         margin-right: 0;
     }
 }
