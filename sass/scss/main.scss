@@ -83,11 +83,12 @@ $font-size-large: 2.5rem;
 .loaded {
     display: flex;
     justify-content: center;
+    animation: spin 2s 1 forwards;
 }
 
 
-.loader img {
-    margin: 3.8% 0;
+.loaded img {
+    margin: 0.8% 0;
 }
 
 a {

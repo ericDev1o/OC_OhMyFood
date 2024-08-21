@@ -44,11 +44,14 @@ body {
     transform: rotate(360deg);
   }
 }
-
 .loaded {
   display: flex;
   justify-content: center;
   animation: spin 2s 1 forwards;
+}
+
+.loaded img {
+  margin: 0.8% 0;
 }
 
 a {
