@@ -83,10 +83,10 @@ $font-size-large: 2.5rem;
 .loaded {
     display: flex;
     justify-content: center;
-    animation: spin 2s 1 forwards;
 }
 
-.load img {
+
+.loader img {
     margin: 3.8% 0;
 }
 
@@ -586,7 +586,7 @@ a {
     .restaurant-cards .restaurant-card {
         top: 15%;
         width: calc(67% - 10px);
-        padding: 12px 0 12px 0px;
+        padding: 12px 0 12px 0px;//toDo
         margin-bottom: 20px;
         box-sizing: border-box;
     }
@@ -608,7 +608,7 @@ a {
     }
 
     .menus {
-        width: 72%;
+        width: 72%;//toDO
     }
 
     .img-cover {
