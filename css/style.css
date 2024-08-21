@@ -44,12 +44,9 @@ body {
     transform: rotate(360deg);
   }
 }
-.load {
+.loaded {
   display: flex;
   justify-content: center;
-}
-
-.loaded {
   animation: spin 2s 1 forwards;
 }
 

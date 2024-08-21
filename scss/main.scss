@@ -80,12 +80,9 @@ $font-size-large: 2.5rem;
     }
 }
 
-.load {
+.loaded {
     display: flex;
     justify-content: center;
-}
-
-.loaded {
     animation: spin 2s 1 forwards;
 }
 
