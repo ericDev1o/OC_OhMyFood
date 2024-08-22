@@ -14,7 +14,7 @@
 }
 
 .heart-gradient {
-    transition: stop-color 1s;
+    transition: stop-color 1s ease;
 }
 
 .heart:hover .heart-gradient-stop1 {
