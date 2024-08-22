@@ -535,6 +535,9 @@ a {
     .fonctionnement {
         width: 82%;
         position: relative;
+        padding: 0;
+        padding-top: 1.8%;
+        padding-bottom: 6.6%;
     }
 
     .function-buttons {
@@ -542,7 +545,7 @@ a {
         left: -5.2%;
         width: 80%;
         display: flex;
-        gap: 3.5%;
+        gap: 3.2%;
         margin-bottom: 20%;
     }
 
@@ -576,8 +579,7 @@ a {
     }
 /****** restaurants ******/
     .restaurants {
-        background-color: mediumseagreen;
-        width: 73%;
+        width: 100%;
         display: flex;
         flex-direction: column;
         justify-content: center;
@@ -585,11 +587,12 @@ a {
     }
 
     .restaurants h2 {
-        margin-left: 13.5%;
+        margin-left: 10.2%;
+        margin-top: 0;
+        margin-bottom: 1.8%;
     }
 
     .restaurant-cards {
-        background-color: burlywood;
         position: relative;
         display: grid;
         grid-template-columns: repeat(2, minmax(0, 1fr));
