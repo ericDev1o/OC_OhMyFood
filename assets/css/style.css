@@ -465,6 +465,7 @@ a {
 
 .menu-item:hover .fa-circle-check {
   display: inline;
+  color: #99e2d0;
 }
 
 /****** Media queries ******/
