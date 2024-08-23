@@ -516,6 +516,7 @@ a {
 .align-price {
     padding: 0 17px 0 0;
     display: flex;
+    flex-direction: column;
     justify-content: space-between;
     align-items: center;
 }
@@ -531,6 +532,8 @@ a {
 .menu-item:hover {
     .fa-circle-check {
         display: inline;
+        color: $tertiary-color;
+        margin-right: 4%;
     }
 }
 
