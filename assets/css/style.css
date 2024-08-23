@@ -343,10 +343,6 @@ html:lang(fr) p[lang=fr] {
   align-items: center;
 }
 
-.menu-item {
-  cursor: pointer;
-}
-
 a {
   padding-left: 23px;
 }
@@ -447,6 +443,9 @@ a {
   background-color: white;
   border-radius: 15px;
   box-shadow: 0 8px 4px rgba(0, 0, 0, 0.1);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
 .align-price {
@@ -454,6 +453,18 @@ a {
   display: flex;
   justify-content: space-between;
   align-items: center;
+}
+
+.menu-item {
+  cursor: pointer;
+}
+
+.fa-circle-check {
+  display: none;
+}
+
+.menu-item:hover .fa-circle-check {
+  display: inline;
 }
 
 /****** Media queries ******/
