@@ -343,6 +343,10 @@ html:lang(fr) p[lang=fr] {
   align-items: center;
 }
 
+.menu-item {
+  cursor: pointer;
+}
+
 a {
   padding-left: 23px;
 }
