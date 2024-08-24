@@ -449,9 +449,6 @@ a {
   align-items: center;
 }
 
-/*.menu-item .title-h2h3__h3t__menu-title {
-    text-align: left;
-}*/
 .align-price {
   padding: 0 17px 0 0;
   display: flex;
@@ -467,10 +464,24 @@ a {
   display: none;
 }
 
+.row-check {
+  display: flex;
+}
+
+.dish-check-background {
+  position: relative;
+  background-color: #99e2d0;
+  z-index: 0;
+}
+
 .menu-item:hover .fa-circle-check {
+  position: absolute;
   display: inline;
   color: #99e2d0;
-  margin-right: 4%;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 1;
 }
 
 /****** Media queries ******/

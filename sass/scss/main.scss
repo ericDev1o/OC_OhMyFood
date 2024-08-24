@@ -529,11 +529,25 @@ a {
     display: none;
 }
 
+.row-check {
+    display: flex;
+}
+
+.dish-check-background {
+    position: relative;
+    background-color: $tertiary-color;
+    z-index: 0;
+}
+
 .menu-item:hover {
     .fa-circle-check {
+        position: absolute;
         display: inline;
         color: $tertiary-color;
-        margin-right: 4%;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        z-index: 1;
     }
 }
 
