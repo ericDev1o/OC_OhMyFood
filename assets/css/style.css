@@ -456,32 +456,38 @@ a {
   align-items: center;
 }
 
-.menu-item {
-  cursor: pointer;
-}
-
 .fa-circle-check {
   display: none;
 }
 
-.row-check {
+.menu-item {
+  cursor: pointer;
+}
+.menu-item .row-check {
   display: flex;
 }
-
-.dish-check-background {
-  position: relative;
+.menu-item .dish-check-background {
+  display: none;
+}
+.menu-item:hover .dish-check-background {
+  display: inline;
   background-color: #99e2d0;
+  width: 25%;
+  height: 100%;
+  position: relative;
   z-index: 0;
 }
-
 .menu-item:hover .fa-circle-check {
   position: absolute;
   display: inline;
   color: #99e2d0;
-  top: 50%;
-  left: 50%;
+  top: 35px;
+  left: 45%;
   transform: translate(-50%, -50%);
   z-index: 1;
+}
+.menu-item:hover .dish-check-background {
+  background-color: #99e2d0;
 }
 
 /****** Media queries ******/

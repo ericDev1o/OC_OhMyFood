@@ -521,33 +521,43 @@ a {
     align-items: center;
 }
 
-.menu-item {
-    cursor: pointer;
-}
-
 .fa-circle-check {
     display: none;
 }
 
-.row-check {
-    display: flex;
-}
+.menu-item {
+    cursor: pointer;
 
-.dish-check-background {
-    position: relative;
-    background-color: $tertiary-color;
-    z-index: 0;
-}
+    .row-check {
+        display: flex;
+    }    
 
-.menu-item:hover {
-    .fa-circle-check {
-        position: absolute;
-        display: inline;
-        color: $tertiary-color;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%, -50%);
-        z-index: 1;
+    .dish-check-background {
+        display: none;
+    }
+
+    &:hover {
+        .dish-check-background {
+            display: inline;
+            background-color: $tertiary-color;
+            width: 25%;
+            height: 100%;
+            position: relative;
+            z-index: 0;
+        }
+        .fa-circle-check {
+            position: absolute;
+            display: inline;
+            color: $tertiary-color;
+            top: 35px;
+            left: 45%;
+            transform: translate(-50%, -50%);
+            z-index: 1;
+        }
+    }
+
+    &:hover .dish-check-background {
+        background-color: $tertiary-color;
     }
 }
 
