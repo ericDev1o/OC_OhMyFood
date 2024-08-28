@@ -525,6 +525,12 @@ a {
         padding: 15px;
         width: 100%;
         transition: width 0.3s ease;
+        overflow: hidden;
+    }
+
+    .dish-content h3,
+    .dish-content span {
+        display: inline;
     }
 
     h3 {
@@ -536,7 +542,7 @@ a {
         padding: 0 17px 0 0;
         display: flex;
         justify-content: space-between;
-        align-items: center;
+        align-items: flex-end; //baseline;//center;
     }
 
     .dish-check-background {
@@ -574,12 +580,41 @@ a {
 
     &:hover, &:active {
         .dish-content {
-            width: calc(100% - 60px);
+            width: 40px;//calc(100% - 60px);
             //transform: translateX(-60px);
+            //overflow: hidden;
         }
         /*.row-check {
             padding-right: 60px;
             transition: padding-right 0.3s ease;
+        }*/
+
+        /*.dish-content h3,
+        .dish-content span {
+            display: inline;
+        }*/
+
+        .ellipsis {
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
+        }
+
+        /*.dish-content.ellipsis .title-h2h3__h3t__menu-title,
+        .dish-content.ellipsis .paragraph__menutext {
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            display: block;
+        }*/
+
+        /*.paragraph__menutext {
+            flex-grow: 1;
+            margin-right: 10px;
+        }
+
+        .paragraph__menutext__price {
+            flex-shrink: 0;
         }*/
 
         .dish-check-background {

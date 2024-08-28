@@ -460,6 +460,11 @@ a {
   padding: 15px;
   width: 100%;
   transition: width 0.3s ease;
+  overflow: hidden;
+}
+.menu-item .dish-content h3,
+.menu-item .dish-content span {
+  display: inline;
 }
 .menu-item h3 {
   margin-top: 0;
@@ -469,7 +474,7 @@ a {
   padding: 0 17px 0 0;
   display: flex;
   justify-content: space-between;
-  align-items: center;
+  align-items: flex-end;
 }
 .menu-item .dish-check-background {
   display: flex;
@@ -498,13 +503,37 @@ a {
       padding-right: 60px;
       transition: padding-right 0.3s ease;
   }*/
+  /*.dish-content h3,
+  .dish-content span {
+      display: inline;
+  }*/
+  /*.dish-content.ellipsis .title-h2h3__h3t__menu-title,
+  .dish-content.ellipsis .paragraph__menutext {
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      display: block;
+  }*/
+  /*.paragraph__menutext {
+      flex-grow: 1;
+      margin-right: 10px;
+  }
+
+  .paragraph__menutext__price {
+      flex-shrink: 0;
+  }*/
   /*.fa-circle-check {
       display: block;
       color: white;
   }*/
 }
 .menu-item:hover .dish-content, .menu-item:active .dish-content {
-  width: calc(100% - 60px);
+  width: 40px;
+}
+.menu-item:hover .ellipsis, .menu-item:active .ellipsis {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 .menu-item:hover .dish-check-background, .menu-item:active .dish-check-background {
   transform: translateX(0);
