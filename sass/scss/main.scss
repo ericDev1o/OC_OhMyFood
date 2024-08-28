@@ -580,7 +580,7 @@ a {
 
     &:hover, &:active {
         .dish-content {
-            width: 40px;//calc(100% - 60px);
+            width: calc(100% - 60px);
             //transform: translateX(-60px);
             //overflow: hidden;
         }
