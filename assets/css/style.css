@@ -10,11 +10,11 @@
 /****** weight ******/
 /****** size ******/
 /****** placeholders ******/
-.title-h1h4__h1t__restaurant-name, .title-h1h4 {
+.title-h2h3__restaurant-name, .title-h1h4 {
   font-family: "Shrikhand", sans-serif;
 }
 
-* {
+*, .title-h1h4__menu-title {
   font-family: "Roboto", sans-serif;
 }
 
@@ -22,7 +22,7 @@
   font-weight: 700;
 }
 
-.paragraph__button, .paragraph, .title-h2h3__h3t__menu-title {
+.paragraph__button, .paragraph, .title-h1h4__menu-title {
   font-weight: 500;
 }
 
@@ -40,19 +40,23 @@
   font-size: 1.875rem;
   line-height: 2.734rem;
 }
-.title-h1h4__h1t__restaurant-name {
-  font-weight: 400;
-  font-size: 1.75rem;
-  line-height: 2.55rem;
-}
 .title-h1h4__h4 {
   font-size: 1.125rem;
   line-height: 1.64rem;
   color: white;
 }
+.title-h1h4__menu-title {
+  font-size: 1.125rem;
+  line-height: 1.318rem;
+}
 
 .title-h2h3 {
   margin-left: 20px;
+}
+.title-h2h3__restaurant-name {
+  font-weight: 400;
+  font-size: 1.75rem;
+  line-height: 2.55rem;
 }
 .title-h2h3__h2 {
   font-size: 1.5rem;
@@ -62,10 +66,7 @@
   margin-left: 0;
   padding-left: 0;
 }
-.title-h2h3__h3t {
-  font-size: 1.125rem;
-  line-height: 1.318rem;
-}
+
 .paragraph {
   font-size: 1rem;
   line-height: 1.172rem;
@@ -142,11 +143,11 @@ button:hover {
   cursor: pointer;
 }
 
+/****** landing page ******/
 /****** header ******/
 header {
   text-align: center;
 }
-
 header .title-h1h4 {
   margin-top: 8%;
   margin-bottom: 12%;
@@ -166,7 +167,6 @@ header .title-h1h4 {
   align-items: center;
   justify-content: center;
 }
-
 .localisation p {
   display: none;
   margin-left: 12.5px;
@@ -183,11 +183,9 @@ html:lang(fr) p[lang=fr] {
   background-color: #f6f6f6;
   padding: 20px 0 55px 0;
 }
-
 .reservation h2 {
   margin-bottom: 2.5%;
 }
-
 .reservation p {
   margin-top: 0;
   margin-bottom: 7%;
@@ -201,9 +199,11 @@ html:lang(fr) p[lang=fr] {
   padding-right: 0;
   padding: 28px 0 54px 0;
 }
-
 .fonctionnement h2 {
   text-align: left;
+}
+.fonctionnement .paragraph__button {
+  color: black;
 }
 
 .function-buttons {
@@ -222,15 +222,12 @@ html:lang(fr) p[lang=fr] {
   padding: 25px 20px;
   background: #f6f6f6;
 }
-
 .button-choose:not(:last-child) {
   margin-bottom: 7%;
 }
-
 .button-choose:hover {
   background: #fafafa;
 }
-
 .button-choose i {
   position: absolute;
   left: 20.5px;
@@ -243,10 +240,6 @@ html:lang(fr) p[lang=fr] {
 .fa-mobile-screen-button,
 .fa-list-ul {
   color: #7e7e7e;
-}
-
-.fonctionnement .paragraph__button {
-  color: black;
 }
 
 .icon {
@@ -278,7 +271,6 @@ html:lang(fr) p[lang=fr] {
   height: 27vh;
   position: relative;
 }
-
 .restaurant-card img {
   width: 100%;
   height: 70%;
@@ -336,23 +328,23 @@ html:lang(fr) p[lang=fr] {
   padding-left: 7%;
 }
 
-/****** page restaurant ******/
+/****** end landing page ******/
+/****** restaurant ******/
 /****** header ******/
 .header-page {
   display: flex;
   align-items: center;
 }
-
-a {
-  padding-left: 23px;
-}
-
 .header-page .title-h1h4 {
   display: flex;
   justify-content: center;
   text-align: center;
   flex: 1;
   margin-bottom: 0;
+}
+
+a {
+  padding-left: 23px;
 }
 
 @keyframes dishes-fade-in {
@@ -375,7 +367,6 @@ a {
   flex-direction: column;
   align-items: center;
 }
-
 .page-img-container img {
   width: 100%;
   height: 275px;
@@ -396,7 +387,6 @@ a {
   justify-content: space-between;
   align-items: baseline;
 }
-
 .img-cover h1 {
   margin: 0;
 }
@@ -404,6 +394,9 @@ a {
 .menu {
   width: 100%;
   background-color: #f6f6f6;
+}
+.menu .paragraph__menu {
+  margin-bottom: 1%;
 }
 
 #entrees {
@@ -416,10 +409,6 @@ a {
 
 #desserts {
   animation: dishes-fade-in 1s 2s ease-in-out;
-}
-
-.menu .paragraph__menu {
-  margin-bottom: 1%;
 }
 
 .line {
@@ -440,20 +429,13 @@ a {
   box-shadow: 0 8px 4px rgba(0, 0, 0, 0.1);
   display: flex;
   flex-direction: column;
-  /*justify-content: space-between;
-  align-items: center;*/
   overflow: hidden;
-  /*&:hover .dish-check-background {
-      background-color: $tertiary-color;
-  }*/
 }
 .menu-item .row-check {
   display: flex;
   justify-content: space-between;
   align-items: stretch;
   width: 100%;
-  /*position: relative;
-  overflow: hidden;*/
 }
 .menu-item .dish-content {
   flex-grow: 1;
@@ -481,10 +463,6 @@ a {
   justify-content: center;
   align-items: center;
   background-color: #99e2d0;
-  /*z-index: 0;
-  top: 0;
-  right: 0;
-  bottom: 0;*/
   width: 60px;
   min-height: 100%;
   transition: transform 0.3s ease;
@@ -493,42 +471,10 @@ a {
 }
 .menu-item .fa-circle-check {
   color: white;
-  /*z-index: 1;
-  display: none;
-  box-sizing: border-box;*/
   font-size: 1.5rem;
 }
-.menu-item:hover, .menu-item:active {
-  /*.row-check {
-      padding-right: 60px;
-      transition: padding-right 0.3s ease;
-  }*/
-  /*.dish-content h3,
-  .dish-content span {
-      display: inline;
-  }*/
-  /*.dish-content.ellipsis .title-h2h3__h3t__menu-title,
-  .dish-content.ellipsis .paragraph__menutext {
-      white-space: nowrap;
-      overflow: hidden;
-      text-overflow: ellipsis;
-      display: block;
-  }*/
-  /*.paragraph__menutext {
-      flex-grow: 1;
-      margin-right: 10px;
-  }
-
-  .paragraph__menutext__price {
-      flex-shrink: 0;
-  }*/
-  /*.fa-circle-check {
-      display: block;
-      color: white;
-  }*/
-}
 .menu-item:hover .dish-content, .menu-item:active .dish-content {
-  width: 40px;
+  width: calc(100% - 60px);
 }
 .menu-item:hover .ellipsis, .menu-item:active .ellipsis {
   white-space: nowrap;
@@ -537,8 +483,6 @@ a {
 }
 .menu-item:hover .dish-check-background, .menu-item:active .dish-check-background {
   transform: translateX(0);
-  /*height: 73px;
-  border-radius: 0 15px 15px 0;*/
 }
 
 /****** Media queries ******/
@@ -582,16 +526,16 @@ a {
     flex-direction: column;
     justify-content: center;
   }
-  .title-h2h3__center {
-    font-size: 2.5rem;
-    line-height: 2.93rem;
-  }
   .reservation p {
     margin-top: 2%;
     margin-bottom: 2.5%;
   }
   .reservation:last-child {
     margin-bottom: 0;
+  }
+  .title-h2h3__center {
+    font-size: 2.5rem;
+    line-height: 2.93rem;
   }
   /****** restaurants ******/
   .restaurants {
@@ -623,13 +567,13 @@ a {
     margin-bottom: 20px;
     box-sizing: border-box;
   }
-  .restaurant-card img:nth-child(3) {
+  .restaurant-cards .restaurant-card img:nth-child(3) {
     grid-row-start: 2;
   }
-  .restaurant-card img:nth-child(4) {
+  .restaurant-cards .restaurant-card img:nth-child(4) {
     grid-row-start: 2;
   }
-  .restaurant-card img {
+  .restaurant-cards .restaurant-card img {
     width: 100%;
     height: 65%;
     object-fit: cover;
