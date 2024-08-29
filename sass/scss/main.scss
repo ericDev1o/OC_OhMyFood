@@ -684,12 +684,13 @@ a {
 
     /***** restaurant-page ******/
     .menu-width {
-        width: 73%;
+        width: 100%;
     }
     .img-cover {
         padding-left: 13px;
         display: flex;
         justify-content: center;
+        width: 75.5%;
 
         .title-h1h4__h1t__restaurant-name {
             margin-right: 2%;
@@ -701,6 +702,8 @@ a {
         flex-direction: column;
         align-items: center;
         padding-left: 0;
+        margin-bottom: 1.5%;
+        width: 75.5%;
     }
 
     .menu-dish-width {

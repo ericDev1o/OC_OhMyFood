@@ -582,12 +582,13 @@ a {
   }
   /***** restaurant-page ******/
   .menu-width {
-    width: 73%;
+    width: 100%;
   }
   .img-cover {
     padding-left: 13px;
     display: flex;
     justify-content: center;
+    width: 75.5%;
   }
   .img-cover .title-h1h4__h1t__restaurant-name {
     margin-right: 2%;
@@ -597,6 +598,8 @@ a {
     flex-direction: column;
     align-items: center;
     padding-left: 0;
+    margin-bottom: 1.5%;
+    width: 75.5%;
   }
   .menu-dish-width {
     width: 56%;
@@ -671,7 +674,7 @@ a {
 }
 
 .heart-gradient {
-  transition: stop-color 1s ease;
+  transition: stop-color 1s ease-in-out;
 }
 
 .heart:hover .heart-gradient-stop1 {
@@ -711,6 +714,7 @@ footer i {
     display: flex;
     flex-direction: row-reverse;
     align-items: baseline;
+    margin-top: 2.6%;
   }
   footer h4 {
     margin-left: 10%;
