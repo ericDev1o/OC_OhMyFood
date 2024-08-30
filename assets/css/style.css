@@ -716,6 +716,8 @@ footer i {
     flex-direction: row-reverse;
     align-items: baseline;
     margin-top: 2.6%;
+    padding-top: 3.5%;
+    padding-bottom: 0.4%;
   }
   footer h4 {
     margin-left: 10%;
@@ -727,8 +729,12 @@ footer i {
     justify-content: space-between;
   }
   footer i {
-    margin-left: 35%;
+    margin-left: 45%;
     margin-right: 0;
+  }
+  footer h4 {
+    margin-left: 5%;
+    margin-right: 3.5%;
   }
 }
 
