@@ -335,6 +335,8 @@ html:lang(fr) p[lang='fr'] {
 
 .restaurant-cards {
     padding: 0 15px;
+    display: flex;
+    flex-direction: column;
 }
 
 .restaurant-card {
@@ -574,8 +576,7 @@ a {
 
 /****** Media queries ******/
 /* Medium and large devices */
-@media (min-width: 1024px), 
-        (max-width: 1440px) {
+@media (min-width: 1024px) {
     main {
         width: 100%;
     }
