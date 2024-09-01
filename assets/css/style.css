@@ -706,7 +706,11 @@ footer {
 }
 
 footer i {
-  margin-right: 0;
+  margin-right: 25px;
+}
+
+.footer-container a {
+  padding-left: 0;
 }
 
 /****** Media queries ******/
