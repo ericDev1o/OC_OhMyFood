@@ -690,7 +690,7 @@ a {
 footer {
   background-color: #353535;
   color: white;
-  padding: 22px 0 22px 25px;
+  padding: 7% 0 5% 8%;
   width: 100%;
 }
 
@@ -711,6 +711,7 @@ footer i {
 
 .footer-container a {
   padding-left: 0;
+  margin-bottom: 2%;
 }
 
 /****** Media queries ******/
