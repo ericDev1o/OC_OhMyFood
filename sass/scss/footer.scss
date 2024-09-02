@@ -12,13 +12,13 @@ footer {
         .footer-icons {
             display: flex;
             align-items: center;
+
+            .paragraph__button {
+                margin-left: 3%;
+            }
         }
     }
-
-    i {
-        margin-right: 25px;
-    }
-
+    
     a {
         padding-left: 0;
         margin-bottom: 2%;
@@ -40,6 +40,12 @@ footer {
             display: flex;
             flex-direction: row;
             justify-content: space-between;
+
+            .footer-icons {
+                .paragraph__button {
+                    margin-left: 0;
+                }
+            }
         }
 
         i {

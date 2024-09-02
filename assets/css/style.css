@@ -718,8 +718,8 @@ footer .footer-container .footer-icons {
   display: flex;
   align-items: center;
 }
-footer i {
-  margin-right: 25px;
+footer .footer-container .footer-icons .paragraph__button {
+  margin-left: 3%;
 }
 footer a {
   padding-left: 0;
@@ -741,6 +741,9 @@ footer a {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+  }
+  footer .footer-container .footer-icons .paragraph__button {
+    margin-left: 0;
   }
   footer i {
     margin-left: 45%;
