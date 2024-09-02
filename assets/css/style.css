@@ -211,28 +211,6 @@ html:lang(fr) p[lang=fr] {
   margin-right: 5%;
 }
 
-.button-choose {
-  display: block;
-  width: 100%;
-  box-sizing: border-box;
-  position: relative;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  padding: 25px 20px;
-  background: #f6f6f6;
-}
-.button-choose:not(:last-child) {
-  margin-bottom: 7%;
-}
-.button-choose:hover {
-  background: #fafafa;
-}
-.button-choose i {
-  position: absolute;
-  left: 20.5px;
-}
-
 .fa-store {
   color: #9356dc;
 }
@@ -501,25 +479,21 @@ a {
   }
   /****** fonctionnement ******/
   .fonctionnement {
-    width: 82%;
+    width: 100%;
     position: relative;
     padding: 0;
     padding-top: 1.8%;
     padding-bottom: 6.6%;
+    padding-left: 9%;
   }
   .function-buttons {
     position: absolute;
     left: -5.2%;
-    width: 80%;
+    width: 55%;
     display: flex;
     gap: 3.2%;
     margin-bottom: 20%;
-  }
-  .button-choose {
-    margin-top: 4px;
-  }
-  .button-choose:not(:last-child) {
-    margin-bottom: 0;
+    margin-left: 16%;
   }
   /****** reservation ******/
   .reservation {
@@ -614,6 +588,7 @@ a {
 * et 
 ****** Commander ******/
 .explore-command {
+  width: 100%;
   display: flex;
   justify-content: center;
   padding-bottom: 0;
@@ -627,16 +602,16 @@ a {
   height: 50px;
 }
 
+.button-explore-size {
+  width: 68%;
+}
+
+.button-command-size {
+  width: 58%;
+}
+
 .button-explore-command:hover {
   box-shadow: 0 8px 4px rgba(0, 0, 0, 0.5);
-}
-
-.button-explore-command-size-w {
-  width: 59%;
-}
-
-.button-explore-command-size-w-rest {
-  width: 70%;
 }
 
 .button-explore-command-color {
@@ -647,17 +622,58 @@ a {
   background: linear-gradient(to bottom, #9356dc, #a880da);
 }
 
-/****** Media queries ******/
-/* Medium and large devices */
-@media (min-width: 1023.98px) {
-  .button-explore-command-size {
-    width: 17%;
+/****** media queries ******/
+/* medium and large devices */
+@media (min-width: 768px) {
+  .button-explore-size {
+    width: 28%;
   }
-  .button-explore-command-size-w {
-    width: 15%;
+  .button-command-size {
+    width: 29%;
   }
-  .button-explore-command-size-w-rest {
-    width: 100%;
+}
+@media (min-width: 1024px) {
+  .button-explore-size {
+    width: 15.5%;
+  }
+  .button-command-size {
+    width: 21%;
+  }
+}
+.button-choose {
+  display: block;
+  width: 100%;
+  box-sizing: border-box;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 25px 20px;
+  background: #f6f6f6;
+}
+.button-choose:not(:last-child) {
+  margin-bottom: 7%;
+}
+.button-choose:hover {
+  background: #fafafa;
+}
+.button-choose i {
+  position: absolute;
+  left: 20.5px;
+}
+
+.button-choose-size {
+  height: 75px;
+}
+
+/****** media queries ******/
+/***** medium and large devices ******/
+@media (min-width: 1024px) {
+  .button-choose {
+    margin-top: 4px;
+  }
+  .button-choose:not(:last-child) {
+    margin-bottom: 0;
   }
 }
 .heart {

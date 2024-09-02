@@ -1,0 +1,40 @@
+.button-choose {
+    display: block;
+    width: 100%;
+    box-sizing: border-box;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 25px 20px;
+    background: $main-backgrd-color;
+
+    &:not(:last-child) {
+        margin-bottom: 7%;
+    }
+
+    &:hover {
+        background: $main-backgrd-color-light;
+    }
+
+    i {
+        position: absolute;
+        left: 20.5px;
+    }
+}
+
+.button-choose-size {
+    height: 75px;
+}
+
+/****** media queries ******/
+/***** medium and large devices ******/
+@media (min-width: 1024px){
+    .button-choose {
+        margin-top: 4px;
+
+        &:not(:last-child) {
+            margin-bottom: 0;
+        }
+    }
+}

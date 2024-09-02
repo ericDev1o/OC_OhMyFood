@@ -276,31 +276,6 @@ html:lang(fr) p[lang='fr'] {
     margin-right: 5%;
 }
 
-.button-choose {
-    display: block;
-    width: 100%;
-    box-sizing: border-box;
-    position: relative;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 25px 20px;
-    background: $main-backgrd-color;
-
-    &:not(:last-child) {
-        margin-bottom: 7%;
-    }
-
-    &:hover {
-        background: $main-backgrd-color-light;
-    }
-
-    i {
-    position: absolute;
-    left: 20.5px;
-    }
-}
-
 .fa-store {
     color: $primary-color;
 }
@@ -570,7 +545,6 @@ a {
         }
     }
 }
-
 /****** Media queries ******/
 /* Medium and large devices */
 @media (min-width: 1024px) {
@@ -587,28 +561,22 @@ a {
     }
 /****** fonctionnement ******/
     .fonctionnement {
-        width: 82%;
+        width: 100%;
         position: relative;
         padding: 0;
         padding-top: 1.8%;
         padding-bottom: 6.6%;
+        padding-left: 9%;
     }
 
     .function-buttons {
         position: absolute;
         left: -5.2%;
-        width: 80%;
+        width: 55%;
         display: flex;
         gap: 3.2%;
         margin-bottom: 20%;
-    }
-
-    .button-choose {
-        margin-top: 4px;
-    }
-
-    .button-choose:not(:last-child) {
-        margin-bottom: 0;
+        margin-left: 16%;
     }
 /****** reservation ******/
     .reservation {

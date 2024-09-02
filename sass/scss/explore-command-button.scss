@@ -2,6 +2,7 @@
 * et 
 ****** Commander ******/
 .explore-command {
+    width: 100%;
     display: flex;
     justify-content: center;
     padding-bottom: 0;
@@ -15,16 +16,16 @@
     height: 50px;
 }
 
+.button-explore-size {
+    width: 68%;
+}
+
+.button-command-size {
+    width: 58%;
+}
+
 .button-explore-command:hover {
     box-shadow: 0 8px 4px rgba(0, 0, 0, 0.5);
-}
-
-.button-explore-command-size-w {
-    width: 59%;
-}
-
-.button-explore-command-size-w-rest {
-    width: 70%;
 }
 
 .button-explore-command-color {
@@ -35,18 +36,23 @@
     background: linear-gradient(to bottom, $secondary-color-light, $primary-color-light);
 }
 
-/****** Media queries ******/
-/* Medium and large devices */
-@media (min-width: 1023.98px) {
-    .button-explore-command-size {
-        width: 17%;
+/****** media queries ******/
+/* medium and large devices */
+@media (min-width: 768px) {
+    .button-explore-size {
+        width: 28%;
     }
 
-    .button-explore-command-size-w {
-        width: 15%;
+    .button-command-size {
+        width: 29%;
+    }
+}
+@media (min-width: 1024px) {
+    .button-explore-size {
+        width: 15.5%;// 1024px boundary: width: 21.5%;
     }
 
-    .button-explore-command-size-w-rest {
-        width: 100%;
+    .button-command-size {
+        width: 21%;
     }
 }
