@@ -774,6 +774,12 @@ footer a:last-child {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: clip;
+  }
+  footer .footer-container .footer-icons {
+    gap: 0 7%;
   }
   footer .footer-container .footer-icons .paragraph__button {
     margin-left: 0;

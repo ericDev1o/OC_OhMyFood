@@ -84,11 +84,16 @@ footer {
             display: flex;
             flex-direction: row;
             justify-content: space-between;
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: clip;
 
             .footer-icons {
                 .paragraph__button {
                     margin-left: 0;
                 }
+
+                gap: 0 7%;
             }
         }
 
