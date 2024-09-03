@@ -709,6 +709,9 @@ footer {
   padding: 7% 0 5% 8%;
   width: 100%;
 }
+footer h4 {
+  margin-bottom: 6%;
+}
 footer .footer-container {
   display: flex;
   flex-direction: column;
