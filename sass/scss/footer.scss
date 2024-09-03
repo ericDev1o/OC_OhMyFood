@@ -16,6 +16,7 @@ footer {
         .footer-icons {
             display: flex;
             align-items: center;
+            margin-bottom: 1%;
 
             .paragraph__button {
                 margin-left: 3%;
@@ -25,6 +26,11 @@ footer {
     
     a {
         padding-left: 0;
+        margin-bottom: 2%;
+    }
+
+    a:last-child {
+        margin-top: 1.5%;
         margin-bottom: 2%;
     }
 }
