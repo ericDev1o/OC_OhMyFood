@@ -37,6 +37,36 @@ footer {
 
 /****** Media queries ******/
 /* Medium and large devices */
+@media (min-width: 768px) { //768px boundary is used for spacing
+    footer {
+        padding: 3% 0 2% 3.2%;
+
+        h4 {
+            margin-bottom: 2.5%;
+        }
+
+        .footer-container {
+            .footer-icons {
+                margin-bottom: 0.5%;
+
+                .paragraph__button {
+                    margin-left: 1.5%;
+                }
+            }
+        }
+
+        a {
+            padding-left: 0;
+            margin-bottom: 0.5%;
+        }
+    
+        a:last-child {
+            margin-top: 0.5%;
+            margin-bottom: 1%;
+        }
+    }
+}
+
 @media (min-width: 1024px) {
     footer {
         display: flex;

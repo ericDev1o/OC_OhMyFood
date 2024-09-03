@@ -736,6 +736,28 @@ footer a:last-child {
 
 /****** Media queries ******/
 /* Medium and large devices */
+@media (min-width: 768px) {
+  footer {
+    padding: 3% 0 2% 3.2%;
+  }
+  footer h4 {
+    margin-bottom: 2.5%;
+  }
+  footer .footer-container .footer-icons {
+    margin-bottom: 0.5%;
+  }
+  footer .footer-container .footer-icons .paragraph__button {
+    margin-left: 1.5%;
+  }
+  footer a {
+    padding-left: 0;
+    margin-bottom: 0.5%;
+  }
+  footer a:last-child {
+    margin-top: 0.5%;
+    margin-bottom: 1%;
+  }
+}
 @media (min-width: 1024px) {
   footer {
     display: flex;
