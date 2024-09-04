@@ -154,6 +154,10 @@ $font-size-large: 2.5rem;
     &__new {
         font-size: 0.875rem;
         line-height: 1.0256rem;
+        width: 61.37px;
+        height: 16px;
+        margin: 0;
+        text-align: center;
     }
 }
 
@@ -163,13 +167,17 @@ $font-size-large: 2.5rem;
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-}
 
-main {
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+    main {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        a {
+            padding-left: 0;
+        }
+    }
 }
 
 @keyframes spin {
@@ -278,19 +286,24 @@ html:lang(fr) p[lang='fr'] {
 
 /****** restaurants ******/
 .restaurants {
+    background-color: #99e2d0;
     width: 100%;
     background-color: $main-backgrd-color;
-    padding: 34px 0 58px 0;
+    padding: 55px 0;
 }
 
 .restaurant-cards {
-    padding: 0 15px;
+    background-color: #9356dc;
+    margin: 6% 6% 0 6%;
     display: flex;
     flex-direction: column;
-    gap: 0 5%;
+    //align-items: center;
+    //gap: 0 5%;
 }
 
 .restaurant-card {
+    margin-bottom: 5%;
+    background-color: #008766;
     width: 100%;
     height: 27vh;
     position: relative;
@@ -321,13 +334,6 @@ html:lang(fr) p[lang='fr'] {
     color: $new-color;
     border-radius: 2px;
     background-color: $tertiary-color;
-}
-
-.paragraph__new {
-    width: 61.37px;
-    height: 16px;
-    margin: 0;
-    text-align: center;
 }
 
 .card-content {
