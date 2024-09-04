@@ -166,7 +166,6 @@ $font-size-large: 2.5rem;
     @extend %font-base;
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
 
     main {
         width: 100%;
@@ -339,6 +338,7 @@ html:lang(fr) p[lang='fr'] {
 .card-content {
     height: 30%;
     background-color: white;
+    //background-size: cover;
     border-radius: 0 0 15px 15px;
     display: flex;
     justify-content: space-between;
@@ -531,12 +531,13 @@ a {
     }
 }
 /****** Media queries ******/
-/* Medium and large devices */
-@media (min-width: 1024px) {
+//* Medium and large devices */
+@media (min-width: 768px) {
     main {
         width: 100%;
     }
-
+}
+@media (min-width: 1024px) {
     .localisation-reservation {
         width: 100%;
     }
