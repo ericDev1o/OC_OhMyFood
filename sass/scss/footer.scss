@@ -76,7 +76,7 @@ footer {
 
         h4 {
             margin-bottom: 0;
-            margin-left: 11.5%;
+            margin-left: 20%;
         }
     
         .footer-container {
@@ -85,8 +85,7 @@ footer {
             flex-direction: row;
             justify-content: space-between;
             white-space: nowrap;
-            overflow: hidden;
-            text-overflow: clip;
+            text-overflow: ellipsis;
 
             .footer-icons {
                 .paragraph__button {
@@ -95,6 +94,10 @@ footer {
 
                 gap: 0 7%;
             }
+        }
+
+        a {
+            padding-left: 5%;
         }
 
         a:last-child {

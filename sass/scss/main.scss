@@ -276,28 +276,6 @@ html:lang(fr) p[lang='fr'] {
     margin-right: 5%;
 }
 
-.fa-store {
-    color: $primary-color;
-}
-
-.fa-mobile-screen-button, 
-.fa-list-ul {
-    color: $function-button-color;
-}
-
-.icon {
-    position: absolute;
-    left: -12.5px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 25px;
-    height: 25px;
-    border-radius: 50%;
-    background-color: $primary-color;
-    color: white;
-}
-
 /****** restaurants ******/
 .restaurants {
     width: 100%;
@@ -309,6 +287,7 @@ html:lang(fr) p[lang='fr'] {
     padding: 0 15px;
     display: flex;
     flex-direction: column;
+    gap: 0 5%;
 }
 
 .restaurant-card {

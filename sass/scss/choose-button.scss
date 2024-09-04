@@ -7,7 +7,10 @@
     justify-content: center;
     align-items: center;
     padding: 25px 20px;
+    gap: 0 7%;
     background: $main-backgrd-color;
+    white-space: nowrap;
+    text-overflow: ellipsis;
 
     &:not(:last-child) {
         margin-bottom: 7%;
@@ -16,22 +19,47 @@
     &:hover {
         background: $main-backgrd-color-light;
     }
-
-    i {
-        position: absolute;
-        left: 20.5px;
-    }
 }
 
 .button-choose-size {
     height: 75px;
 }
 
+.fa-store {
+    color: $primary-color;
+}
+
+.fa-mobile-screen-button, 
+.fa-list-ul {
+    color: $function-button-color;
+}
+
+.icon-number {
+    position: absolute;
+    left: -12.5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    background-color: $primary-color;
+    color: white;
+}
+
 /****** media queries ******/
 /***** medium and large devices ******/
+@media (min-width: 768px) {
+    .button-choose {
+        gap: 0 2%;
+    }
+}
+
 @media (min-width: 1024px){
     .button-choose {
         margin-top: 4px;
+
+        gap: 0 6%;
 
         &:not(:last-child) {
             margin-bottom: 0;

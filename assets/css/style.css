@@ -211,28 +211,6 @@ html:lang(fr) p[lang=fr] {
   margin-right: 5%;
 }
 
-.fa-store {
-  color: #9356dc;
-}
-
-.fa-mobile-screen-button,
-.fa-list-ul {
-  color: #7e7e7e;
-}
-
-.icon {
-  position: absolute;
-  left: -12.5px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 25px;
-  height: 25px;
-  border-radius: 50%;
-  background-color: #9356dc;
-  color: white;
-}
-
 /****** restaurants ******/
 .restaurants {
   width: 100%;
@@ -244,6 +222,7 @@ html:lang(fr) p[lang=fr] {
   padding: 0 15px;
   display: flex;
   flex-direction: column;
+  gap: 0 5%;
 }
 
 .restaurant-card {
@@ -649,7 +628,10 @@ a {
   justify-content: center;
   align-items: center;
   padding: 25px 20px;
+  gap: 0 7%;
   background: #f6f6f6;
+  white-space: nowrap;
+  text-overflow: ellipsis;
 }
 .button-choose:not(:last-child) {
   margin-bottom: 7%;
@@ -657,20 +639,44 @@ a {
 .button-choose:hover {
   background: #fafafa;
 }
-.button-choose i {
-  position: absolute;
-  left: 20.5px;
-}
 
 .button-choose-size {
   height: 75px;
 }
 
+.fa-store {
+  color: #9356dc;
+}
+
+.fa-mobile-screen-button,
+.fa-list-ul {
+  color: #7e7e7e;
+}
+
+.icon-number {
+  position: absolute;
+  left: -12.5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  background-color: #9356dc;
+  color: white;
+}
+
 /****** media queries ******/
 /***** medium and large devices ******/
+@media (min-width: 768px) {
+  .button-choose {
+    gap: 0 2%;
+  }
+}
 @media (min-width: 1024px) {
   .button-choose {
     margin-top: 4px;
+    gap: 0 6%;
   }
   .button-choose:not(:last-child) {
     margin-bottom: 0;
@@ -770,7 +776,7 @@ footer a:last-child {
   }
   footer h4 {
     margin-bottom: 0;
-    margin-left: 11.5%;
+    margin-left: 20%;
   }
   footer .footer-container {
     width: 100%;
@@ -778,14 +784,16 @@ footer a:last-child {
     flex-direction: row;
     justify-content: space-between;
     white-space: nowrap;
-    overflow: hidden;
-    text-overflow: clip;
+    text-overflow: ellipsis;
   }
   footer .footer-container .footer-icons {
     gap: 0 7%;
   }
   footer .footer-container .footer-icons .paragraph__button {
     margin-left: 0;
+  }
+  footer a {
+    padding-left: 5%;
   }
   footer a:last-child {
     margin-top: 0;
