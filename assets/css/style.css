@@ -199,13 +199,7 @@ html:lang(fr) p[lang=fr] {
 /****** fonctionnement *****/
 .fonctionnement {
   width: 100%;
-  margin: 0;
-  padding-left: 0;
-  padding-right: 0;
   padding: 28px 0 54px 0;
-}
-.fonctionnement h2 {
-  text-align: left;
 }
 .fonctionnement .paragraph__button {
   color: black;
@@ -240,16 +234,12 @@ html:lang(fr) p[lang=fr] {
   height: 27vh;
   position: relative;
 }
-.restaurant-card img {
+.restaurant-card .index-image {
   width: 100%;
   height: 70%;
+  border-radius: 15px 15px 0 0;
   object-fit: cover;
   object-position: 50% 60%;
-  border-radius: 15px 15px 0 0;
-}
-
-.index-image {
-  object-position: center bottom;
 }
 
 .new-container {
@@ -329,10 +319,14 @@ a {
   flex-direction: column;
   align-items: center;
 }
-.page-img-container img {
+.page-img-container picture {
+  width: 100%;
+}
+.page-img-container picture .resto-image {
   width: 100%;
   height: 275px;
   object-fit: cover;
+  object-position: 50% 60%;
 }
 
 .img-cover {
@@ -348,6 +342,8 @@ a {
   display: flex;
   justify-content: space-between;
   align-items: baseline;
+  object-fit: cover;
+  object-position: 50% 60%;
 }
 .img-cover h1 {
   margin: 0;
