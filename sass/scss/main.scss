@@ -276,14 +276,12 @@ html:lang(fr) p[lang='fr'] {
 
 /****** restaurants ******/
 .restaurants {
-    background-color: #99e2d0;
     width: 100%;
     background-color: $main-backgrd-color;
     padding: 55px 0;
 }
 
 .restaurant-cards {
-    background-color: #9356dc;
     margin-top: 6%;
     margin-right: 6%;
     margin-left: 6%;
@@ -293,7 +291,6 @@ html:lang(fr) p[lang='fr'] {
 
 .restaurant-card {
     margin-bottom: 5%;
-    background-color: #008766;
     width: 100%;
     height: 27vh;
     position: relative;
@@ -588,15 +585,18 @@ a {
     .restaurant-cards {
         width: 100%;
         flex-direction: row;
-        justify-content: space-between;
+        flex-wrap: wrap;
+        gap: 40px 7%;
         margin-top: 2%;
-        margin-left: 0;
         margin-bottom: 1.5%;
 
         .restaurant-card {
             margin-bottom: 0;
-            height: 34vh;
+            height: 31vh;
             box-sizing: border-box;
+            flex: 0 0 calc(100%);
+            aspect-ratio: 1.9 / 1;
+            min-height: 200px;
             img {
                 width: 100%;
                 height: 65%;
