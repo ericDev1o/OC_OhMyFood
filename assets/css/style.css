@@ -226,7 +226,9 @@ html:lang(fr) p[lang=fr] {
 
 .restaurant-cards {
   background-color: #9356dc;
-  margin: 6% 6% 0 6%;
+  margin-top: 6%;
+  margin-right: 6%;
+  margin-left: 6%;
   display: flex;
   flex-direction: column;
 }
@@ -446,15 +448,8 @@ a {
 }
 
 /****** Media queries ******/
-@media (min-width: 768px) {
-  main {
-    width: 100%;
-  }
-}
+/***** large devices *****/
 @media (min-width: 1024px) {
-  .localisation-reservation {
-    width: 100%;
-  }
   .load img {
     margin: 2.4% 0;
   }
@@ -464,7 +459,7 @@ a {
     position: relative;
     padding: 0;
     padding-top: 1.8%;
-    padding-bottom: 6.6%;
+    padding-bottom: 9%;
     padding-left: 9%;
   }
   .function-buttons {
@@ -478,7 +473,7 @@ a {
   }
   /****** reservation ******/
   .reservation {
-    padding-top: 0;
+    padding-top: 3%;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -497,6 +492,8 @@ a {
   /****** restaurants ******/
   .restaurants {
     width: 100%;
+    padding-top: 2.5%;
+    padding-bottom: 0;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -510,25 +507,14 @@ a {
     width: 100%;
     flex-direction: row;
     justify-content: space-between;
-    /*display: grid;
-    grid-template-columns: repeat(2, minmax(0, 1fr));
-    padding: 0 150px;
-    //float: left;
-    position: relative;
-    height: auto;*/
+    margin-top: 2%;
+    margin-left: 0;
+    margin-bottom: 1.5%;
   }
   .restaurant-cards .restaurant-card {
+    margin-bottom: 0;
     height: 34vh;
-    /*padding: 12px 0;
-    margin-bottom: 20px;*/
     box-sizing: border-box;
-    /*img:nth-child(3) {
-        grid-row-start: 2;
-    }
-
-    img:nth-child(4) {
-        grid-row-start: 2;
-    }*/
   }
   .restaurant-cards .restaurant-card img {
     width: 100%;
@@ -805,7 +791,7 @@ footer a:last-child {
     display: flex;
     flex-direction: row-reverse;
     align-items: center;
-    padding: 4.2% 4.5% 1.6% 41%;
+    padding: 0;
   }
   footer h4 {
     margin-bottom: 0;
