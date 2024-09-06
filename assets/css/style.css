@@ -678,53 +678,10 @@ a {
   background-clip: text;
   -webkit-text-fill-color: transparent;
   transition: color 0.3s ease-in-out;
-  /*width: 27px;
-  //fill: white;
-  //transition: fill 0.3s, stroke 1s;
-  height: 26px;
-  stroke: black;
-  stroke-width: 1;
-  font-size: x-small;
-  color: white;*/
-  /*&::before {
-      //content: '004';
-      font-family: 'Font Awesome 6 Free';
-      position: absolute;
-      top: 0;
-      left: 0;
-      z-index: -1;
-  }*/
-  /*&:hover::before {
-      color: transparent;
-  }*/
-  /*
-  @keyframes gradient {
-      from { background-position: 0% 50%;}
-      to { background-position: 100% 50%;}
-  }
-  */
-  /*.heart-gradient {
-      transition: stop-color 1s ease-in-out;
-  }
-
-  .heart:hover .heart-gradient-stop1 {
-      stop-color: $secondary-color;
-  }
-
-  .heart:hover .heart-gradient-stop2 {
-      stop-color: $primary-color;*/
 }
 .heart:hover {
   color: linear-gradient(to top, #ff79da, #9356dc);
   -webkit-text-stroke: 0;
-  /*animation: 
-  gradient 
-  0.4s 
-  ease-in-out
-  0 
-  1 
-  both;
-  //fill: url(#gradient);*/
 }
 
 footer {
