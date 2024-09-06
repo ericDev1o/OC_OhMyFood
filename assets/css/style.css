@@ -672,16 +672,15 @@ a {
 .heart {
   padding-right: 25px;
   font-size: 24px;
-  color: linear-gradient(to top, white, white);
-  -webkit-text-stroke: 1px black;
-  -webkit-background-clip: text;
-  background-clip: text;
-  -webkit-text-fill-color: transparent;
+  color: #ff79da;
   transition: color 0.3s ease-in-out;
 }
 .heart:hover {
-  color: linear-gradient(to top, #ff79da, #9356dc);
-  -webkit-text-stroke: 0;
+  color: #9356dc; /*linear-gradient(
+    to top, 
+    $secondary-color,
+    $primary-color);
+-webkit-text-stroke: 0;*/
 }
 
 footer {
