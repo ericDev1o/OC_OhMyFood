@@ -179,24 +179,22 @@ $font-size-large: 2.5rem;
 
 @keyframes spin {
     0% {
-        transform: scale(1) rotate(0deg);
+        transform: rotate(0deg);
         width: 100vw;
         height: 100vh;
         opacity: 1;
-        visibility: visible;
     }
     50% {
-        transform: scale(0.6) rotate(180deg);
+        transform: rotate(180deg);
         width: 60vw;
         height: 60vh;
         opacity: 0.6;
     }
     100% {
-        transform: scale(0.1) rotate(360deg);
+        transform: rotate(360deg);
         width: 10vw;
         height: 10vh;
         opacity: 0;
-        visibility: hidden;
         position: absolute;
     }
 }
@@ -204,7 +202,7 @@ $font-size-large: 2.5rem;
 .loaded {
     display: flex;
     justify-content: center;
-    animation: spin 1.5s 1 forwards;
+    animation: spin 3s 1 both;
 }
 
 a {
@@ -541,7 +539,7 @@ a {
         position: relative;
         padding: 0;
         padding-top: 1.8%;
-        padding-bottom: 9%; //1440px boundary
+        padding-bottom: 9%; //to check 1440px boundary
         padding-left: 9%;
     }
 
@@ -556,7 +554,7 @@ a {
     }
 /****** reservation ******/
     .reservation {
-        padding-top: 3%; //1440px boundary
+        padding-top: 3%; // to do 1440px boundary
         display: flex;
         flex-direction: column;
         justify-content: center;
@@ -601,10 +599,10 @@ a {
 
         .restaurant-card {
             margin-bottom: 0;
-            height: 31vh;
+            height: 31vh;// to check
             box-sizing: border-box;
-            flex: 0 0 calc(100%);
-            aspect-ratio: 1.9 / 1;
+            flex: 0 0 calc(100%);// to check 0 0
+            aspect-ratio: 1.9 / 1;// to check
             min-height: 200px;
             img {
                 width: 100%;
@@ -624,7 +622,7 @@ a {
         padding-left: 13px;
         display: flex;
         justify-content: center;
-        width: 75.5%;
+        width: 75.5%;// to do
 
         .title-h1h4__h1t__restaurant-name {
             margin-right: 2%;
@@ -637,11 +635,11 @@ a {
         align-items: center;
         padding-left: 0;
         margin-bottom: 1.5%;
-        width: 75.5%;
+        width: 75.5%;// to do
     }
 
     .menu-dish-width {
-        width: 56%;
+        width: 56%;// to do
     }
 
     .menu-item {
