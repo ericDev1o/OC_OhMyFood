@@ -62,7 +62,6 @@ $font-size-large: 2.5rem;
     @include font-size($font-size-large);
 }
 /****** end fonts system ******/
-
 /****** fonts ******/
 .title-h1h4 {
     @extend %font-title;
@@ -154,25 +153,28 @@ $font-size-large: 2.5rem;
     &__new {
         font-size: 0.875rem;
         line-height: 1.0256rem;
+        width: 61.37px;
+        height: 16px;
+        margin: 0;
+        text-align: center;
     }
 }
-
 /****** end fonts ******/
 * {
     @extend %font-base;
-  }
-
-html {
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
-}
 
-main {
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+    main {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        a {
+            padding-left: 0;
+        }
+    }
 }
 
 @keyframes spin {
@@ -269,14 +271,7 @@ html:lang(fr) p[lang='fr'] {
 /****** fonctionnement *****/
 .fonctionnement {
     width: 100%;
-    margin: 0;
-    padding-left: 0;
-    padding-right: 0;
     padding: 28px 0 54px 0;
-
-    h2 {
-    text-align: left;
-    }
 
     .paragraph__button {
         color: black;
@@ -288,80 +283,34 @@ html:lang(fr) p[lang='fr'] {
     margin-right: 5%;
 }
 
-.button-choose {
-    display: block;
-    width: 100%;
-    box-sizing: border-box;
-    position: relative;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 25px 20px;
-    background: $main-backgrd-color;
-
-    &:not(:last-child) {
-        margin-bottom: 7%;
-    }
-
-    &:hover {
-        background: $main-backgrd-color-light;
-    }
-
-    i {
-    position: absolute;
-    left: 20.5px;
-    }
-}
-
-.fa-store {
-    color: $primary-color;
-}
-
-.fa-mobile-screen-button, 
-.fa-list-ul {
-    color: $function-button-color;
-}
-
-.icon {
-    position: absolute;
-    left: -12.5px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 25px;
-    height: 25px;
-    border-radius: 50%;
-    background-color: $primary-color;
-    color: white;
-}
-
 /****** restaurants ******/
 .restaurants {
     width: 100%;
     background-color: $main-backgrd-color;
-    padding: 34px 0 58px 0;
+    padding: 55px 0;
 }
 
 .restaurant-cards {
-    padding: 0 15px;
+    margin-top: 6%;
+    margin-right: 6%;
+    margin-left: 6%;
+    display: flex;
+    flex-direction: column;
 }
 
 .restaurant-card {
+    margin-bottom: 5%;
     width: 100%;
     height: 27vh;
     position: relative;
 
-    img {
+    .index-image {
         width: 100%;
         height: 70%;
+        border-radius: 15px 15px 0 0;
         object-fit: cover;
         object-position: 50% 60%;
-        border-radius: 15px 15px 0 0;
     }
-}
-
-.index-image {
-    object-position: center bottom;
 }
 
 .new-container {
@@ -377,13 +326,6 @@ html:lang(fr) p[lang='fr'] {
     color: $new-color;
     border-radius: 2px;
     background-color: $tertiary-color;
-}
-
-.paragraph__new {
-    width: 61.37px;
-    height: 16px;
-    margin: 0;
-    text-align: center;
 }
 
 .card-content {
@@ -448,10 +390,15 @@ a {
     flex-direction: column;
     align-items: center;
 
-    img {
+    picture {
         width: 100%;
-        height: 275px;
-        object-fit: cover;
+
+        .resto-image {
+            width: 100%;
+            height: 275px;
+            object-fit: cover;
+            object-position: 50% 60%
+        }
     }
 }
 
@@ -468,6 +415,8 @@ a {
     display: flex;
     justify-content: space-between;
     align-items: baseline;
+    object-fit: cover;
+    object-position: 50% 60%;
 
     h1 {
         margin: 0;
@@ -580,50 +529,34 @@ a {
         }
     }
 }
-
 /****** Media queries ******/
-/* Medium and large devices */
-@media (min-width: 1024px), 
-        (max-width: 1440px) {
-    main {
-        width: 100%;
-    }
-
-    .localisation-reservation {
-        width: 100%;
-    }
-
+/***** large devices *****/
+@media (min-width: 1024px) {
     .load img {
-    margin: 2.4% 0;
+        margin: 2.4% 0;
     }
 /****** fonctionnement ******/
     .fonctionnement {
-        width: 82%;
+        width: 100%;
         position: relative;
         padding: 0;
         padding-top: 1.8%;
-        padding-bottom: 6.6%;
+        padding-bottom: 9%; //1440px boundary
+        padding-left: 9%;
     }
 
     .function-buttons {
         position: absolute;
         left: -5.2%;
-        width: 80%;
+        width: 100%;
         display: flex;
         gap: 3.2%;
         margin-bottom: 20%;
-    }
-
-    .button-choose {
-        margin-top: 4px;
-    }
-
-    .button-choose:not(:last-child) {
-        margin-bottom: 0;
+        margin-left: 16%;
     }
 /****** reservation ******/
     .reservation {
-        padding-top: 0;
+        padding-top: 3%; //1440px boundary
         display: flex;
         flex-direction: column;
         justify-content: center;
@@ -645,43 +578,34 @@ a {
 /****** restaurants ******/
     .restaurants {
         width: 100%;
+        padding-top: 2.5%;
+        padding-bottom: 0;
         display: flex;
         flex-direction: column;
         justify-content: center;
         align-items: flex-start;
 
         h2 {
-            margin-left: 10.2%;
+            margin-left: 6%;
             margin-top: 0;
-            margin-bottom: 1.8%;
         }
     }
 
     .restaurant-cards {
-        position: relative;
-        display: grid;
-        grid-template-columns: repeat(2, minmax(0, 1fr));
         width: 100%;
-        padding: 0 150px;
-        float: left;
-        height: auto;
+        flex-direction: row;
+        flex-wrap: wrap;
+        gap: 40px 7%;
+        margin-top: 2%;
+        margin-bottom: 1.5%;
 
         .restaurant-card {
-            top: 15%;
-            width: calc(67% - 10px);
-            height: 34vh;
-            padding: 12px 0;
-            margin-bottom: 20px;
+            margin-bottom: 0;
+            height: 31vh;
             box-sizing: border-box;
-
-            img:nth-child(3) {
-                grid-row-start: 2;
-            }
-
-            img:nth-child(4) {
-                grid-row-start: 2;
-            }
-
+            flex: 0 0 calc(100%);
+            aspect-ratio: 1.9 / 1;
+            min-height: 200px;
             img {
                 width: 100%;
                 height: 65%;

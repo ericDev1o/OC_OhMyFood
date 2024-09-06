@@ -1,28 +1,18 @@
-
-
 .heart {
     padding-right: 25px;
-    width: 27px;
-    height: 26px;
-    fill: white;
-    stroke: black;
-    stroke-width: 1;
-    transition: fill 0.3s, stroke 1s;
-}
+    font-size: 24px;
+    color: $secondary-color;//linear-gradient(to top, white, white);
+    //-webkit-text-stroke: 1px black;
+    //-webkit-background-clip: text;
+    //background-clip: text;
+    //-webkit-text-fill-color: transparent;
+    transition: color 0.3s ease-in-out;
 
-.heart:hover {
-    fill: url(#gradient);
-    stroke: none;
-}
-
-.heart-gradient {
-    transition: stop-color 1s ease-in-out;
-}
-
-.heart:hover .heart-gradient-stop1 {
-    stop-color: $secondary-color;
-}
-
-.heart:hover .heart-gradient-stop2 {
-    stop-color: $primary-color;
+    &:hover {
+        color: $primary-color;/*linear-gradient(
+            to top, 
+            $secondary-color,
+            $primary-color);
+        -webkit-text-stroke: 0;*/
+    }
 }
