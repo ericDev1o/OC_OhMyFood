@@ -177,6 +177,15 @@ $font-size-large: 2.5rem;
             padding-left: 0;
         }
     }
+
+    a {
+        text-decoration: none;
+        color: inherit;
+    }
+
+    button:hover {
+        cursor: pointer;
+    }
 }
 
 @-webkit-keyframes spin {
@@ -223,16 +232,6 @@ $font-size-large: 2.5rem;
     }
 }
 
-@-webkit-keyframes animate-bottom {
-    from { bottom: -100vh; opacity: 0; }
-    to { bottom: 0; opacity: 1; }
-}
-
-@keyframes animate-bottom {
-    from { bottom: -100px; opacity: 0; }
-    to { bottom: 0; opacity: 1; }
-}
-
 .loaded {
     display: flex;
     justify-content: center;
@@ -243,15 +242,6 @@ $font-size-large: 2.5rem;
     animation: spin 3s both;
     overflow-y: hidden;
     position: fixed;
-}
-
-a {
-    text-decoration: none;
-    color: inherit;
-}
-
-button:hover {
-    cursor: pointer;
 }
 
 /****** landing page ******/

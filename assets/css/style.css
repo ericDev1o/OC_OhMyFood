@@ -120,6 +120,13 @@
 * main a {
   padding-left: 0;
 }
+* a {
+  text-decoration: none;
+  color: inherit;
+}
+* button:hover {
+  cursor: pointer;
+}
 
 @-webkit-keyframes spin {
   0% {
@@ -163,26 +170,6 @@
     position: fixed;
   }
 }
-@-webkit-keyframes animate-bottom {
-  from {
-    bottom: -100vh;
-    opacity: 0;
-  }
-  to {
-    bottom: 0;
-    opacity: 1;
-  }
-}
-@keyframes animate-bottom {
-  from {
-    bottom: -100px;
-    opacity: 0;
-  }
-  to {
-    bottom: 0;
-    opacity: 1;
-  }
-}
 .loaded {
   display: flex;
   justify-content: center;
@@ -193,15 +180,6 @@
   animation: spin 3s both;
   overflow-y: hidden;
   position: fixed;
-}
-
-a {
-  text-decoration: none;
-  color: inherit;
-}
-
-button:hover {
-  cursor: pointer;
 }
 
 /****** landing page ******/
