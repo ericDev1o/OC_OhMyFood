@@ -1,10 +1,45 @@
-.heart {
+.fa-heart {
     padding-right: 25px;
     font-size: 24px;
-    color: $secondary-color;
-    transition: color 0.3s ease-in-out;
+    background-image: linear-gradient(
+        to top,
+        white,
+        white);
+    -webkit-text-stroke: 1px black;
+    stroke: 1px black;
+    -webkit-background-clip: text;
+    background-clip: text;
+    animation: gradient 2s forwards;
 
     &:hover {
-        color: $primary-color;
+        background-image: linear-gradient(
+            to top, 
+            $secondary-color, 
+            $primary-color);
+        -webkit-text-stroke: 0;
+        stroke: none;
+        background-size: 200% 100%;
+    }
+
+    &:hover::before {
+        background-image: transparent;
+    }
+}
+
+@-webkit-keyframes gradient {
+    0% {
+        background-position: 0% 50%;
+    }
+    100% {
+        background-position: 100% 50%;
+    }
+}
+
+@keyframes gradient {
+    0% {
+        background-position: 0% 50%;
+    }
+    100% {
+        background-position: 100% 50%;
     }
 }
