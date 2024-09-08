@@ -317,12 +317,14 @@ html:lang(fr) p[lang=fr] {
 .header-page {
   display: flex;
   align-items: center;
+  padding: 2.7%;
 }
 .header-page .title-h1h4 {
   display: flex;
   justify-content: center;
   text-align: center;
   flex: 1;
+  margin-top: 0;
   margin-bottom: 0;
 }
 
