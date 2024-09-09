@@ -602,11 +602,11 @@ a {
 }
 
 .button-explore-size {
-  width: 68%;
+  width: 218px;
 }
 
 .button-command-size {
-  width: 58%;
+  width: 186px;
 }
 
 .button-explore-command:hover {
@@ -621,24 +621,6 @@ a {
   background: linear-gradient(to bottom, #9356dc, #a880da);
 }
 
-/****** media queries ******/
-/* medium and large devices */
-@media (min-width: 768px) {
-  .button-explore-size {
-    width: 28%;
-  }
-  .button-command-size {
-    width: 29%;
-  }
-}
-@media (min-width: 1024px) {
-  .button-explore-size {
-    width: 15.5%;
-  }
-  .button-command-size {
-    width: 21%;
-  }
-}
 .button-choose {
   display: block;
   width: 100%;
