@@ -6,8 +6,7 @@
     display: flex;
     justify-content: center;
     padding-bottom: 0;
-    margin-bottom: 0;   
-    overflow: hidden;
+    margin-bottom: 0;
 }
 
 .button-explore-command {
@@ -15,30 +14,25 @@
     border: none;
     box-shadow: 0 0 0 rgba(0, 0, 0.1);
     height: 50px;
-    overflow: hidden;
 }
 
 .button-explore-size {
     width: 218px;
-    overflow: hidden;
 }
 
 .button-command-size {
     width: 186px;
-    overflow: hidden;
+    margin: 10px 0;
 }
 
 .button-explore-command:hover {
     box-shadow: 0 0 0 rgba(0, 0, 0.5);
-    overflow: hidden;
 }
 
 .button-explore-command-color {
     background: linear-gradient(to bottom, $secondary-color, $primary-color);
-    overflow: hidden;
 }
 
 .button-explore-command-color:hover {
     background: linear-gradient(to bottom, $secondary-color-light, $primary-color-light);
-    overflow: hidden;
 }
