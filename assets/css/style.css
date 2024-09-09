@@ -592,33 +592,40 @@ a {
   justify-content: center;
   padding-bottom: 0;
   margin-bottom: 0;
+  overflow: hidden;
 }
 
 .button-explore-command {
   border-radius: 20px;
   border: none;
-  box-shadow: 0 8px 4px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 0 0 rgb(0, 0, 0);
   height: 50px;
+  overflow: hidden;
 }
 
 .button-explore-size {
   width: 218px;
+  overflow: hidden;
 }
 
 .button-command-size {
   width: 186px;
+  overflow: hidden;
 }
 
 .button-explore-command:hover {
-  box-shadow: 0 8px 4px rgba(0, 0, 0, 0.5);
+  box-shadow: 0 0 0 rgb(0, 0, 1);
+  overflow: hidden;
 }
 
 .button-explore-command-color {
   background: linear-gradient(to bottom, #ff79da, #9356dc);
+  overflow: hidden;
 }
 
 .button-explore-command-color:hover {
-  background: linear-gradient(to bottom, #9356dc, #a880da);
+  background: linear-gradient(to bottom, #fa96de, #a880da);
+  overflow: hidden;
 }
 
 .button-choose {
