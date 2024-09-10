@@ -559,7 +559,25 @@ a {
         }
     }
 }
-/****** Media queries ******/
+/****** media queries ******/
+/****** medium devices ******/
+@media (min-width: 768px) {
+    .fonctionnement {
+        h2 {
+            margin: 0 6%;
+        }
+
+        .function-buttons {
+            padding: 0 4%;
+        }
+    }
+
+    .restaurants {
+        h2 {
+            margin: 0 6%;
+        }
+    }
+}
 /***** large devices *****/
 @media (min-width: 1024px) {
     .load img {

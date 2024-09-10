@@ -475,7 +475,19 @@ a {
   transform: translateX(0);
 }
 
-/****** Media queries ******/
+/****** media queries ******/
+/****** medium devices ******/
+@media (min-width: 768px) {
+  .fonctionnement h2 {
+    margin: 0 6%;
+  }
+  .fonctionnement .function-buttons {
+    padding: 0 4%;
+  }
+  .restaurants h2 {
+    margin: 0 6%;
+  }
+}
 /***** large devices *****/
 @media (min-width: 1024px) {
   .load img {
@@ -730,8 +742,8 @@ footer a:last-child {
   margin-bottom: 2%;
 }
 
-/****** Media queries ******/
-/* Medium and large devices */
+/****** media queries ******/
+/* medium and large devices */
 @media (min-width: 768px) {
   footer {
     padding: 3% 0 2% 3.2%;
