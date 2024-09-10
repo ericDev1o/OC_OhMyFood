@@ -220,28 +220,26 @@ html:lang(fr) p[lang=fr] {
   width: 100%;
   text-align: center;
   background-color: #f6f6f6;
-  padding: 20px 0 55px 0;
+  padding: 38px 0 55px 0;
 }
 .reservation h2 {
-  margin-bottom: 2.5%;
+  margin: 0 15px 13px 15px;
 }
 .reservation p {
-  margin-top: 0;
-  margin-bottom: 7%;
+  margin: 0 15px 30px 15px;
 }
 
 /****** fonctionnement *****/
 .fonctionnement {
   width: 100%;
-  padding: 28px 0 54px 0;
+  padding: 45px 0 65px 0;
 }
-.fonctionnement .paragraph__button {
+.fonctionnement .function-buttons {
+  margin-top: 30px;
+  margin-left: 30px;
+}
+.fonctionnement .function-buttons .paragraph__button {
   color: black;
-}
-
-.function-buttons {
-  margin-left: 8%;
-  margin-right: 5%;
 }
 
 /****** restaurants ******/
@@ -487,30 +485,33 @@ a {
   .fonctionnement {
     width: 100%;
     position: relative;
-    padding: 0;
-    padding-top: 1.8%;
-    padding-bottom: 9%;
-    padding-left: 9%;
+    padding: 60px 0 135px 0;
   }
-  .function-buttons {
+  .fonctionnement .title-h2h3 {
+    margin-left: 80px;
+  }
+  .fonctionnement .function-buttons {
     position: absolute;
     left: -5.2%;
     width: 100%;
     display: flex;
     gap: 3.2%;
     margin-bottom: 20%;
-    margin-left: 16%;
+    margin-top: 30px;
+    margin-left: 160px;
   }
   /****** reservation ******/
   .reservation {
-    padding-top: 3%;
+    padding: 28px 0 30px 0;
     display: flex;
     flex-direction: column;
     justify-content: center;
   }
+  .reservation h2 {
+    margin-bottom: 22px;
+  }
   .reservation p {
-    margin-top: 2%;
-    margin-bottom: 2.5%;
+    margin-top: 7.5px;
   }
   .reservation:last-child {
     margin-bottom: 0;
