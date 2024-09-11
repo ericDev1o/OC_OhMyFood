@@ -497,20 +497,19 @@ a {
   .fonctionnement {
     width: 100%;
     position: relative;
-    padding: 60px 0 135px 0;
+    padding: 60px 0 160px 0;
   }
-  .fonctionnement .title-h2h3 {
+  .fonctionnement h2 {
     margin-left: 80px;
   }
   .fonctionnement .function-buttons {
+    margin-left: 106px;
+    margin-top: 30px;
     position: absolute;
     left: -5.2%;
     width: 100%;
     display: flex;
     gap: 3.2%;
-    margin-bottom: 20%;
-    margin-top: 30px;
-    margin-left: 160px;
   }
   /****** reservation ******/
   .reservation {
@@ -543,16 +542,17 @@ a {
     align-items: flex-start;
   }
   .restaurants h2 {
-    margin-left: 6%;
+    margin-left: 80px;
     margin-top: 0;
   }
   .restaurant-cards {
     width: 100%;
+    margin-top: 28px;
+    margin-left: 80px;
+    margin-bottom: 24px;
     flex-direction: row;
     flex-wrap: wrap;
     gap: 40px 110px;
-    margin-top: 2%;
-    margin-bottom: 24px;
   }
   .restaurant-cards .restaurant-card {
     margin-bottom: 0;
