@@ -388,34 +388,26 @@ a {
 .menu .paragraph__menu {
   margin-bottom: 1%;
 }
-
-#entrees {
+.menu #entrees {
   animation: dishes-fade-in 1s ease-in-out;
 }
-
-#plats {
+.menu #plats {
   animation: dishes-fade-in 1s 1s ease-in-out;
 }
-
-#desserts {
+.menu #desserts {
   animation: dishes-fade-in 1s 2s ease-in-out;
 }
-
-.line {
+.menu .line {
   width: 40px;
   height: 3px;
   background-color: #99e2d0;
 }
-
-.menu-left {
+.menu .menu-left {
   margin-left: 15px;
 }
-
-.menu-item {
+.menu .menu-item {
   cursor: pointer;
-  margin: 12.5px 0;
-  margin-left: 15px;
-  margin-right: 15px;
+  margin: 12.5px 15px;
   background-color: white;
   border-radius: 15px;
   box-shadow: 0 8px 4px rgba(0, 0, 0, 0.1);
@@ -423,34 +415,34 @@ a {
   flex-direction: column;
   overflow: hidden;
 }
-.menu-item .row-check {
+.menu .menu-item .row-check {
   display: flex;
   justify-content: space-between;
   align-items: stretch;
   width: 100%;
 }
-.menu-item .dish-content {
+.menu .menu-item .dish-content {
   flex-grow: 1;
   padding: 15px;
   width: 100%;
   transition: width 0.3s ease;
   overflow: hidden;
 }
-.menu-item .dish-content h3,
-.menu-item .dish-content span {
+.menu .menu-item .dish-content h3,
+.menu .menu-item .dish-content span {
   display: inline;
 }
-.menu-item h3 {
+.menu .menu-item h3 {
   margin-top: 0;
   margin-bottom: 5px;
 }
-.menu-item .align-price {
+.menu .menu-item .align-price {
   padding: 0 17px 0 0;
   display: flex;
   justify-content: space-between;
   align-items: flex-end;
 }
-.menu-item .dish-check-background {
+.menu .menu-item .dish-check-background {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -461,19 +453,19 @@ a {
   transform: translateX(100%);
   flex-shrink: 0;
 }
-.menu-item .fa-circle-check {
+.menu .menu-item .fa-circle-check {
   color: white;
   font-size: 1.5rem;
 }
-.menu-item:hover .dish-content, .menu-item:active .dish-content {
+.menu .menu-item:hover .dish-content, .menu .menu-item:active .dish-content {
   width: calc(100% - 60px);
 }
-.menu-item:hover .ellipsis, .menu-item:active .ellipsis {
+.menu .menu-item:hover .ellipsis, .menu .menu-item:active .ellipsis {
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
 }
-.menu-item:hover .dish-check-background, .menu-item:active .dish-check-background {
+.menu .menu-item:hover .dish-check-background, .menu .menu-item:active .dish-check-background {
   transform: translateX(0);
 }
 
@@ -573,29 +565,21 @@ a {
   }
   /***** restaurant-page ******/
   .menu-width {
-    width: 100%;
+    width: 75.5%;
   }
   .img-cover {
     padding-left: 13px;
     display: flex;
     justify-content: center;
-    width: 75.5%;
   }
   .img-cover .title-h1h4__h1t__restaurant-name {
     margin-right: 2%;
   }
-  .menu {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding-left: 0;
-    width: 75.5%;
+  .menu .menu-left {
+    margin: 0 16.5%;
   }
-  .menu-dish-width {
-    width: 56%;
-  }
-  .menu-item {
-    margin-right: 0;
+  .menu .menu-item {
+    margin: 0 16.5%;
   }
 }
 /****** Explorer nos restaurants ******
