@@ -654,10 +654,9 @@ a {
 
         .restaurant-card {
             margin-bottom: 0;
-            height: 31vh;// to check
+            height: 31vh;
             box-sizing: border-box;
-            flex: 0 0 calc(100%);// to check 0 0
-            aspect-ratio: 1.9 / 1;// to check
+            aspect-ratio: 1.9 / 1;
             min-height: 200px;
             img {
                 width: 100%;
@@ -679,18 +678,20 @@ a {
         justify-content: center;
         
 
-        .title-h1h4__h1t__restaurant-name {
+        .title-h2h3__restaurant-name {
             margin-right: 2%;
         }
     }
 
     .menu {
         .menu-left {
-            margin: 0 16.5%;
+            margin-left: 16.5%;
+            margin-right: 16.5%;
         }
 
         .menu-item {
-            margin: 0 16.5%;
+            margin-left: 16.5%;
+            margin-right: 16.5%;
         }
     }
 }

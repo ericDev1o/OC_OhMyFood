@@ -552,7 +552,6 @@ a {
     margin-bottom: 0;
     height: 31vh;
     box-sizing: border-box;
-    flex: 0 0 100%;
     aspect-ratio: 1.9/1;
     min-height: 200px;
   }
@@ -572,14 +571,16 @@ a {
     display: flex;
     justify-content: center;
   }
-  .img-cover .title-h1h4__h1t__restaurant-name {
+  .img-cover .title-h2h3__restaurant-name {
     margin-right: 2%;
   }
   .menu .menu-left {
-    margin: 0 16.5%;
+    margin-left: 16.5%;
+    margin-right: 16.5%;
   }
   .menu .menu-item {
-    margin: 0 16.5%;
+    margin-left: 16.5%;
+    margin-right: 16.5%;
   }
 }
 /****** Explorer nos restaurants ******
