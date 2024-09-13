@@ -6,26 +6,27 @@
     display: flex;
     justify-content: center;
     padding-bottom: 0;
-    margin-bottom: 0;   
+    margin-bottom: 0;
 }
 
 .button-explore-command {
     border-radius: 20px;
     border: none;
-    box-shadow: 0 8px 4px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 0 0 rgba(0, 0, 0.1);
     height: 50px;
 }
 
 .button-explore-size {
-    width: 68%;
+    width: 218px;
 }
 
 .button-command-size {
-    width: 58%;
+    width: 186px;
+    margin: 22px 0 32px 0;
 }
 
 .button-explore-command:hover {
-    box-shadow: 0 8px 4px rgba(0, 0, 0, 0.5);
+    box-shadow: 0 0 0 rgba(0, 0, 0.5);
 }
 
 .button-explore-command-color {
@@ -34,25 +35,4 @@
 
 .button-explore-command-color:hover {
     background: linear-gradient(to bottom, $secondary-color-light, $primary-color-light);
-}
-
-/****** media queries ******/
-/* medium and large devices */
-@media (min-width: 768px) {
-    .button-explore-size {
-        width: 28%;
-    }
-
-    .button-command-size {
-        width: 29%;
-    }
-}
-@media (min-width: 1024px) {
-    .button-explore-size {
-        width: 15.5%;// 1024px boundary: width: 21.5%;
-    }
-
-    .button-command-size {
-        width: 21%;
-    }
 }
