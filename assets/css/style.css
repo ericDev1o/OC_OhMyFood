@@ -354,7 +354,6 @@ html:lang(fr) p[lang=fr] {
 }
 
 .card-content {
-  position: relative;
   height: 30%;
   background-color: white;
   border-radius: 0 0 15px 15px;
@@ -362,13 +361,13 @@ html:lang(fr) p[lang=fr] {
   justify-content: space-between;
   align-items: center;
 }
-.card-content #white, .card-content #gradient {
+.card-content .white, .card-content .gradient {
   position: absolute;
-  right: 0;
+  right: 7%;
   opacity: 1;
   width: 22px;
 }
-.card-content #gradient {
+.card-content .gradient {
   opacity: 0;
 }
 
@@ -455,6 +454,15 @@ a {
 }
 .img-cover h1 {
   margin: 0;
+}
+.img-cover #white, .img-cover #gradient {
+  position: absolute;
+  right: 7%;
+  opacity: 1;
+  width: 22px;
+}
+.img-cover #gradient {
+  opacity: 0;
 }
 
 .menu {
@@ -762,81 +770,6 @@ a {
   }
   .button-choose-size {
     width: 23%;
-  }
-}
-.heart, .fa-heart {
-  padding-right: 25px;
-  font-size: 24px;
-  color: white;
-  /*-ms-text-stroke: 1px;
-  -o-text-stroke: 1px;
-  -moz-text-stroke: 1px;
-     -webkit-text-stroke: 1px;*/
-  stroke: 1px;
-  -ms-background-clip: text;
-  -o-background-clip: text;
-  -moz-background-clip: text;
-  -webkit-background-clip: text;
-  background-clip: text;
-  transition: stroke 0.3s;
-}
-.heart:hover, .fa-heart:hover {
-  /*-ms-text-stroke: 0;
-  -o-text-stroke: 0;
-  -moz-text-stroke: 0;
-  -webkit-text-stroke: 0;*/
-  opacity: 1;
-  stroke: 1px black;
-}
-.heart:hover::before, .fa-heart:hover::before {
-  background-image: transparent;
-  opacity: 1;
-  border: 1px black;
-}
-
-.heart {
-  position: absolute;
-  right: 0;
-}
-
-@-ms-keyframes gradient {
-  0% {
-    background-position: 0% 50%;
-  }
-  100% {
-    background-position: 100% 50%;
-  }
-}
-@-o-keyframes gradient {
-  0% {
-    background-position: 0% 50%;
-  }
-  100% {
-    background-position: 100% 50%;
-  }
-}
-@-moz-keyframes gradient {
-  0% {
-    background-position: 0% 50%;
-  }
-  100% {
-    background-position: 100% 50%;
-  }
-}
-@-webkit-keyframes gradient {
-  0% {
-    background-position: 0% 50%;
-  }
-  100% {
-    background-position: 100% 50%;
-  }
-}
-@keyframes gradient {
-  0% {
-    background-position: 0% 50%;
-  }
-  100% {
-    background-position: 100% 50%;
   }
 }
 footer {

@@ -427,7 +427,6 @@ html:lang(fr) p[lang='fr'] {
 }
 
 .card-content {
-    position: relative;
     height: 30%;
     background-color: white;
     border-radius: 0 0 15px 15px;
@@ -435,14 +434,14 @@ html:lang(fr) p[lang='fr'] {
     justify-content: space-between;
     align-items: center;
 
-    #white, #gradient {
+    .white, .gradient {
         position: absolute;
-        right: 0;
+        right: 7%;
         opacity: 1;
         width: 22px;
     }
 
-    #gradient {
+    .gradient {
         opacity: 0;
     }
 }
@@ -532,6 +531,17 @@ a {
 
     h1 {
         margin: 0;
+    }
+
+    #white, #gradient {
+        position: absolute;
+        right: 7%;
+        opacity: 1;
+        width: 22px;
+    }
+
+    #gradient {
+        opacity: 0;
     }
 }
 
