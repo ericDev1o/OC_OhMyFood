@@ -1,0 +1,43 @@
+#white, #gradient, 
+#white1, #white2, #white3, #white4,
+#gradient1, #gradient2, #gradient3, #gradient4 {
+    position: absolute;
+    right: 7%;
+    width: 22px;
+}
+
+#white, 
+#white1, #white2, #white3, #white4 {
+    opacity: 1;
+
+    &:hover {
+        opacity: 0;
+    }
+}
+
+#gradient, 
+#gradient1, #gradient2, #gradient3, #gradient4 {
+    opacity: 0;
+    
+    &:hover {
+        opacity: 1;
+    }
+}
+
+/****** media queries ******/
+@media (min-width: 1024px) {
+    /****** landing page ******/
+    .card-content {
+        #white1, #white2, #white3, #white4,
+        #gradient1, #gradient2, #gradient3, #gradient4 {
+            right: 15%
+        }
+    }
+
+    /****** restaurant page ******/
+    .img-cover {
+        #white, #gradient {
+            right: 30%;
+        }
+    }
+}

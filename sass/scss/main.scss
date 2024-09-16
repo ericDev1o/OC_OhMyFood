@@ -433,17 +433,7 @@ html:lang(fr) p[lang='fr'] {
     display: flex;
     justify-content: space-between;
     align-items: center;
-
-    .white, .gradient {
-        position: absolute;
-        right: 7%;
-        opacity: 1;
-        width: 22px;
-    }
-
-    .gradient {
-        opacity: 0;
-    }
+    position: relative;
 }
 
 .text-left h3 {
@@ -460,7 +450,7 @@ html:lang(fr) p[lang='fr'] {
     padding-left: 7%;
 }
 /****** end landing page ******/
-/****** restaurant ******/
+/****** restaurant page ******/
 /****** header ******/
 .header-page {
     display: flex;
@@ -525,23 +515,13 @@ a {
     box-sizing: border-box;
     display: flex;
     justify-content: space-between;
-    align-items: baseline;
+    align-items: center;
     object-fit: cover;
     object-position: 50% 60%;
+    position: relative;
 
     h1 {
         margin: 0;
-    }
-
-    #white, #gradient {
-        position: absolute;
-        right: 7%;
-        opacity: 1;
-        width: 22px;
-    }
-
-    #gradient {
-        opacity: 0;
     }
 }
 
@@ -672,6 +652,7 @@ a {
 }
 /***** large devices *****/
 @media (min-width: 1024px) {
+    /****** landing page ******/
     .load img {
         margin: 2.4% 0;
     }
@@ -759,7 +740,8 @@ a {
             }
         }
     }
-    /***** restaurant-page ******/
+    /****** end landing page ******/
+    /***** restaurant page ******/
     .menu-width {
         width: 75.5%;
     }
