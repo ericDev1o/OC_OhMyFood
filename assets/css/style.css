@@ -624,7 +624,7 @@ a {
     aspect-ratio: 1.9/1;
     min-height: 200px;
   }
-  .restaurant-cards .restaurant-card img {
+  .restaurant-cards .restaurant-card picture img {
     width: 100%;
     height: 65%;
     object-fit: cover;
@@ -789,7 +789,7 @@ a {
   /****** landing page ******/
   .card-content #white1, .card-content #white2, .card-content #white3, .card-content #white4,
   .card-content #gradient1, .card-content #gradient2, .card-content #gradient3, .card-content #gradient4 {
-    right: 15%;
+    right: 5%;
   }
   /****** restaurant page ******/
   .img-cover #white, .img-cover #gradient {
