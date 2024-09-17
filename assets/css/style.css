@@ -458,12 +458,24 @@ a {
   margin-bottom: 1%;
 }
 .menu #entrees {
+  -ms-animation: dishes-fade-in 1s ease-in-out;
+  -o-animation: dishes-fade-in 1s ease-in-out;
+  -moz-animation: dishes-fade-in 1s ease-in-out;
+  -webkit-animation: dishes-fade-in 1s ease-in-out;
   animation: dishes-fade-in 1s ease-in-out;
 }
 .menu #plats {
+  -ms-animation: dishes-fade-in 1s 1s ease-in-out;
+  -o-animation: dishes-fade-in 1s 1s ease-in-out;
+  -moz-animation: dishes-fade-in 1s 1s ease-in-out;
+  -webkit-animation: dishes-fade-in 1s 1s ease-in-out;
   animation: dishes-fade-in 1s 1s ease-in-out;
 }
 .menu #desserts {
+  -ms-animation: dishes-fade-in 1s 2s ease-in-out;
+  -o-animation: dishes-fade-in 1s 2s ease-in-out;
+  -moz-animation: dishes-fade-in 1s 2s ease-in-out;
+  -webkit-animation: dishes-fade-in 1s 2s ease-in-out;
   animation: dishes-fade-in 1s 2s ease-in-out;
 }
 .menu .line {
@@ -653,6 +665,36 @@ a {
   .menu .menu-item {
     margin-left: 16.5%;
     margin-right: 16.5%;
+  }
+}
+@media (prefers-reduced-motion) {
+  .loaded {
+    -ms-animation: spin 6s both;
+    -o-animation: spin 6s both;
+    -moz-animation: spin 6s both;
+    -webkit-animation: spin 6s both;
+    animation: spin 6s both;
+  }
+  .menu #entrees {
+    -ms-animation: dishes-fade-in 6s ease-in-out;
+    -o-animation: dishes-fade-in 6s ease-in-out;
+    -moz-animation: dishes-fade-in 6s ease-in-out;
+    -webkit-animation: dishes-fade-in 6s ease-in-out;
+    animation: dishes-fade-in 6s ease-in-out;
+  }
+  .menu #plats {
+    -ms-animation: dishes-fade-in 6s 6s ease-in-out;
+    -o-animation: dishes-fade-in 6s 6s ease-in-out;
+    -moz-animation: dishes-fade-in 6s 6s ease-in-out;
+    -webkit-animation: dishes-fade-in 6s 6s ease-in-out;
+    animation: dishes-fade-in 6s 6s ease-in-out;
+  }
+  .menu #desserts {
+    -ms-animation: dishes-fade-in 6s 12s ease-in-out;
+    -o-animation: dishes-fade-in 6s 12s ease-in-out;
+    -moz-animation: dishes-fade-in 6s 12s ease-in-out;
+    -webkit-animation: dishes-fade-in 6s 12s ease-in-out;
+    animation: dishes-fade-in 6s 12s ease-in-out;
   }
 }
 /****** Explorer nos restaurants ******
