@@ -20,7 +20,7 @@ $font-weight-light: 300;
 $font-weight-medium: 500;
 $font-weight-bold: 700;
 /****** size *****/
-$font-size-large: 2.5rem;
+$font-size-large: 2.5em;
 
 /****** mixins ******/
 /****** family ******/
@@ -69,21 +69,21 @@ $font-size-large: 2.5rem;
     margin-top: 0;
 
     &__h1t {
-        font-size: 1.875rem;
-        line-height: 2.734rem;
+        font-size: 1.875em;
+        line-height: 2.734em;
     }
     
     &__h4 {
-        font-size: 1.125rem;
-        line-height: 1.64rem;
+        font-size: 1.125em;
+        line-height: 1.64em;
         color: white;
     }
 
     &__menu-title {
         @extend %font-medium;
         @extend %font-base;
-        font-size: 1.125rem;
-        line-height: 1.318rem;
+        font-size: 1.125em;
+        line-height: 1.318em;
     }
 }
 
@@ -94,13 +94,13 @@ $font-size-large: 2.5rem;
     &__restaurant-name {
         @extend %font-title;
         font-weight: 400;
-        font-size: 1.75rem;
-        line-height: 2.55rem;
+        font-size: 1.75em;
+        line-height: 2.55em;
     }
     
     &__h2 { 
-        font-size: 1.5rem;
-        line-height: 1.758rem;
+        font-size: 1.5em;
+        line-height: 1.758em;
     }
 
     &__center {
@@ -110,25 +110,25 @@ $font-size-large: 2.5rem;
 }
 
 .paragraph {
-    font-size: 1rem;
-    line-height: 1.172rem;
+    font-size: 1em;
+    line-height: 1.172em;
     @extend %font-medium;
 
     &__reservation {
         @extend %font-light;
-        font-size: 1.125rem;
-        line-height: 1.318rem;
+        font-size: 1.125em;
+        line-height: 1.318em;
     }
 
     &__card {
-        font-size: 1.0625rem;
-        line-height: 1.245rem;
+        font-size: 1.0625em;
+        line-height: 1.245em;
     }
     
     &__button {
         @extend %font-medium;
-        font-size: 1rem;
-        line-height: 1.172rem;
+        font-size: 1em;
+        line-height: 1.172em;
         color: white;
         margin: 0;
         padding: 0;
@@ -136,14 +136,14 @@ $font-size-large: 2.5rem;
 
     &__menu {
         margin-top: 40px;
-        font-size: 1rem;
-        line-height: 1.172rem;
+        font-size: 1em;
+        line-height: 1.172em;
         @extend %font-light;
     }
 
     &__menutext {
-        font-size: 0.94rem;
-        line-height: 1.102rem;
+        font-size: 0.94em;
+        line-height: 1.102em;
 
         &__price {
             @extend %font-bold;
@@ -151,8 +151,8 @@ $font-size-large: 2.5rem;
     }
 
     &__new {
-        font-size: 0.875rem;
-        line-height: 1.0256rem;
+        font-size: 0.875em;
+        line-height: 1.0256em;
         width: 61.37px;
         height: 16px;
         margin: 0;
@@ -612,7 +612,7 @@ a {
 
         .fa-circle-check {
             color: white;
-            font-size: 1.5rem;
+            font-size: 1.5em;
         }
 
         &:hover, &:active {
@@ -698,8 +698,8 @@ a {
     }
 
     .title-h2h3__center {
-        font-size: 2.5rem;
-        line-height: 2.93rem;
+        font-size: 2.5em;
+        line-height: 2.93em;
     }
     /****** restaurants ******/
     .restaurants {
@@ -727,6 +727,7 @@ a {
         gap: 40px 110px;
 
         .restaurant-card {
+            width: 100%;
             margin-bottom: 0;
             height: 31vh;
             box-sizing: border-box;

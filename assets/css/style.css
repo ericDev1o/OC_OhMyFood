@@ -37,17 +37,17 @@
   margin-top: 0;
 }
 .title-h1h4__h1t {
-  font-size: 1.875rem;
-  line-height: 2.734rem;
+  font-size: 1.875em;
+  line-height: 2.734em;
 }
 .title-h1h4__h4 {
-  font-size: 1.125rem;
-  line-height: 1.64rem;
+  font-size: 1.125em;
+  line-height: 1.64em;
   color: white;
 }
 .title-h1h4__menu-title {
-  font-size: 1.125rem;
-  line-height: 1.318rem;
+  font-size: 1.125em;
+  line-height: 1.318em;
 }
 
 .title-h2h3 {
@@ -55,12 +55,12 @@
 }
 .title-h2h3__restaurant-name {
   font-weight: 400;
-  font-size: 1.75rem;
-  line-height: 2.55rem;
+  font-size: 1.75em;
+  line-height: 2.55em;
 }
 .title-h2h3__h2 {
-  font-size: 1.5rem;
-  line-height: 1.758rem;
+  font-size: 1.5em;
+  line-height: 1.758em;
 }
 .title-h2h3__center {
   margin-left: 0;
@@ -68,36 +68,36 @@
 }
 
 .paragraph {
-  font-size: 1rem;
-  line-height: 1.172rem;
+  font-size: 1em;
+  line-height: 1.172em;
 }
 .paragraph__reservation {
-  font-size: 1.125rem;
-  line-height: 1.318rem;
+  font-size: 1.125em;
+  line-height: 1.318em;
 }
 .paragraph__card {
-  font-size: 1.0625rem;
-  line-height: 1.245rem;
+  font-size: 1.0625em;
+  line-height: 1.245em;
 }
 .paragraph__button {
-  font-size: 1rem;
-  line-height: 1.172rem;
+  font-size: 1em;
+  line-height: 1.172em;
   color: white;
   margin: 0;
   padding: 0;
 }
 .paragraph__menu {
   margin-top: 40px;
-  font-size: 1rem;
-  line-height: 1.172rem;
+  font-size: 1em;
+  line-height: 1.172em;
 }
 .paragraph__menutext {
-  font-size: 0.94rem;
-  line-height: 1.102rem;
+  font-size: 0.94em;
+  line-height: 1.102em;
 }
 .paragraph__new {
-  font-size: 0.875rem;
-  line-height: 1.0256rem;
+  font-size: 0.875em;
+  line-height: 1.0256em;
   width: 61.37px;
   height: 16px;
   margin: 0;
@@ -524,7 +524,7 @@ a {
 }
 .menu .menu-item .fa-circle-check {
   color: white;
-  font-size: 1.5rem;
+  font-size: 1.5em;
 }
 .menu .menu-item:hover .dish-content, .menu .menu-item:active .dish-content {
   width: calc(100% - 60px);
@@ -592,8 +592,8 @@ a {
     margin-bottom: 0;
   }
   .title-h2h3__center {
-    font-size: 2.5rem;
-    line-height: 2.93rem;
+    font-size: 2.5em;
+    line-height: 2.93em;
   }
   /****** restaurants ******/
   .restaurants {
@@ -619,6 +619,7 @@ a {
     gap: 40px 110px;
   }
   .restaurant-cards .restaurant-card {
+    width: 100%;
     margin-bottom: 0;
     height: 31vh;
     box-sizing: border-box;
