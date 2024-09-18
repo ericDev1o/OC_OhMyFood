@@ -264,7 +264,6 @@ header .title-h1h4 {
 }
 
 .localisation {
-  width: 100%;
   text-align: center;
   height: 50px;
   background-color: #eaeaea;
@@ -283,7 +282,6 @@ html:lang(fr) p[lang=fr] {
 
 /****** reservation ******/
 .reservation {
-  width: 100%;
   text-align: center;
   background-color: #f6f6f6;
   padding: 38px 0 55px 0;
@@ -326,7 +324,6 @@ html:lang(fr) p[lang=fr] {
 
 .restaurant-card {
   margin-bottom: 13px;
-  width: 100%;
   height: 27vh;
   position: relative;
 }
@@ -409,10 +406,6 @@ a {
     transform: translateY(0);
   }
 }
-.restaurant-page {
-  width: 100%;
-}
-
 .page-img-container {
   width: 100%;
   display: flex;
@@ -451,7 +444,6 @@ a {
 }
 
 .menu {
-  width: 100%;
   background-color: #f6f6f6;
 }
 .menu .paragraph__menu {
@@ -500,12 +492,10 @@ a {
   display: flex;
   justify-content: space-between;
   align-items: stretch;
-  width: 100%;
 }
 .menu .menu-item .dish-content {
   flex-grow: 1;
   padding: 15px;
-  width: 100%;
   transition: width 0.3s ease;
   overflow: hidden;
 }
@@ -571,7 +561,6 @@ a {
   }
   /****** fonctionnement ******/
   .fonctionnement {
-    width: 100%;
     position: relative;
     padding: 60px 0 160px 0;
   }
@@ -579,12 +568,12 @@ a {
     margin-left: 80px;
   }
   .fonctionnement .function-buttons {
+    width: 100%;
+    display: flex;
     margin-left: 106px;
     margin-top: 30px;
     position: absolute;
     left: -5.2%;
-    width: 100%;
-    display: flex;
     gap: 3.2%;
   }
   /****** reservation ******/
@@ -631,7 +620,6 @@ a {
     gap: 40px 110px;
   }
   .restaurant-cards .restaurant-card {
-    width: 100%;
     margin-bottom: 0;
     height: 31vh;
     box-sizing: border-box;
@@ -639,7 +627,6 @@ a {
     min-height: 200px;
   }
   .restaurant-cards .restaurant-card picture img {
-    width: 100%;
     height: 65%;
     object-fit: cover;
     object-position: 50% 60%;
@@ -698,10 +685,9 @@ a {
   }
 }
 /****** Explorer nos restaurants ******
-* et 
+*
 ****** Commander ******/
 .explore-command {
-  width: 100%;
   display: flex;
   justify-content: center;
   padding-bottom: 0;
@@ -784,12 +770,13 @@ a {
 }
 
 /****** media queries ******/
-/***** medium and large devices ******/
+/***** medium devices ******/
 @media (min-width: 768px) {
   .button-choose {
     gap: 0 2%;
   }
 }
+/***** large devices ******/
 @media (min-width: 1024px) {
   .button-choose {
     margin-top: 4px;
@@ -829,6 +816,7 @@ a {
 }
 
 /****** media queries ******/
+/***** large devices ******/
 @media (min-width: 1024px) {
   /****** landing page ******/
   .card-content #white1, .card-content #white2, .card-content #white3, .card-content #white4,
@@ -844,7 +832,6 @@ footer {
   background-color: #353535;
   color: white;
   padding: 7% 0 5% 8%;
-  width: 100%;
 }
 footer h4 {
   margin-bottom: 6%;
@@ -872,7 +859,7 @@ footer a:last-child {
 }
 
 /****** media queries ******/
-/* medium and large devices */
+/****** medium devices ******/
 @media (min-width: 768px) {
   footer {
     padding: 3% 0 2% 3.2%;
@@ -895,9 +882,9 @@ footer a:last-child {
     margin-bottom: 1%;
   }
 }
+/***** large devices ******/
 @media (min-width: 1024px) {
   footer {
-    width: 100%;
     display: flex;
     flex-direction: row-reverse;
     justify-content: flex-end;

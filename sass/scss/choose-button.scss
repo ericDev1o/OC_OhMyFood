@@ -48,13 +48,13 @@
 }
 
 /****** media queries ******/
-/***** medium and large devices ******/
+/***** medium devices ******/
 @media (min-width: 768px) {
     .button-choose {
         gap: 0 2%;
     }
 }
-
+/***** large devices ******/
 @media (min-width: 1024px){
     .button-choose {
         margin-top: 4px;
