@@ -804,8 +804,53 @@ a {
 #white:hover,
 #white1:hover, #white2:hover, #white3:hover, #white4:hover {
   opacity: 0;
+  -ms-animation: heart-white 0.5s forwards;
+  -o-animation: heart-white 0.5s forwards;
+  -moz-animation: heart-white 0.5s forwards;
+  -webkit-animation: heart-white 0.5s forwards;
+  animation: heart-white 0.5s forwards;
 }
 
+@-ms-keyframes heart-white {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+  }
+}
+@-o-keyframes heart-white {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+  }
+}
+@-moz-keyframes heart-white {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+  }
+}
+@-webkit-keyframes heart-white {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+  }
+}
+@keyframes heart-white {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+  }
+}
 #gradient,
 #gradient1, #gradient2, #gradient3, #gradient4 {
   opacity: 0;
@@ -813,8 +858,53 @@ a {
 #gradient:hover,
 #gradient1:hover, #gradient2:hover, #gradient3:hover, #gradient4:hover {
   opacity: 1;
+  -ms-animation: heart-color 0.5s forwards;
+  -o-animation: heart-color 0.5s forwards;
+  -moz-animation: heart-color 0.5s forwards;
+  -webkit-animation: heart-color 0.5s forwards;
+  animation: heart-color 0.5s forwards;
 }
 
+@-ms-keyframes heart-color {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+@-o-keyframes heart-color {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+@-moz-keyframes heart-color {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+@-webkit-keyframes heart-color {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+@keyframes heart-color {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
 /****** media queries ******/
 /***** large devices ******/
 @media (min-width: 1024px) {
