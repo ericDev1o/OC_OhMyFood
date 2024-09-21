@@ -264,7 +264,6 @@ header .title-h1h4 {
 }
 
 .localisation {
-  text-align: center;
   height: 50px;
   background-color: #eaeaea;
   display: flex;
@@ -284,23 +283,24 @@ html:lang(fr) p[lang=fr] {
 .reservation {
   text-align: center;
   background-color: #f6f6f6;
-  padding: 38px 0 55px 0;
+  padding: 38px 15px 55px 15px;
 }
 .reservation h2 {
-  margin: 0 15px 13px 15px;
+  margin-bottom: 13px;
 }
 .reservation p {
-  margin: 0 15px 30px 15px;
+  margin-bottom: 30px;
 }
 
 /****** fonctionnement *****/
 .fonctionnement {
   width: 100%;
-  padding: 45px 0 65px 0;
+  padding: 45px 8vw 65px 8vw;
 }
 .fonctionnement .function-buttons {
   margin-top: 30px;
   margin-left: 30px;
+  margin-right: 30px;
 }
 .fonctionnement .function-buttons .paragraph__button {
   color: black;
