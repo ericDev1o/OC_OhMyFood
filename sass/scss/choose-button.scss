@@ -4,9 +4,8 @@
     box-sizing: border-box;
     position: relative;
     display: flex;
-    justify-content: center;
     align-items: center;
-    padding: 25px 20px;
+    padding: 38px 9vw;
     gap: 0 7%;
     background: $main-backgrd-color;
     white-space: nowrap;
@@ -19,32 +18,32 @@
     &:hover {
         background: $main-backgrd-color-light;
     }
-}
 
-.button-choose-size {
-    height: 75px;
-}
+    .icon-number {
+        position: absolute;
+        left: -12.5px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 25px;
+        height: 25px;
+        border-radius: 50%;
+        background-color: $primary-color;
+        color: white;
+    }
 
-.fa-store {
-    color: $primary-color;
-}
+    .button-choose-size {
+        height: 75px;
+    }
+    
+    .fa-mobile-screen-button, 
+    .fa-list-ul {
+        color: $function-button-color;
+    }
 
-.fa-mobile-screen-button, 
-.fa-list-ul {
-    color: $function-button-color;
-}
-
-.icon-number {
-    position: absolute;
-    left: -12.5px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 25px;
-    height: 25px;
-    border-radius: 50%;
-    background-color: $primary-color;
-    color: white;
+    .fa-store {
+        color: $primary-color;
+    }
 }
 
 /****** media queries ******/
