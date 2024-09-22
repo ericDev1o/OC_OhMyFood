@@ -261,34 +261,31 @@ header .title-h1h4 {
 /****** localisation ******/
 .localisation-reservation {
   width: 100%;
+  /****** reservation ******/
 }
-
-.localisation {
+.localisation-reservation .localisation {
   height: 50px;
   background-color: #eaeaea;
   display: flex;
   align-items: center;
   justify-content: center;
 }
-.localisation p {
+.localisation-reservation .localisation p {
   display: none;
   margin-left: 12.5px;
 }
-
-html:lang(fr) p[lang=fr] {
+.localisation-reservation .localisation p html:lang(fr) p[lang=fr] {
   display: inline;
 }
-
-/****** reservation ******/
-.reservation {
+.localisation-reservation .reservation {
   text-align: center;
   background-color: #f6f6f6;
   padding: 38px 15px 55px 15px;
 }
-.reservation h2 {
+.localisation-reservation .reservation h2 {
   margin-bottom: 13px;
 }
-.reservation p {
+.localisation-reservation .reservation p {
   margin-bottom: 30px;
 }
 
@@ -309,8 +306,8 @@ html:lang(fr) p[lang=fr] {
 
 /****** restaurants ******/
 .restaurants {
-  background-color: brown;
   width: 100%;
+  background-color: #f6f6f6;
   padding: 55px 0;
 }
 .restaurants .restaurant-cards {
@@ -333,8 +330,7 @@ html:lang(fr) p[lang=fr] {
   object-fit: cover;
   object-position: 50% 60%;
 }
-
-.new-container {
+.restaurants .restaurant-cards .restaurant-card .new-container {
   position: absolute;
   display: flex;
   justify-content: center;
@@ -348,8 +344,7 @@ html:lang(fr) p[lang=fr] {
   border-radius: 2px;
   background-color: #99e2d0;
 }
-
-.card-content {
+.restaurants .restaurant-cards .restaurant-card .card-content {
   height: 30%;
   background-color: white;
   border-radius: 0 0 15px 15px;
@@ -359,15 +354,13 @@ html:lang(fr) p[lang=fr] {
   position: relative;
   top: -5px;
 }
-
-.text-left h3 {
+.restaurants .restaurant-cards .restaurant-card .card-content .text-left h3 {
   margin-top: -5%;
   margin-bottom: 0;
   width: 100%;
   margin-left: 7%;
 }
-
-.paragraph__card {
+.restaurants .restaurant-cards .restaurant-card .card-content .paragraph__card {
   line-height: 0;
   margin: 0;
   margin-top: 8%;

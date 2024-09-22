@@ -328,37 +328,37 @@ header {
 /****** localisation ******/
 .localisation-reservation {
     width: 100%;
-}
 
-.localisation {
-    height: 50px;
-    background-color: #eaeaea;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    .localisation {
+        height: 50px;
+        background-color: #eaeaea;
+        display: flex;
+        align-items: center;
+        justify-content: center;
 
-    p {
-        display: none;
-        margin-left: 12.5px;
+        p {
+            display: none;
+            margin-left: 12.5px;
+
+            html:lang(fr) p[lang='fr'] {
+                display: inline;
+            }
+        }
     }
-}
-
-html:lang(fr) p[lang='fr'] {
-    display: inline;
-}
 
 /****** reservation ******/
-.reservation {
-    text-align: center;
-    background-color: $main-backgrd-color;
-    padding: 38px 15px 55px 15px;
+    .reservation {
+        text-align: center;
+        background-color: $main-backgrd-color;
+        padding: 38px 15px 55px 15px;
 
-    h2 {
-        margin-bottom: 13px;
-    }
+        h2 {
+            margin-bottom: 13px;
+        }
 
-    p {
-        margin-bottom: 30px;
+        p {
+            margin-bottom: 30px;
+        }
     }
 }
 
@@ -382,9 +382,8 @@ html:lang(fr) p[lang='fr'] {
 
 /****** restaurants ******/
 .restaurants {
-    background-color: brown;
     width: 100%;
-    //background-color: $main-backgrd-color;
+    background-color: $main-backgrd-color;
     padding: 55px 0;
 
     .restaurant-cards {
@@ -407,48 +406,48 @@ html:lang(fr) p[lang='fr'] {
                 object-fit: cover;
                 object-position: 50% 60%;
             }
+
+            .new-container {
+                position: absolute;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                top: 25px;
+                right: 15px;
+                width: 80px;
+                height: 29px;
+                padding-top: 3px;
+                color: $new-color;
+                border-radius: 2px;
+                background-color: $tertiary-color;
+            }
+
+            .card-content {
+                height: 30%;
+                background-color: white;
+                border-radius: 0 0 15px 15px;
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                position: relative;
+                top: -5px;
+
+                .text-left h3 {
+                    margin-top: -5%;
+                    margin-bottom: 0;
+                    width: 100%;
+                    margin-left: 7%;
+                }
+
+                .paragraph__card {
+                    line-height: 0;
+                    margin: 0;
+                    margin-top: 8%;
+                    padding-left: 7%;
+                }
+            }
         }
     }
-}
-
-.new-container {
-    position: absolute;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    top: 25px;
-    right: 15px;
-    width: 80px;
-    height: 29px;
-    padding-top: 3px;
-    color: $new-color;
-    border-radius: 2px;
-    background-color: $tertiary-color;
-}
-
-.card-content {
-    height: 30%;
-    background-color: white;
-    border-radius: 0 0 15px 15px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    position: relative;
-    top: -5px;
-}
-
-.text-left h3 {
-    margin-top: -5%;
-    margin-bottom: 0;
-    width: 100%;
-    margin-left: 7%;
-}
-
-.paragraph__card {
-    line-height: 0;
-    margin: 0;
-    margin-top: 8%;
-    padding-left: 7%;
 }
 /****** end landing page ******/
 /****** restaurant page ******/
