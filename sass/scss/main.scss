@@ -144,6 +144,7 @@ $font-size-large: 2.5em;
     &__menutext {
         font-size: 0.94em;
         line-height: 1.102em;
+        @extend %font-light;
 
         &__price {
             @extend %font-bold;
@@ -565,6 +566,10 @@ header {
     }
 }
 
+.menu-width {
+    width: 100%;
+}
+
 .menu {
     background-color: $main-backgrd-color;
 
@@ -701,6 +706,25 @@ header {
             margin: 0 6%;
         }
     }
+
+    /****** restaurant page ******/
+    .menu-width {
+        width: 75.5%;
+    }
+
+    .page-img-container {
+        .img-cover {
+            width: 75.5%;
+            padding-left: 13px;
+            display: flex;
+            justify-content: center;
+            
+
+            .title-h2h3__restaurant-name {
+                margin-right: 2%;
+            }
+        }
+    }
 }
 /***** large devices *****/
 @media (min-width: 1024px) {
@@ -797,21 +821,6 @@ header {
     }
     /****** end landing page ******/
     /***** restaurant page ******/
-    .menu-width {
-        width: 75.5%;
-    }
-
-    .img-cover {
-        padding-left: 13px;
-        display: flex;
-        justify-content: center;
-        
-
-        .title-h2h3__restaurant-name {
-            margin-right: 2%;
-        }
-    }
-
     .menu {
         .menu-left {
             margin-left: 16.5%;

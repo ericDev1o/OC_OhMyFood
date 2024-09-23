@@ -26,7 +26,7 @@
   font-weight: 500;
 }
 
-.paragraph__menu, .paragraph__reservation {
+.paragraph__menutext, .paragraph__menu, .paragraph__reservation {
   font-weight: 300;
 }
 
@@ -472,6 +472,10 @@ header .title-h1h4 {
     transform: translateY(0);
   }
 }
+.menu-width {
+  width: 100%;
+}
+
 .menu {
   background-color: #f6f6f6;
 }
@@ -585,6 +589,19 @@ header .title-h1h4 {
   .restaurants h2 {
     margin: 0 6%;
   }
+  /****** restaurant page ******/
+  .menu-width {
+    width: 75.5%;
+  }
+  .page-img-container .img-cover {
+    width: 75.5%;
+    padding-left: 13px;
+    display: flex;
+    justify-content: center;
+  }
+  .page-img-container .img-cover .title-h2h3__restaurant-name {
+    margin-right: 2%;
+  }
 }
 /***** large devices *****/
 @media (min-width: 1024px) {
@@ -668,17 +685,6 @@ header .title-h1h4 {
   }
   /****** end landing page ******/
   /***** restaurant page ******/
-  .menu-width {
-    width: 75.5%;
-  }
-  .img-cover {
-    padding-left: 13px;
-    display: flex;
-    justify-content: center;
-  }
-  .img-cover .title-h2h3__restaurant-name {
-    margin-right: 2%;
-  }
   .menu .menu-left {
     margin-left: 16.5%;
     margin-right: 16.5%;
