@@ -616,7 +616,7 @@ header .title-h1h4 {
   /****** fonctionnement ******/
   .fonctionnement {
     position: relative;
-    padding: 43px 0 154px 0;
+    padding: 43px 0 154px 14vw;
   }
   .fonctionnement h2 {
     margin-left: 80px;
@@ -624,7 +624,7 @@ header .title-h1h4 {
   .fonctionnement .function-buttons {
     width: 100%;
     display: flex;
-    margin-left: 106px;
+    margin-left: 22vw;
     margin-top: 21px;
     position: absolute;
     left: -5.2%;
@@ -635,6 +635,7 @@ header .title-h1h4 {
     width: 100%;
     padding-top: 25px;
     padding-bottom: 0;
+    padding-left: 14vw;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -644,23 +645,22 @@ header .title-h1h4 {
     margin-left: 80px;
     margin-bottom: -60px;
   }
-  .restaurant-cards {
+  .restaurants .restaurant-cards {
     width: 100%;
-    margin-top: -10px;
     margin-left: 80px;
     margin-bottom: 24px;
+    display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    gap: 40px 110px;
+    gap: 50px 100px;
   }
-  .restaurant-cards .restaurant-card {
+  .restaurants .restaurant-cards .restaurant-card {
     margin-bottom: 0;
     height: 31vh;
     box-sizing: border-box;
     aspect-ratio: 1.9/1;
-    min-height: 200px;
   }
-  .restaurant-cards .restaurant-card picture img {
+  .restaurants .restaurant-cards .restaurant-card picture img {
     height: 65%;
     object-fit: cover;
     object-position: 50% 60%;

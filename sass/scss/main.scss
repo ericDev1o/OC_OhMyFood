@@ -739,7 +739,7 @@ header {
     /****** fonctionnement ******/
     .fonctionnement {
         position: relative;
-        padding: 43px 0 154px 0;
+        padding: 43px 0 154px 14vw;
 
         h2 {
             margin-left: 80px;
@@ -748,7 +748,7 @@ header {
         .function-buttons {
             width: 100%;
             display: flex;
-            margin-left: 106px;
+            margin-left: 22vw;
             margin-top: 21px;
             position: absolute;
             left: -5.2%;
@@ -761,6 +761,7 @@ header {
         width: 100%;
         padding-top: 25px;
         padding-bottom: 0;
+        padding-left: 14vw;
         display: flex;
         flex-direction: column;
         justify-content: center;
@@ -770,28 +771,27 @@ header {
             margin-left: 80px;
             margin-bottom: -60px;
         }
-    }
 
-    .restaurant-cards {
-        width: 100%;
-        margin-top: -10px;
-        margin-left: 80px;
-        margin-bottom: 24px;
-        flex-direction: row;
-        flex-wrap: wrap;
-        gap: 40px 110px;
+        .restaurant-cards {
+            width: 100%;
+            margin-left: 80px;
+            margin-bottom: 24px;
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            gap: 50px 100px;
 
-        .restaurant-card {
-            margin-bottom: 0;
-            height: 31vh;
-            box-sizing: border-box;
-            aspect-ratio: 1.9 / 1;
-            min-height: 200px;
-            picture img {
-                height: 65%;
-                object-fit: cover;
-                object-position: 50% 60%;
-                border-radius: 15px 15px 0 0;
+            .restaurant-card {
+                margin-bottom: 0;
+                height: 31vh;
+                box-sizing: border-box;
+                aspect-ratio: 1.9 / 1;
+                picture img {
+                    height: 65%;
+                    object-fit: cover;
+                    object-position: 50% 60%;
+                    border-radius: 15px 15px 0 0;
+                }
             }
         }
     }
