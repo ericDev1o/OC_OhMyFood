@@ -291,13 +291,14 @@ header .title-h1h4 {
 /****** fonctionnement *****/
 .fonctionnement {
   width: 100%;
-  padding: 45px 7vw 65px 28vw;
+  padding: 45px 7vw 65px 25vw;
 }
 .fonctionnement h2 {
   margin-left: -4vw;
 }
 .fonctionnement .function-buttons {
   margin-top: 30px;
+  margin-right: 15vw;
 }
 .fonctionnement .function-buttons .paragraph__button {
   color: black;
@@ -571,11 +572,15 @@ header .title-h1h4 {
 /****** media queries ******/
 /****** medium devices ******/
 @media (min-width: 768px) {
+  .fonctionnement {
+    padding: 45px 21vw 65px 29vw;
+  }
   .fonctionnement h2 {
-    margin: 0 6%;
+    margin: 0 2vw;
   }
   .fonctionnement .function-buttons {
     padding: 0 4%;
+    margin-right: 5vw;
   }
   .restaurants h2 {
     margin: 0 6%;
@@ -587,10 +592,31 @@ header .title-h1h4 {
   .load img {
     margin: 2.4% 0;
   }
+  /****** reservation ******/
+  .localisation-reservation .localisation {
+    height: 55px;
+    padding-bottom: 0;
+  }
+  .localisation-reservation .localisation i, .localisation-reservation .localisation p {
+    margin-top: -5px;
+  }
+  .localisation-reservation .reservation {
+    padding: 0px 15px 27px 15px;
+  }
+  .localisation-reservation .reservation h2 {
+    font-size: 2.5em;
+    line-height: 2.93em;
+    margin-top: -10px;
+    margin-bottom: 0;
+  }
+  .localisation-reservation .reservation p {
+    margin-top: -10px;
+    margin-bottom: 25px;
+  }
   /****** fonctionnement ******/
   .fonctionnement {
     position: relative;
-    padding: 60px 0 160px 0;
+    padding: 43px 0 154px 0;
   }
   .fonctionnement h2 {
     margin-left: 80px;
@@ -599,35 +625,15 @@ header .title-h1h4 {
     width: 100%;
     display: flex;
     margin-left: 106px;
-    margin-top: 30px;
+    margin-top: 21px;
     position: absolute;
     left: -5.2%;
     gap: 3.2%;
   }
-  /****** reservation ******/
-  .reservation {
-    padding: 28px 0 30px 0;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-  }
-  .reservation h2 {
-    margin-bottom: 22px;
-  }
-  .reservation p {
-    margin-top: 7.5px;
-  }
-  .reservation:last-child {
-    margin-bottom: 0;
-  }
-  .title-h2h3__center {
-    font-size: 2.5em;
-    line-height: 2.93em;
-  }
   /****** restaurants ******/
   .restaurants {
     width: 100%;
-    padding-top: 2.5%;
+    padding-top: 25px;
     padding-bottom: 0;
     display: flex;
     flex-direction: column;
@@ -636,11 +642,11 @@ header .title-h1h4 {
   }
   .restaurants h2 {
     margin-left: 80px;
-    margin-top: 0;
+    margin-bottom: -60px;
   }
   .restaurant-cards {
     width: 100%;
-    margin-top: 28px;
+    margin-top: -10px;
     margin-left: 80px;
     margin-bottom: 24px;
     flex-direction: row;
@@ -782,7 +788,7 @@ header .title-h1h4 {
   color: white;
 }
 .button-choose .button-choose-size {
-  height: 75px;
+  height: 55px;
 }
 .button-choose .fa-mobile-screen-button,
 .button-choose .fa-list-ul {
@@ -796,20 +802,22 @@ header .title-h1h4 {
 /***** medium devices ******/
 @media (min-width: 768px) {
   .button-choose {
-    gap: 0 2%;
+    gap: 0 3%;
+    padding: 38px 4vw;
   }
 }
 /***** large devices ******/
 @media (min-width: 1024px) {
   .button-choose {
     margin-top: 4px;
-    gap: 0 6%;
+    gap: 0 1.5vw;
+    padding: 38px 2.5vw;
   }
   .button-choose:not(:last-child) {
     margin-bottom: 0;
   }
   .button-choose-size {
-    width: 23%;
+    width: 20vw;
   }
 }
 #white, #gradient,

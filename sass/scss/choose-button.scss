@@ -33,7 +33,7 @@
     }
 
     .button-choose-size {
-        height: 75px;
+        height: 55px;
     }
     
     .fa-mobile-screen-button, 
@@ -49,8 +49,9 @@
 /****** media queries ******/
 /***** medium devices ******/
 @media (min-width: 768px) {
-    .button-choose {
-        gap: 0 2%;
+    .button-choose { // threshold is 768px
+        gap: 0 3%;
+        padding: 38px 4vw;
     }
 }
 /***** large devices ******/
@@ -58,7 +59,8 @@
     .button-choose {
         margin-top: 4px;
 
-        gap: 0 6%;
+        gap: 0 1.5vw;
+        padding: 38px 2.5vw;
 
         &:not(:last-child) {
             margin-bottom: 0;
@@ -66,6 +68,6 @@
     }
 
     .button-choose-size {
-        width: 23%;
+        width: 20vw; // threshold is 1440px
     }
 }
