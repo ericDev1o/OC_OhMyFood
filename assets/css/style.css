@@ -373,7 +373,7 @@ header .title-h1h4 {
 .header-page {
   display: flex;
   align-items: center;
-  padding: 2.7%;
+  padding: 3vh;
 }
 .header-page h1 {
   display: flex;
@@ -550,16 +550,19 @@ header .title-h1h4 {
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: #99e2d0;
-  width: 60px;
+  background-color: white;
   min-height: 100%;
-  transition: transform 0.3s ease;
-  transform: translateX(100%);
-  flex-shrink: 0;
+  transition: transform 0.5s ease-in-out;
+  transform: translateX(99%);
 }
 .menu .menu-item .row-check .dish-check-background .fa-circle-check {
   color: white;
   font-size: 1.5em;
+}
+.menu .menu-item .row-check .dish-check-background:hover, .menu .menu-item .row-check .dish-check-background:active {
+  width: 60px;
+  transform: translateX(0);
+  background-color: #99e2d0;
 }
 .menu .menu-item .row-check .dish-check-background:hover .dish-content, .menu .menu-item .row-check .dish-check-background:active .dish-content {
   width: calc(100% - 60px);
@@ -568,9 +571,6 @@ header .title-h1h4 {
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
-}
-.menu .menu-item .row-check .dish-check-background:hover .dish-check-background, .menu .menu-item .row-check .dish-check-background:active .dish-check-background {
-  transform: translateX(0);
 }
 
 /****** media queries ******/
@@ -737,7 +737,7 @@ header .title-h1h4 {
 .button-explore-command {
   border-radius: 20px;
   border: none;
-  box-shadow: 0 0 0 rgb(0, 0, 0);
+  box-shadow: 0 8px 4px rgba(0, 0, 0, 0.1);
   height: 50px;
 }
 
@@ -751,7 +751,7 @@ header .title-h1h4 {
 }
 
 .button-explore-command:hover {
-  box-shadow: 0 0 0 rgb(0, 0, 1);
+  box-shadow: 0 8px 4px rgba(0, 0, 0, 0.3);
 }
 
 .button-explore-command-color {
