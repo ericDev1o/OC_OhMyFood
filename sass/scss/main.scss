@@ -629,7 +629,9 @@ header {
             .dish-content {
                 flex-grow: 1;
                 padding: 15px;
-                transition: width 0.3s ease;
+                transition: 
+                    width 0.5s ease-in-out,
+                    opacity 0.5s ease-in-out;
                 overflow: hidden;
 
                 h4,
@@ -656,7 +658,9 @@ header {
                 align-items: center;
                 background-color: white;
                 min-height: 100%;
-                transition: transform 0.5s ease-in-out;
+                transition: 
+                    transform 0.5s ease-in-out,
+                    background-color 0.5s ease-in-out;
                 transform: translateX(99%);
 
                 .fa-circle-check {
