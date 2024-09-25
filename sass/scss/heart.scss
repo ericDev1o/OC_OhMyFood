@@ -1,144 +1,57 @@
-#white, #gradient, 
-#white1, #white2, #white3, #white4,
-#gradient1, #gradient2, #gradient3, #gradient4 {
-    position: absolute;
-    right: 7%;
-    width: 22px;
-}
+.heart-container {
+    position: relative;
+    top: -10px;
 
-#white, 
-#white1, #white2, #white3, #white4 {
-    opacity: 1;
+    .resto-page-heart {
+        left: -5px;
+    }
+
+    #white, #gradient, 
+    #white1, #white2, #white3, #white4,
+    #gradient1, #gradient2, #gradient3, #gradient4 {
+        position: absolute;
+        right: 25px;
+        width: 22px;
+        transition: opacity 0.5s ease;
+    }
+
+    #white, 
+    #white1, #white2, #white3, #white4 {
+        opacity: 1;
+    }
+
+    #gradient, 
+    #gradient1, #gradient2, #gradient3, #gradient4 {
+        opacity: 0;
+    }
 
     &:hover {
-        opacity: 0;
-        -ms-animation: heart-white 0.5s forwards;
-        -o-animation: heart-white 0.5s forwards;
-        -moz-animation: heart-white 0.5s forwards;
-        -webkit-animation: heart-white 0.5s forwards;
-        animation: heart-white 0.5s forwards;
-    }
-}
-
-@-ms-keyframes heart-white {
-    from {
-        opacity: 1;
-    }
-    to {
-        opacity: 0;
-    }
-}
-
-@-o-keyframes heart-white {
-    from {
-        opacity: 1;
-    }
-    to {
-        opacity: 0;
-    }
-}
-
-@-moz-keyframes heart-white {
-    from {
-        opacity: 1;
-    }
-    to {
-        opacity: 0;
-    }
-}
-
-@-webkit-keyframes heart-white {
-    from {
-        opacity: 1;
-    }
-    to {
-        opacity: 0;
-    }
-}
-
-@keyframes heart-white {
-    from {
-        opacity: 1;
-    }
-    to {
-        opacity: 0;
-    }
-}
-
-#gradient, 
-#gradient1, #gradient2, #gradient3, #gradient4 {
-    opacity: 0;
-    
-    &:hover {
-        opacity: 1;
-        -ms-animation: heart-color 0.5s forwards;
-        -o-animation: heart-color 0.5s forwards;
-        -moz-animation: heart-color 0.5s forwards;
-        -webkit-animation: heart-color 0.5s forwards;
-        animation: heart-color 0.5s forwards;
-    }
-}
-
-@-ms-keyframes heart-color {
-    from {
-        opacity: 0;
-    }
-    to {
-        opacity: 1;
-    }
-}
-
-@-o-keyframes heart-color {
-    from {
-        opacity: 0;
-    }
-    to {
-        opacity: 1;
-    }
-}
-
-@-moz-keyframes heart-color {
-    from {
-        opacity: 0;
-    }
-    to {
-        opacity: 1;
-    }
-}
-
-@-webkit-keyframes heart-color {
-    from {
-        opacity: 0;
-    }
-    to {
-        opacity: 1;
-    }
-}
-
-@keyframes heart-color {
-    from {
-        opacity: 0;
-    }
-    to {
-        opacity: 1;
-    }
-}
-
-/****** media queries ******/
-/***** large devices ******/
-@media (min-width: 1024px) {
-    /****** landing page ******/
-    .card-content {
-        #white1, #white2, #white3, #white4,
+        #white, 
+        #white1, #white2, #white3, #white4 {
+            opacity: 0;
+        }
+        #gradient, 
         #gradient1, #gradient2, #gradient3, #gradient4 {
-            right: 5%
+            opacity: 1;
         }
     }
 
-    /****** restaurant page ******/
-    .img-cover {
-        #white, #gradient {
-            right: 30%;
+    /****** media queries ******/
+    /***** large devices ******/
+    @media (min-width: 1024px) {
+        /****** landing page ******/
+        .card-content {
+            #white1, #white2, #white3, #white4,
+            #gradient1, #gradient2, #gradient3, #gradient4 {
+                right: 5%
+            }
+        }
+
+        /****** restaurant page ******/
+        .img-cover {
+            #white, #gradient {
+                right: 30%;
+            }
         }
     }
 }

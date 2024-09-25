@@ -826,135 +826,53 @@ header .title-h1h4 {
     width: 20vw;
   }
 }
-#white, #gradient,
-#white1, #white2, #white3, #white4,
-#gradient1, #gradient2, #gradient3, #gradient4 {
+.heart-container {
+  position: relative;
+  top: -10px;
+  /****** media queries ******/
+  /***** large devices ******/
+}
+.heart-container .resto-page-heart {
+  left: -5px;
+}
+.heart-container #white, .heart-container #gradient,
+.heart-container #white1, .heart-container #white2, .heart-container #white3, .heart-container #white4,
+.heart-container #gradient1, .heart-container #gradient2, .heart-container #gradient3, .heart-container #gradient4 {
   position: absolute;
-  right: 7%;
+  right: 25px;
   width: 22px;
+  transition: opacity 0.5s ease;
 }
-
-#white,
-#white1, #white2, #white3, #white4 {
+.heart-container #white,
+.heart-container #white1, .heart-container #white2, .heart-container #white3, .heart-container #white4 {
   opacity: 1;
 }
-#white:hover,
-#white1:hover, #white2:hover, #white3:hover, #white4:hover {
-  opacity: 0;
-  -ms-animation: heart-white 0.5s forwards;
-  -o-animation: heart-white 0.5s forwards;
-  -moz-animation: heart-white 0.5s forwards;
-  -webkit-animation: heart-white 0.5s forwards;
-  animation: heart-white 0.5s forwards;
-}
-
-@-ms-keyframes heart-white {
-  from {
-    opacity: 1;
-  }
-  to {
-    opacity: 0;
-  }
-}
-@-o-keyframes heart-white {
-  from {
-    opacity: 1;
-  }
-  to {
-    opacity: 0;
-  }
-}
-@-moz-keyframes heart-white {
-  from {
-    opacity: 1;
-  }
-  to {
-    opacity: 0;
-  }
-}
-@-webkit-keyframes heart-white {
-  from {
-    opacity: 1;
-  }
-  to {
-    opacity: 0;
-  }
-}
-@keyframes heart-white {
-  from {
-    opacity: 1;
-  }
-  to {
-    opacity: 0;
-  }
-}
-#gradient,
-#gradient1, #gradient2, #gradient3, #gradient4 {
+.heart-container #gradient,
+.heart-container #gradient1, .heart-container #gradient2, .heart-container #gradient3, .heart-container #gradient4 {
   opacity: 0;
 }
-#gradient:hover,
-#gradient1:hover, #gradient2:hover, #gradient3:hover, #gradient4:hover {
+.heart-container:hover #white,
+.heart-container:hover #white1, .heart-container:hover #white2, .heart-container:hover #white3, .heart-container:hover #white4 {
+  opacity: 0;
+}
+.heart-container:hover #gradient,
+.heart-container:hover #gradient1, .heart-container:hover #gradient2, .heart-container:hover #gradient3, .heart-container:hover #gradient4 {
   opacity: 1;
-  -ms-animation: heart-color 0.5s forwards;
-  -o-animation: heart-color 0.5s forwards;
-  -moz-animation: heart-color 0.5s forwards;
-  -webkit-animation: heart-color 0.5s forwards;
-  animation: heart-color 0.5s forwards;
 }
-
-@-ms-keyframes heart-color {
-  from {
-    opacity: 0;
-  }
-  to {
-    opacity: 1;
-  }
-}
-@-o-keyframes heart-color {
-  from {
-    opacity: 0;
-  }
-  to {
-    opacity: 1;
-  }
-}
-@-moz-keyframes heart-color {
-  from {
-    opacity: 0;
-  }
-  to {
-    opacity: 1;
-  }
-}
-@-webkit-keyframes heart-color {
-  from {
-    opacity: 0;
-  }
-  to {
-    opacity: 1;
-  }
-}
-@keyframes heart-color {
-  from {
-    opacity: 0;
-  }
-  to {
-    opacity: 1;
-  }
-}
-/****** media queries ******/
-/***** large devices ******/
 @media (min-width: 1024px) {
-  /****** landing page ******/
-  .card-content #white1, .card-content #white2, .card-content #white3, .card-content #white4,
-  .card-content #gradient1, .card-content #gradient2, .card-content #gradient3, .card-content #gradient4 {
+  .heart-container {
+    /****** landing page ******/
+    /****** restaurant page ******/
+  }
+  .heart-container .card-content #white1, .heart-container .card-content #white2, .heart-container .card-content #white3, .heart-container .card-content #white4,
+  .heart-container .card-content #gradient1, .heart-container .card-content #gradient2, .heart-container .card-content #gradient3, .heart-container .card-content #gradient4 {
     right: 5%;
   }
-  /****** restaurant page ******/
-  .img-cover #white, .img-cover #gradient {
+  .heart-container .img-cover #white, .heart-container .img-cover #gradient {
     right: 30%;
   }
 }
+
 footer {
   background-color: #353535;
   color: white;
