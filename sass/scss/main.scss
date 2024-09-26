@@ -628,7 +628,7 @@ header {
 
             .dish-content {
                 flex-grow: 1;
-                padding: 15px;
+                padding: 15px 0 15px 15px;
                 transition: 
                     width 0.5s ease-in-out,
                     opacity 0.5s ease-in-out;
@@ -645,7 +645,6 @@ header {
                 }
 
                 .align-price {
-                    padding: 0 17px 0 0;
                     display: flex;
                     justify-content: space-between;
                     align-items: flex-end;
@@ -670,6 +669,7 @@ header {
 
                 &:hover, &:active {
                     width: 60px;
+                    margin-left: 15px;
                     transform: translateX(0);
                     background-color: $tertiary-color;
 

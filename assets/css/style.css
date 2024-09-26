@@ -528,7 +528,7 @@ header .title-h1h4 {
 }
 .menu .menu-item .row-check .dish-content {
   flex-grow: 1;
-  padding: 15px;
+  padding: 15px 0 15px 15px;
   transition: width 0.5s ease-in-out, opacity 0.5s ease-in-out;
   overflow: hidden;
 }
@@ -541,7 +541,6 @@ header .title-h1h4 {
   margin-bottom: 5px;
 }
 .menu .menu-item .row-check .dish-content .align-price {
-  padding: 0 17px 0 0;
   display: flex;
   justify-content: space-between;
   align-items: flex-end;
@@ -561,6 +560,7 @@ header .title-h1h4 {
 }
 .menu .menu-item .row-check .dish-check-background:hover, .menu .menu-item .row-check .dish-check-background:active {
   width: 60px;
+  margin-left: 15px;
   transform: translateX(0);
   background-color: #99e2d0;
 }
