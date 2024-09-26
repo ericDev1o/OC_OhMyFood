@@ -558,16 +558,19 @@ header .title-h1h4 {
   color: white;
   font-size: 1.5em;
 }
-.menu .menu-item .row-check .dish-check-background:hover, .menu .menu-item .row-check .dish-check-background:active {
+.menu .menu-item .row-check:hover .dish-check-background,
+.menu .menu-item .row-check:active .dish-check-background {
   width: 60px;
   margin-left: 15px;
   transform: translateX(0);
   background-color: #99e2d0;
 }
-.menu .menu-item .row-check .dish-check-background:hover .dish-content, .menu .menu-item .row-check .dish-check-background:active .dish-content {
+.menu .menu-item .row-check:hover .dish-check-background .dish-content,
+.menu .menu-item .row-check:active .dish-check-background .dish-content {
   width: calc(100% - 60px);
 }
-.menu .menu-item .row-check .dish-check-background:hover .ellipsis, .menu .menu-item .row-check .dish-check-background:active .ellipsis {
+.menu .menu-item .row-check:hover .dish-check-background .ellipsis,
+.menu .menu-item .row-check:active .dish-check-background .ellipsis {
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
