@@ -854,7 +854,7 @@ header .title-h1h4 {
   position: absolute;
   right: 25px;
   width: 22px;
-  transition: opacity 0.5s ease;
+  transition: opacity 0.5s ease-in-out;
 }
 .heart-container #white,
 .heart-container #white1, .heart-container #white2, .heart-container #white3, .heart-container #white4 {
