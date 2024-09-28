@@ -456,7 +456,7 @@ header {
 .header-page {
     display: flex;
     align-items: center;
-    padding: 3vh;
+    padding: 1vh;
 
     h1 {
         display: flex;
@@ -577,6 +577,10 @@ header {
         margin-bottom: 1%;
     }
 
+    .paragraph__menu__entrees {
+        margin-top: 15px;
+    }
+
     #entrees {
         -ms-animation: dishes-fade-in 1s ease-in-out;
         -o-animation: dishes-fade-in 1s ease-in-out;
@@ -688,6 +692,15 @@ header {
     }
 }
 /****** media queries ******/
+/****** small mobile devices ******/
+/****** restaurant page ******/
+@media (max-width: 375px) {
+    .page-img-container{
+        .img-cover{
+            flex-direction: column;
+        }
+    }
+}
 /****** medium devices ******/
 @media (min-width: 768px) {
     .fonctionnement {

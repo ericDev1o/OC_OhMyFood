@@ -2,11 +2,7 @@
     position: relative;
     top: -10px;
 
-    .resto-page-heart {
-        left: -5px;
-    }
-
-    #white, #gradient, 
+    #white, #gradient,
     #white1, #white2, #white3, #white4,
     #gradient1, #gradient2, #gradient3, #gradient4 {
         position: absolute;
@@ -37,7 +33,22 @@
     }
 
     /****** media queries ******/
-    /***** large devices ******/
+    /****** small mobile devices ******/
+    /****** restaurant page ******/
+    @media (max-width: 375px) {
+        #white, #gradient {
+            left: -11px;
+        }
+    }
+
+    /****** medium devices ******/
+    @media (min-width: 768px) {
+        #white, #gradient {
+            left: 15px;
+        }
+    }
+    
+     /***** large devices ******/
     @media (min-width: 1024px) {
         /****** landing page ******/
         .card-content {

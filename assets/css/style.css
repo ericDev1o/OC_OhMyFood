@@ -373,7 +373,7 @@ header .title-h1h4 {
 .header-page {
   display: flex;
   align-items: center;
-  padding: 3vh;
+  padding: 1vh;
 }
 .header-page h1 {
   display: flex;
@@ -482,6 +482,9 @@ header .title-h1h4 {
 .menu .paragraph__menu {
   margin-bottom: 1%;
 }
+.menu .paragraph__menu__entrees {
+  margin-top: 15px;
+}
 .menu #entrees {
   -ms-animation: dishes-fade-in 1s ease-in-out;
   -o-animation: dishes-fade-in 1s ease-in-out;
@@ -577,6 +580,13 @@ header .title-h1h4 {
 }
 
 /****** media queries ******/
+/****** small mobile devices ******/
+/****** restaurant page ******/
+@media (max-width: 375px) {
+  .page-img-container .img-cover {
+    flex-direction: column;
+  }
+}
 /****** medium devices ******/
 @media (min-width: 768px) {
   .fonctionnement {
@@ -833,10 +843,10 @@ header .title-h1h4 {
   position: relative;
   top: -10px;
   /****** media queries ******/
+  /****** small mobile devices ******/
+  /****** restaurant page ******/
+  /****** medium devices ******/
   /***** large devices ******/
-}
-.heart-container .resto-page-heart {
-  left: -5px;
 }
 .heart-container #white, .heart-container #gradient,
 .heart-container #white1, .heart-container #white2, .heart-container #white3, .heart-container #white4,
@@ -861,6 +871,16 @@ header .title-h1h4 {
 .heart-container:hover #gradient,
 .heart-container:hover #gradient1, .heart-container:hover #gradient2, .heart-container:hover #gradient3, .heart-container:hover #gradient4 {
   opacity: 1;
+}
+@media (max-width: 375px) {
+  .heart-container #white, .heart-container #gradient {
+    left: -11px;
+  }
+}
+@media (min-width: 768px) {
+  .heart-container #white, .heart-container #gradient {
+    left: 15px;
+  }
 }
 @media (min-width: 1024px) {
   .heart-container {
