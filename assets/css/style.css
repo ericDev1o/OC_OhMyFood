@@ -549,13 +549,13 @@ header .title-h1h4 {
   align-items: flex-end;
 }
 .menu .menu-item .row-check .dish-check-background {
+  width: 15px;
   display: flex;
   justify-content: center;
   align-items: center;
   background-color: white;
-  min-height: 100%;
-  transition: transform 0.5s ease-in-out, background-color 0.5s ease-in-out;
   transform: translateX(100%);
+  transition: transform 0.5s ease-in-out, background-color 0.5s ease-in-out, width 0.5s ease-in-out;
 }
 .menu .menu-item .row-check .dish-check-background .fa-circle-check {
   color: white;

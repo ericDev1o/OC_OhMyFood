@@ -656,15 +656,16 @@ header {
             }
 
             .dish-check-background {
+                width: 15px;
                 display: flex;
                 justify-content: center;
                 align-items: center;
                 background-color: white;
-                min-height: 100%;
+                transform: translateX(100%);
                 transition: 
                     transform 0.5s ease-in-out,
-                    background-color 0.5s ease-in-out;
-                transform: translateX(100%);
+                    background-color 0.5s ease-in-out,
+                    width 0.5s ease-in-out;
 
                 .fa-circle-check {
                     color: white;
@@ -672,6 +673,7 @@ header {
                 }
             }
         }
+
         .row-check:hover .dish-check-background,
         .row-check:active .dish-check-background {
             width: 60px;
