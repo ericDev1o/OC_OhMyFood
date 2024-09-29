@@ -802,7 +802,8 @@ header {
         width: 100%;
         padding-top: 25px;
         padding-bottom: 0;
-        padding-left: 14vw;
+        padding-left: 7vw;
+        box-sizing: border-box;
         display: flex;
         flex-direction: column;
         justify-content: center;
