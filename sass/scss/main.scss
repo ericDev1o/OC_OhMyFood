@@ -168,7 +168,6 @@ $font-size-large: 2.5rem;
     padding: 0;
 
     main {
-        display: none;
         width: 100%;
         display: flex;
         flex-direction: column;
@@ -208,7 +207,6 @@ $font-size-large: 2.5rem;
         width: 10vw;
         height: 10vh;
         opacity: 0;
-        position: fixed;
     }
 }
 
@@ -230,7 +228,6 @@ $font-size-large: 2.5rem;
         width: 10vw;
         height: 10vh;
         opacity: 0;
-        position: fixed;
     }
 }
 
@@ -252,7 +249,6 @@ $font-size-large: 2.5rem;
         width: 10vw;
         height: 10vh;
         opacity: 0;
-        position: fixed;
     }
 }
 
@@ -274,7 +270,6 @@ $font-size-large: 2.5rem;
         width: 10vw;
         height: 10vh;
         opacity: 0;
-        position: fixed;
     }
 }
 
@@ -296,7 +291,6 @@ $font-size-large: 2.5rem;
         width: 10vw;
         height: 10vh;
         opacity: 0;
-        position: fixed;
     }
 }
 
@@ -697,10 +691,8 @@ header {
 /****** small mobile devices ******/
 /****** restaurant page ******/
 @media (max-width: 375px) {
-    .page-img-container{
-        .img-cover{
-            flex-direction: column;
-        }
+    .img-cover{
+        flex-direction: column;
     }
 }
 /****** medium devices ******/
