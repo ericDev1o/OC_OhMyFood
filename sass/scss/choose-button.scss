@@ -49,7 +49,7 @@
 /****** media queries ******/
 /***** medium devices ******/
 @media (min-width: 768px) {
-    .button-choose { // threshold is 768px
+    .button-choose {
         gap: 0 3%;
         padding: 38px 4vw;
     }
@@ -68,6 +68,6 @@
     }
 
     .button-choose-size {
-        width: 20vw; // threshold is 1440px
+        width: 22.5vw;
     }
 }

@@ -657,7 +657,7 @@ header .title-h1h4 {
     margin-top: 21px;
     position: absolute;
     left: -5.2%;
-    gap: 3.2%;
+    gap: 2%;
   }
   /****** restaurants ******/
   .restaurants {
@@ -837,7 +837,7 @@ header .title-h1h4 {
     margin-bottom: 0;
   }
   .button-choose-size {
-    width: 20vw;
+    width: 22.5vw;
   }
 }
 .heart-container {
