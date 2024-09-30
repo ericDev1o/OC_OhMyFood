@@ -20,7 +20,7 @@ $font-weight-light: 300;
 $font-weight-medium: 500;
 $font-weight-bold: 700;
 /****** size *****/
-$font-size-large: 2.5em;
+$font-size-large: 2.5rem;
 
 /****** mixins ******/
 /****** family ******/
@@ -69,21 +69,21 @@ $font-size-large: 2.5em;
     margin-top: 0;
 
     &__h1t {
-        font-size: 1.875em;
-        line-height: 2.734em;
+        font-size: 1.875rem;
+        line-height: 2.734rem;
     }
     
     &__h4 {
-        font-size: 1.125em;
-        line-height: 1.64em;
+        font-size: 1.125rem;
+        line-height: 1.64rem;
         color: white;
     }
 
     &__menu-title {
         @extend %font-medium;
         @extend %font-base;
-        font-size: 1.125em;
-        line-height: 1.318em;
+        font-size: 1.125rem;
+        line-height: 1.318rem;
     }
 }
 
@@ -94,13 +94,13 @@ $font-size-large: 2.5em;
     &__restaurant-name {
         @extend %font-title;
         font-weight: 400;
-        font-size: 1.75em;
-        line-height: 2.55em;
+        font-size: 1.75rem;
+        line-height: 2.55rem;
     }
     
     &__h2 { 
-        font-size: 1.5em;
-        line-height: 1.758em;
+        font-size: 1.5rem;
+        line-height: 1.758rem;
     }
 
     &__center {
@@ -110,25 +110,25 @@ $font-size-large: 2.5em;
 }
 
 .paragraph {
-    font-size: 1em;
-    line-height: 1.172em;
+    font-size: 1rem;
+    line-height: 1.172rem;
     @extend %font-medium;
 
     &__reservation {
         @extend %font-light;
-        font-size: 1.125em;
-        line-height: 1.318em;
+        font-size: 1.125rem;
+        line-height: 1.318rem;
     }
 
     &__card {
-        font-size: 1.0625em;
-        line-height: 1.245em;
+        font-size: 1.0625rem;
+        line-height: 1.245rem;
     }
     
     &__button {
         @extend %font-medium;
-        font-size: 1em;
-        line-height: 1.172em;
+        font-size: 1rem;
+        line-height: 1.172rem;
         color: white;
         margin: 0;
         padding: 0;
@@ -136,14 +136,14 @@ $font-size-large: 2.5em;
 
     &__menu {
         margin-top: 40px;
-        font-size: 1em;
-        line-height: 1.172em;
+        font-size: 1rem;
+        line-height: 1.172rem;
         @extend %font-light;
     }
 
     &__menutext {
-        font-size: 0.94em;
-        line-height: 1.102em;
+        font-size: 0.94rem;
+        line-height: 1.102rem;
         @extend %font-light;
 
         &__price {
@@ -152,8 +152,8 @@ $font-size-large: 2.5em;
     }
 
     &__new {
-        font-size: 0.875em;
-        line-height: 1.0256em;
+        font-size: 0.875rem;
+        line-height: 1.0256rem;
         width: 61.37px;
         height: 16px;
         margin: 0;
@@ -669,7 +669,7 @@ header {
 
                 .fa-circle-check {
                     color: white;
-                    font-size: 1.5em;
+                    font-size: 1.5rem;
                 }
             }
         }
@@ -764,8 +764,8 @@ header {
             padding: 0px 15px 27px 15px;
 
             h2 {
-                font-size: 2.5em;
-                line-height: 2.93em;
+                font-size: 2.5rem;
+                line-height: 2.93rem;
                 margin-top: -10px;
                 margin-bottom: 0;
             }

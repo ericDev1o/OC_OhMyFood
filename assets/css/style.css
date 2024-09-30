@@ -37,17 +37,17 @@
   margin-top: 0;
 }
 .title-h1h4__h1t {
-  font-size: 1.875em;
-  line-height: 2.734em;
+  font-size: 1.875rem;
+  line-height: 2.734rem;
 }
 .title-h1h4__h4 {
-  font-size: 1.125em;
-  line-height: 1.64em;
+  font-size: 1.125rem;
+  line-height: 1.64rem;
   color: white;
 }
 .title-h1h4__menu-title {
-  font-size: 1.125em;
-  line-height: 1.318em;
+  font-size: 1.125rem;
+  line-height: 1.318rem;
 }
 
 .title-h2h3 {
@@ -55,12 +55,12 @@
 }
 .title-h2h3__restaurant-name {
   font-weight: 400;
-  font-size: 1.75em;
-  line-height: 2.55em;
+  font-size: 1.75rem;
+  line-height: 2.55rem;
 }
 .title-h2h3__h2 {
-  font-size: 1.5em;
-  line-height: 1.758em;
+  font-size: 1.5rem;
+  line-height: 1.758rem;
 }
 .title-h2h3__center {
   margin-left: 0;
@@ -68,36 +68,36 @@
 }
 
 .paragraph {
-  font-size: 1em;
-  line-height: 1.172em;
+  font-size: 1rem;
+  line-height: 1.172rem;
 }
 .paragraph__reservation {
-  font-size: 1.125em;
-  line-height: 1.318em;
+  font-size: 1.125rem;
+  line-height: 1.318rem;
 }
 .paragraph__card {
-  font-size: 1.0625em;
-  line-height: 1.245em;
+  font-size: 1.0625rem;
+  line-height: 1.245rem;
 }
 .paragraph__button {
-  font-size: 1em;
-  line-height: 1.172em;
+  font-size: 1rem;
+  line-height: 1.172rem;
   color: white;
   margin: 0;
   padding: 0;
 }
 .paragraph__menu {
   margin-top: 40px;
-  font-size: 1em;
-  line-height: 1.172em;
+  font-size: 1rem;
+  line-height: 1.172rem;
 }
 .paragraph__menutext {
-  font-size: 0.94em;
-  line-height: 1.102em;
+  font-size: 0.94rem;
+  line-height: 1.102rem;
 }
 .paragraph__new {
-  font-size: 0.875em;
-  line-height: 1.0256em;
+  font-size: 0.875rem;
+  line-height: 1.0256rem;
   width: 61.37px;
   height: 16px;
   margin: 0;
@@ -559,7 +559,7 @@ header .title-h1h4 {
 }
 .menu .menu-item .row-check .dish-check-background .fa-circle-check {
   color: white;
-  font-size: 1.5em;
+  font-size: 1.5rem;
 }
 .menu .menu-item .row-check:hover .dish-check-background,
 .menu .menu-item .row-check:active .dish-check-background {
@@ -634,8 +634,8 @@ header .title-h1h4 {
     padding: 0px 15px 27px 15px;
   }
   .localisation-reservation .reservation h2 {
-    font-size: 2.5em;
-    line-height: 2.93em;
+    font-size: 2.5rem;
+    line-height: 2.93rem;
     margin-top: -10px;
     margin-bottom: 0;
   }
