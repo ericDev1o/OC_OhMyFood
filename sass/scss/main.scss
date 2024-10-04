@@ -10,58 +10,6 @@ $main-backgrd-color: #f6f6f6;
 $main-backgrd-color-light: #fafafa;
 $function-button-color: #7e7e7e;
 
-/****** fonts system ******/
-/***** variables ******/
-/****** family ******/
-$font-family-primary: 'Shrikhand', sans-serif;
-$font-family-secondary: 'Roboto', sans-serif;
-/****** weight ******/
-$font-weight-light: 300;
-$font-weight-medium: 500;
-$font-weight-bold: 700;
-/****** size *****/
-$font-size-large: 2.5rem;
-
-/****** mixins ******/
-/****** family ******/
-@mixin font-family($family) {
-    font-family: $family;
-}
-/****** weight ******/
-@mixin font-weight($weight) {
-    font-weight: $weight;
-}
-
-/****** size ******/
-@mixin font-size($size) {
-    font-size: $font-size-large;
-}
-
-/****** placeholders ******/
-%font-title {
-    @include font-family($font-family-primary)
-}
-
-%font-base {
-    @include font-family($font-family-secondary);
-}
-
-%font-bold {
-    @include font-weight($font-weight-bold);
-}
-
-%font-medium {
-    @include font-weight($font-weight-medium);
-}
-
-%font-light {
-    @include font-weight($font-weight-light);
-}
-
-%font-large {
-    @include font-size($font-size-large);
-}
-/****** end fonts system ******/
 /****** fonts ******/
 .title-h1h4 {
     @extend %font-title;
@@ -121,6 +69,7 @@ $font-size-large: 2.5rem;
     }
 
     &__card {
+        @extend %font-light;
         font-size: 1.0625rem;
         line-height: 1.245rem;
     }

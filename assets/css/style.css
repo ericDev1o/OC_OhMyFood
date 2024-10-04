@@ -1,14 +1,14 @@
-/****** general ******/
-/****** colors ******/
 /****** fonts system ******/
 /***** variables ******/
 /****** family ******/
 /****** weight ******/
 /****** size *****/
+/****** fonts system ******/
 /****** mixins ******/
 /****** family ******/
 /****** weight ******/
 /****** size ******/
+/****** fonts system ******/
 /****** placeholders ******/
 .title-h2h3__restaurant-name, .title-h1h4 {
   font-family: "Shrikhand", sans-serif;
@@ -26,11 +26,12 @@
   font-weight: 500;
 }
 
-.paragraph__menutext, .paragraph__menu, .paragraph__reservation {
+.paragraph__menutext, .paragraph__menu, .paragraph__card, .paragraph__reservation {
   font-weight: 300;
 }
 
-/****** end fonts system ******/
+/****** general ******/
+/****** colors ******/
 /****** fonts ******/
 .title-h1h4 {
   font-weight: 400;

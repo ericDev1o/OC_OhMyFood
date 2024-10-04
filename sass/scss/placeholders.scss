@@ -1,0 +1,25 @@
+/****** fonts system ******/
+/****** placeholders ******/
+%font-title {
+    @include font-family($font-family-primary)
+}
+
+%font-base {
+    @include font-family($font-family-secondary);
+}
+
+%font-bold {
+    @include font-weight($font-weight-bold);
+}
+
+%font-medium {
+    @include font-weight($font-weight-medium);
+}
+
+%font-light {
+    @include font-weight($font-weight-light);
+}
+
+%font-large {
+    @include font-size($font-size-large);
+}

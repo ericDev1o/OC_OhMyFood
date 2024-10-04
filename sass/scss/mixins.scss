@@ -1,0 +1,15 @@
+/****** fonts system ******/
+/****** mixins ******/
+/****** family ******/
+@mixin font-family($family) {
+    font-family: $family;
+}
+/****** weight ******/
+@mixin font-weight($weight) {
+    font-weight: $weight;
+}
+
+/****** size ******/
+@mixin font-size($size) {
+    font-size: $font-size-large;
+}
