@@ -1,5 +1,5 @@
-/****** fonts system ******/
-/***** variables ******/
+/****** colors ******/
+/****** fonts ******/
 /****** family ******/
 /****** weight ******/
 /****** size *****/
@@ -31,7 +31,6 @@
 }
 
 /****** general ******/
-/****** colors ******/
 /****** fonts ******/
 .title-h1h4 {
   font-weight: 400;
@@ -51,9 +50,6 @@
   line-height: 1.318rem;
 }
 
-.title-h2h3 {
-  margin-left: 20px;
-}
 .title-h2h3__restaurant-name {
   font-weight: 400;
   font-size: 1.75rem;
@@ -307,12 +303,13 @@ header .title-h1h4 {
 .restaurants {
   width: 100%;
   background-color: #f6f6f6;
-  padding: 55px 0;
+  padding: 6vh 0;
+}
+.restaurants h2 {
+  margin-left: 6vw;
 }
 .restaurants .restaurant-cards {
-  margin-top: 6%;
-  margin-right: 6%;
-  margin-left: 6%;
+  margin: 5vw 5vw 0 5vw;
   display: flex;
   flex-direction: column;
   gap: 11px 0;
@@ -353,17 +350,18 @@ header .title-h1h4 {
   position: relative;
   top: -5px;
 }
+.restaurants .restaurant-cards .restaurant-card .card-content .text-left {
+  padding-left: 4vw;
+}
 .restaurants .restaurant-cards .restaurant-card .card-content .text-left h3 {
   margin-top: -5%;
   margin-bottom: 0;
   width: 100%;
-  margin-left: 7%;
 }
 .restaurants .restaurant-cards .restaurant-card .card-content .paragraph__card {
   line-height: 0;
   margin: 0;
   margin-top: 8%;
-  padding-left: 7%;
 }
 
 /****** end landing page ******/
@@ -584,7 +582,7 @@ header .title-h1h4 {
 /****** media queries ******/
 /****** small mobile devices ******/
 /****** restaurant page ******/
-@media (max-width: 375px) {
+@media (max-width: 374px) {
   .img-cover {
     flex-direction: column;
   }
@@ -664,9 +662,7 @@ header .title-h1h4 {
   /****** restaurants ******/
   .restaurants {
     width: 100%;
-    padding-top: 25px;
-    padding-bottom: 0;
-    padding-left: 7vw;
+    padding: 3.3vh 0 3.3vh 7vw;
     box-sizing: border-box;
     display: flex;
     flex-direction: column;
@@ -675,12 +671,11 @@ header .title-h1h4 {
   }
   .restaurants h2 {
     margin-left: 80px;
-    margin-bottom: -60px;
+    margin-bottom: -1vh;
   }
   .restaurants .restaurant-cards {
     width: 100%;
-    margin-left: 80px;
-    margin-bottom: 24px;
+    margin: 4.4vh 5vw 0 5vw;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
@@ -786,7 +781,7 @@ header .title-h1h4 {
   display: flex;
   align-items: center;
   padding: 38px 9vw;
-  gap: 0 7%;
+  gap: 0 4vw;
   background: #f6f6f6;
   white-space: nowrap;
   text-overflow: ellipsis;
@@ -832,7 +827,7 @@ header .title-h1h4 {
 @media (min-width: 1024px) {
   .button-choose {
     margin-top: 4px;
-    gap: 0 1.5vw;
+    gap: 0 1.3vw;
     padding: 38px 2.5vw;
   }
   .button-choose:not(:last-child) {
@@ -875,7 +870,7 @@ header .title-h1h4 {
 .heart-container:hover #gradient1, .heart-container:hover #gradient2, .heart-container:hover #gradient3, .heart-container:hover #gradient4 {
   opacity: 1;
 }
-@media (max-width: 375px) {
+@media (max-width: 374px) {
   .heart-container #white, .heart-container #gradient {
     left: -11px;
   }

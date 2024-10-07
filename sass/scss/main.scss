@@ -1,15 +1,4 @@
 /****** general ******/
-/****** colors ******/
-$primary-color: #9356dc;
-$primary-color-light: #a880da;
-$secondary-color: #ff79da;
-$secondary-color-light: #fa96de;
-$tertiary-color: #99e2d0;
-$new-color: #008766;
-$main-backgrd-color: #f6f6f6;
-$main-backgrd-color-light: #fafafa;
-$function-button-color: #7e7e7e;
-
 /****** fonts ******/
 .title-h1h4 {
     @extend %font-title;
@@ -37,7 +26,6 @@ $function-button-color: #7e7e7e;
 
 .title-h2h3 {
     @extend %font-bold;
-    margin-left: 20px;
 
     &__restaurant-name {
         @extend %font-title;
@@ -333,12 +321,14 @@ header {
 .restaurants {
     width: 100%;
     background-color: $main-backgrd-color;
-    padding: 55px 0;
+    padding: 6vh 0;
+
+    h2 {
+        margin-left: 6vw;
+    }
 
     .restaurant-cards {
-        margin-top: 6%;
-        margin-right: 6%;
-        margin-left: 6%;
+        margin: 5vw 5vw 0 5vw;
         display: flex;
         flex-direction: column;
         gap: 11px 0;
@@ -381,18 +371,20 @@ header {
                 position: relative;
                 top: -5px;
 
+                .text-left {
+                    padding-left: 4vw;
+                }
+
                 .text-left h3 {
                     margin-top: -5%;
                     margin-bottom: 0;
                     width: 100%;
-                    margin-left: 7%;
                 }
 
                 .paragraph__card {
                     line-height: 0;
                     margin: 0;
                     margin-top: 8%;
-                    padding-left: 7%;
                 }
             }
         }
@@ -648,7 +640,7 @@ header {
 /****** media queries ******/
 /****** small mobile devices ******/
 /****** restaurant page ******/
-@media (max-width: 375px) {
+@media (max-width: 374px) {
     .img-cover{
         flex-direction: column;
     }
@@ -749,9 +741,7 @@ header {
     /****** restaurants ******/
     .restaurants {
         width: 100%;
-        padding-top: 25px;
-        padding-bottom: 0;
-        padding-left: 7vw;
+        padding: 3.3vh 0 3.3vh 7vw;
         box-sizing: border-box;
         display: flex;
         flex-direction: column;
@@ -760,13 +750,12 @@ header {
 
         h2 {
             margin-left: 80px;
-            margin-bottom: -60px;
+            margin-bottom: -1vh;
         }
 
         .restaurant-cards {
             width: 100%;
-            margin-left: 80px;
-            margin-bottom: 24px;
+            margin: 4.4vh 5vw 0 5vw;
             display: flex;
             flex-direction: row;
             flex-wrap: wrap;
