@@ -900,10 +900,10 @@ header .title-h1h4 {
 footer {
   background-color: #353535;
   color: white;
-  padding: 7% 0 5% 8%;
+  padding: 3vh 0 2vh 7vw;
 }
 footer h4 {
-  margin-bottom: 6%;
+  margin-bottom: 3vh;
 }
 footer .footer-container {
   display: flex;
@@ -913,45 +913,43 @@ footer .footer-container {
 footer .footer-container .footer-icons {
   display: flex;
   align-items: center;
-  margin-bottom: 1%;
 }
 footer .footer-container .footer-icons i {
-  font-size: 16px;
+  font-size: 15px;
 }
 footer .footer-container .footer-icons .paragraph__button {
-  margin-left: 3%;
+  margin-left: 3vw;
 }
 footer a {
   padding-left: 0;
-  margin-bottom: 2%;
+  margin-bottom: 0.6vh;
 }
 footer a:last-child {
-  margin-top: 1.5%;
-  margin-bottom: 2%;
+  margin-top: 0.4vh;
 }
 
 /****** media queries ******/
 /****** medium devices ******/
 @media (min-width: 768px) {
   footer {
-    padding: 3% 0 2% 3.2%;
+    padding: 2.75vh 0 1.5vh 3.2vw;
   }
   footer h4 {
-    margin-bottom: 2.5%;
+    margin-bottom: 2.5vh;
   }
   footer .footer-container .footer-icons {
-    margin-bottom: 0.5%;
+    margin-bottom: 0.7vh;
   }
   footer .footer-container .footer-icons .paragraph__button {
-    margin-left: 1.5%;
+    margin-left: 1.5vw;
   }
   footer a {
     padding-left: 0;
-    margin-bottom: 0.5%;
+    margin-bottom: 0.25vh;
   }
   footer a:last-child {
-    margin-top: 0.5%;
-    margin-bottom: 1%;
+    margin-top: 0.7vh;
+    margin-bottom: 3vh;
   }
 }
 /***** large devices ******/
