@@ -752,11 +752,11 @@ header .title-h1h4 {
   border-radius: 20px;
   border: none;
   box-shadow: 0 8px 4px rgba(0, 0, 0, 0.1);
-  height: 50px;
 }
 
 .button-explore-size {
   width: 218px;
+  height: 50px;
 }
 
 .button-command-size {
@@ -807,9 +807,6 @@ header .title-h1h4 {
   background-color: #9356dc;
   color: white;
 }
-.button-choose .button-choose-size {
-  height: 55px;
-}
 .button-choose .fa-mobile-screen-button,
 .button-choose .fa-list-ul {
   color: #7e7e7e;
@@ -818,11 +815,15 @@ header .title-h1h4 {
   color: #9356dc;
 }
 
+.button-choose-height {
+  height: 50px;
+}
+
 /****** media queries ******/
 /***** medium devices ******/
 @media (min-width: 768px) {
   .button-choose {
-    gap: 0 3%;
+    gap: 0 2vw;
     padding: 38px 4vw;
   }
 }
@@ -836,7 +837,7 @@ header .title-h1h4 {
   .button-choose:not(:last-child) {
     margin-bottom: 0;
   }
-  .button-choose-size {
+  .button-choose-width {
     width: 22.5vw;
   }
 }
@@ -976,7 +977,7 @@ footer a:last-child {
     text-overflow: ellipsis;
     margin-left: 30vw;
     margin-top: 7.5vh;
-    margin-bottom: 3vh;
+    margin-bottom: 0.5vh;
   }
   footer .footer-container .footer-icons {
     gap: 0 0.5vw;

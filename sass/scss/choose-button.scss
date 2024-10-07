@@ -31,10 +31,6 @@
         background-color: $primary-color;
         color: white;
     }
-
-    .button-choose-size {
-        height: 55px;
-    }
     
     .fa-mobile-screen-button, 
     .fa-list-ul {
@@ -46,11 +42,15 @@
     }
 }
 
+.button-choose-height {
+    height: 50px;
+}
+
 /****** media queries ******/
 /***** medium devices ******/
 @media (min-width: 768px) {
     .button-choose {
-        gap: 0 3%;
+        gap: 0 2vw;
         padding: 38px 4vw;
     }
 }
@@ -67,7 +67,7 @@
         }
     }
 
-    .button-choose-size {
+    .button-choose-width {
         width: 22.5vw;
     }
 }
