@@ -411,3 +411,13 @@ header {
         }
     }
 }
+
+@media (prefers-reduced-motion) {
+    .loaded {
+        -ms-animation: spin 6s forwards;
+        -o-animation: spin 6s forwards;
+        -moz-animation: spin 6s forwards;
+        -webkit-animation: spin 6s forwards;
+        animation: spin 6s forwards;
+    }
+}
