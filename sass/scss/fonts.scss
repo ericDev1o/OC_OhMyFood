@@ -1,0 +1,97 @@
+.title-h1h4 {
+    @extend %font-title;
+    font-weight: 400;
+    margin-top: 0;
+
+    &__h1t {
+        font-size: 1.875rem;
+        line-height: 2.734rem;
+    }
+    
+    &__h4 {
+        font-size: 1.125rem;
+        line-height: 1.64rem;
+        color: white;
+    }
+
+    &__menu-title {
+        @extend %font-medium;
+        @extend %font-base;
+        font-size: 1.125rem;
+        line-height: 1.318rem;
+    }
+}
+
+.title-h2h3 {
+    @extend %font-bold;
+
+    &__restaurant-name {
+        @extend %font-title;
+        font-weight: 400;
+        font-size: 1.75rem;
+        line-height: 2.55rem;
+    }
+    
+    &__h2 { 
+        font-size: 1.5rem;
+        line-height: 1.758rem;
+    }
+
+    &__center {
+        margin-left: 0;
+        padding-left: 0;
+    }
+}
+
+.paragraph {
+    font-size: 1rem;
+    line-height: 1.172rem;
+    @extend %font-medium;
+
+    &__reservation {
+        @extend %font-light;
+        font-size: 1.125rem;
+        line-height: 1.318rem;
+    }
+
+    &__card {
+        @extend %font-light;
+        font-size: 1.0625rem;
+        line-height: 1.245rem;
+    }
+    
+    &__button {
+        @extend %font-medium;
+        font-size: 1rem;
+        line-height: 1.172rem;
+        color: white;
+        margin: 0;
+        padding: 0;
+    }
+
+    &__menu {
+        margin-top: 40px;
+        font-size: 1rem;
+        line-height: 1.172rem;
+        @extend %font-light;
+    }
+
+    &__menutext {
+        font-size: 0.94rem;
+        line-height: 1.102rem;
+        @extend %font-light;
+
+        &__price {
+            @extend %font-bold;
+        }
+    }
+
+    &__new {
+        font-size: 0.875rem;
+        line-height: 1.0256rem;
+        width: 61.37px;
+        height: 16px;
+        margin: 0;
+        text-align: center;
+    }
+}

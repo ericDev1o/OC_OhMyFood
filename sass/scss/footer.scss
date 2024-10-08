@@ -1,10 +1,18 @@
+/* This file, 
+the title and some exceptions apart,
+is a vw and eventually vh use test.
+In order to answer to 
+changing customer's requirements 
+other than 375 and 1440 wide screens provided
+it can be useful.
+*/
 footer {
     background-color: #353535;
     color: white;
-    padding: 7% 0 5% 8%;
+    padding: 2.8vh 0 2vh 6vw;
 
     h4 {
-        margin-bottom: 6%;
+        margin-bottom: 3vh;
     }
 
     .footer-container {
@@ -15,26 +23,24 @@ footer {
         .footer-icons {
             display: flex;
             align-items: center;
-            margin-bottom: 1%;
 
             i {
-                font-size: 16px;
+                font-size: 15px;
             }
 
             .paragraph__button {
-                margin-left: 3%;
+                margin-left: 9px;
             }
         }
     }
     
     a {
         padding-left: 0;
-        margin-bottom: 2%;
+        margin-bottom: 0.6vh;
     }
 
     a:last-child {
-        margin-top: 1.5%;
-        margin-bottom: 2%;
+        margin-top: 0.4vh;
     }
 }
 
@@ -42,30 +48,30 @@ footer {
 /****** medium devices ******/
 @media (min-width: 768px) {
     footer {
-        padding: 3% 0 2% 3.2%;
+        padding: 2.75vh 0 1.5vh 3.2vw;
 
         h4 {
-            margin-bottom: 2.5%;
+            margin-bottom: 2.5vh;
         }
 
         .footer-container {
             .footer-icons {
-                margin-bottom: 0.5%;
+                margin-bottom: 0.7vh;
 
                 .paragraph__button {
-                    margin-left: 1.5%;
+                    margin-left: 1.5vw;
                 }
             }
         }
 
         a {
             padding-left: 0;
-            margin-bottom: 0.5%;
+            margin-bottom: 0.25vh;
         }
     
         a:last-child {
-            margin-top: 0.5%;
-            margin-bottom: 1%;
+            margin-top: 0.7vh;
+            margin-bottom: 3vh;
         }
     }
 }
@@ -74,43 +80,49 @@ footer {
     footer {
         display: flex;
         flex-direction: row-reverse;
-        justify-content: flex-end;
         align-items: center;
         padding: 0;
 
         .title-h1h4 {
             margin-bottom: 0;
-            margin-top: 2%;
-            margin-left: 6.5%;
-            margin-right: 5%;
+            margin-top: 25px;
+            margin-left: 90px;
+            margin-right: 67px;
         }
     
         .footer-container {
-            width: 100%;
+            width: 100vw;
             display: flex;
             flex-direction: row;
             justify-content: flex-end;
             white-space: nowrap;
             text-overflow: ellipsis;
-            margin-left: 30%;
-            margin-top: 4.6%;
-            margin-bottom: 1.7%;
+            margin-left: 30vw;
+            margin-top: 7.5vh;
+            margin-bottom: 0.5vh;
 
             .footer-icons {
                 .paragraph__button {
                     margin-left: 0;
                 }
 
-                gap: 0 7%;
+                gap: 0 5px;
             }
         }
 
         a {
-            padding-left: 5%;
+            padding-left: 10px;
         }
 
+        // Mentions l.
+        a:nth-child(3) {
+            padding-left: 44px;
+        }
+
+        // Contact
         a:last-child {
             margin-top: 0;
+            padding-left: 16px;
         }
     }
 }

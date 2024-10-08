@@ -7,21 +7,32 @@
     padding-bottom: 0;
     margin-bottom: 0;
 }
-
+/****** for your information
+in case of modification 
+in the HTML 
+of below classes 
+application limited to 4 classes per element
+the readability decision I followed is:
+-> 1 whitespace on the right before new line
+-> tabulations on the left to indent as a first technical try
+******/
 .button-explore-command {
     border-radius: 20px;
     border: none;
     box-shadow: 0 8px 4px rgba(0, 0, 0, 0.1);
+}
+
+.button-explore-command-height {
     height: 50px;
 }
 
-.button-explore-size {
+.button-explore-width {
     width: 218px;
 }
 
-.button-command-size {
+.button-command-width-vertical-margin {
     width: 186px;
-    margin: 22px 0 32px 0;
+    margin: 27px 0 39px 0;
 }
 
 .button-explore-command:hover {

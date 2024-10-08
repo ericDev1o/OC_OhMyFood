@@ -1,0 +1,360 @@
+/****** DRY is violated 
+for reading and 
+maintenability speed ******/
+* {
+    @extend %font-base;
+    margin: 0;
+    padding: 0;
+
+    main {
+        width: 100vw;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        z-index: 0;
+        overflow-x: hidden;
+
+        a {
+            padding-left: 0;
+        }
+    }
+
+    a {
+        text-decoration: none;
+        color: inherit;
+    }
+
+    button:hover {
+        cursor: pointer;
+    }
+}
+/****** end of DRY violation ******/
+/****** header ******/
+// h1 is a test in case customer's needs or device changes
+.header-page {
+    display: flex;
+    align-items: center;
+    padding: 1vh;
+
+    a {
+        padding-left: 2vw;
+
+        i {
+            font-size: 30px;
+        }
+    }
+
+    h1 {
+        display: flex;
+        justify-content: center;
+        flex: 1;
+        margin-top: 0.7vh;
+        margin-bottom: -0.3vh;
+        margin-right: 10.5vw;
+    }
+}
+
+.page-img-container {
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    picture {
+        width: 100%;
+
+        .resto-image {
+            width: 100%;
+            height: 275px;
+            object-fit: cover;
+            object-position: 50% 60%
+        }
+    }
+
+    .img-cover {
+        background-color: $main-backgrd-color;
+        width: 100%;
+        margin-top: -65px;
+        padding-top: 32px;
+        padding-bottom: 12px;
+        border-top-left-radius: 40px;
+        border-top-right-radius: 40px;
+        padding-left: 5vw;
+        padding-right: 2.6vw;
+        box-sizing: border-box;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        object-fit: cover;
+        object-position: 50% 60%;
+        position: relative;
+
+        h1 {
+            margin: 0;
+        }
+    }
+}
+
+@-ms-keyframes dishes-fade-in {
+    0% {
+        opacity: 0;
+        transform: translateY(+50%);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@-o-keyframes dishes-fade-in {
+    0% {
+        opacity: 0;
+        transform: translateY(+50%);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@-moz-keyframes dishes-fade-in {
+    0% {
+        opacity: 0;
+        transform: translateY(+50%);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@-webkit-keyframes dishes-fade-in {
+    0% {
+        opacity: 0;
+        transform: translateY(+50%);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes dishes-fade-in {
+    0% {
+        opacity: 0;
+        transform: translateY(+50%);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.menu-width {
+    width: 100vw;
+}
+
+.menu {
+    background-color: $main-backgrd-color;
+
+    .paragraph__menu {
+        margin-bottom: 4px;
+    }
+
+    .paragraph__menu__entrees {
+        margin-top: 15px;
+    }
+
+    #entrees {
+        -ms-animation: dishes-fade-in 1s ease-in-out;
+        -o-animation: dishes-fade-in 1s ease-in-out;
+        -moz-animation: dishes-fade-in 1s ease-in-out;
+        -webkit-animation: dishes-fade-in 1s ease-in-out;
+        animation: dishes-fade-in 1s ease-in-out;
+    }
+
+    #plats {
+        -ms-animation: dishes-fade-in 1s 1s ease-in-out;
+        -o-animation: dishes-fade-in 1s 1s ease-in-out;
+        -moz-animation: dishes-fade-in 1s 1s ease-in-out;
+        -webkit-animation: dishes-fade-in 1s 1s ease-in-out;
+        animation: dishes-fade-in 1s 1s ease-in-out;
+    }
+
+    #desserts {
+        -ms-animation: dishes-fade-in 1s 2s ease-in-out;
+        -o-animation: dishes-fade-in 1s 2s ease-in-out;
+        -moz-animation: dishes-fade-in 1s 2s ease-in-out;
+        -webkit-animation: dishes-fade-in 1s 2s ease-in-out;
+        animation: dishes-fade-in 1s 2s ease-in-out;
+    }
+
+    .line {
+        width: 40px;
+        height: 3px;
+        background-color: $tertiary-color;
+    }
+
+    .menu-left {
+        margin-left: 4vw;
+    }
+
+    .menu-item {
+        cursor: pointer;
+        margin: 12.5px 15px;
+        background-color: white;
+        border-radius: 15px;
+        box-shadow: 0 8px 4px rgba(0, 0, 0, 0.05);
+        display: flex;
+        flex-direction: column;
+        overflow: hidden;
+
+        .row-check {
+            display: flex;
+            justify-content: space-between;
+            align-items: stretch;
+
+            .dish-content {
+                flex-grow: 1;
+                padding: 15px 0 15px 15px;
+                transition: 
+                    width 0.5s ease-in-out,
+                    opacity 0.5s ease-in-out;
+                overflow: hidden;
+
+                h4,
+                span {
+                    display: inline;
+                }
+
+                h4 {
+                    margin-top: 0;
+                    margin-bottom: 5px;
+                }
+
+                .align-price {
+                    display: flex;
+                    justify-content: space-between;
+                    align-items: flex-end;
+                }
+            }
+
+            .dish-check-background {
+                width: 15px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                background-color: white;
+                transform: translateX(100%);
+                transition: 
+                    transform 0.5s ease-in-out,
+                    background-color 0.5s ease-in-out,
+                    width 0.5s ease-in-out;
+
+                .fa-circle-check {
+                    color: white;
+                    font-size: 1.5rem;
+                }
+            }
+        }
+
+        .row-check:hover .dish-check-background,
+        .row-check:active .dish-check-background {
+            width: 60px;
+            margin-left: 15px;
+            transform: translateX(0);
+            background-color: $tertiary-color;
+
+            .dish-content {
+                width: calc(100% - 60px);
+            }
+
+            .ellipsis {
+                white-space: nowrap;
+                overflow: hidden;
+                text-overflow: ellipsis;
+            }
+        }
+    }
+}
+/****** media queries ******/
+/****** small mobile devices ******/
+/****** restaurant page ******/
+@media (max-width: 374px) {
+    .img-cover{
+        flex-direction: column;
+    }
+}
+
+/****** medium devices ******/
+@media (min-width: 768px) {
+    /****** restaurant page ******/
+    .menu-width {
+        width: 75.5%;
+    }
+
+    .page-img-container {
+        .img-cover {
+            width: 75.5%;
+            padding-left: 13px;
+            display: flex;
+            justify-content: center;
+            
+
+            .title-h2h3__restaurant-name {
+                margin-right: 2%;
+            }
+        }
+    }
+}
+
+/****** large devices ******/
+@media (min-width: 1024px) {
+    /***** restaurant page ******/
+    .menu {
+        .menu-left {
+            margin-left: 14.5vw;
+            margin-right: 14.5vw;
+        }
+
+        .menu-item {
+            margin-left: 14.5vw;
+            margin-right: 14.5vw;
+        }
+    }
+}
+
+@media (prefers-reduced-motion) {
+    .loaded {
+        -ms-animation: spin 6s both;
+        -o-animation: spin 6s both;
+        -moz-animation: spin 6s both;
+        -webkit-animation: spin 6s both;
+        animation: spin 6s both;
+    }
+    .menu {
+        #entrees {
+            -ms-animation: dishes-fade-in 6s ease-in-out;
+            -o-animation: dishes-fade-in 6s ease-in-out;
+            -moz-animation: dishes-fade-in 6s ease-in-out;
+            -webkit-animation: dishes-fade-in 6s ease-in-out;
+            animation: dishes-fade-in 6s ease-in-out;
+        }
+
+        #plats {
+            -ms-animation: dishes-fade-in 6s 6s ease-in-out;
+            -o-animation: dishes-fade-in 6s 6s ease-in-out;
+            -moz-animation: dishes-fade-in 6s 6s ease-in-out;
+            -webkit-animation: dishes-fade-in 6s 6s ease-in-out;
+            animation: dishes-fade-in 6s 6s ease-in-out;
+        }
+
+        #desserts {
+            -ms-animation: dishes-fade-in 6s 12s ease-in-out;
+            -o-animation: dishes-fade-in 6s 12s ease-in-out;
+            -moz-animation: dishes-fade-in 6s 12s ease-in-out;
+            -webkit-animation: dishes-fade-in 6s 12s ease-in-out;
+            animation: dishes-fade-in 6s 12s ease-in-out;
+        }
+    }
+}
