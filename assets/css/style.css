@@ -99,7 +99,7 @@
   text-align: center;
 }
 
-/****** general ******/
+/****** general landing page styling ******/
 * {
   margin: 0;
   padding: 0;
@@ -238,7 +238,6 @@
   position: fixed;
 }
 
-/****** landing page ******/
 /****** header ******/
 header {
   text-align: center;
@@ -362,229 +361,6 @@ header .title-h1h4 {
   margin-top: 8%;
 }
 
-/****** end landing page ******/
-/****** restaurant page ******/
-/****** header ******/
-.header-page {
-  display: flex;
-  align-items: center;
-  padding: 1vh;
-}
-.header-page h1 {
-  display: flex;
-  justify-content: center;
-  flex: 1;
-  margin-top: 0;
-  margin-bottom: 0;
-}
-.header-page a {
-  padding-left: 23px;
-}
-.header-page a i {
-  font-size: 30px;
-}
-
-.page-img-container {
-  width: 100%;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-.page-img-container picture {
-  width: 100%;
-}
-.page-img-container picture .resto-image {
-  width: 100%;
-  height: 275px;
-  object-fit: cover;
-  object-position: 50% 60%;
-}
-.page-img-container .img-cover {
-  background-color: #f6f6f6;
-  width: 100%;
-  margin-top: -65px;
-  padding-top: 16px;
-  border-top-left-radius: 40px;
-  border-top-right-radius: 40px;
-  padding-left: 17px;
-  padding-right: 17px;
-  box-sizing: border-box;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  object-fit: cover;
-  object-position: 50% 60%;
-  position: relative;
-}
-.page-img-container .img-cover h1 {
-  margin: 0;
-}
-
-@-ms-keyframes dishes-fade-in {
-  0% {
-    opacity: 0;
-    transform: translateY(50%);
-  }
-  100% {
-    opacity: 1;
-    transform: translateY(0);
-  }
-}
-@-o-keyframes dishes-fade-in {
-  0% {
-    opacity: 0;
-    transform: translateY(50%);
-  }
-  100% {
-    opacity: 1;
-    transform: translateY(0);
-  }
-}
-@-moz-keyframes dishes-fade-in {
-  0% {
-    opacity: 0;
-    transform: translateY(50%);
-  }
-  100% {
-    opacity: 1;
-    transform: translateY(0);
-  }
-}
-@-webkit-keyframes dishes-fade-in {
-  0% {
-    opacity: 0;
-    transform: translateY(50%);
-  }
-  100% {
-    opacity: 1;
-    transform: translateY(0);
-  }
-}
-@keyframes dishes-fade-in {
-  0% {
-    opacity: 0;
-    transform: translateY(50%);
-  }
-  100% {
-    opacity: 1;
-    transform: translateY(0);
-  }
-}
-.menu-width {
-  width: 100%;
-}
-
-.menu {
-  background-color: #f6f6f6;
-}
-.menu .paragraph__menu {
-  margin-bottom: 1%;
-}
-.menu .paragraph__menu__entrees {
-  margin-top: 15px;
-}
-.menu #entrees {
-  -ms-animation: dishes-fade-in 1s ease-in-out;
-  -o-animation: dishes-fade-in 1s ease-in-out;
-  -moz-animation: dishes-fade-in 1s ease-in-out;
-  -webkit-animation: dishes-fade-in 1s ease-in-out;
-  animation: dishes-fade-in 1s ease-in-out;
-}
-.menu #plats {
-  -ms-animation: dishes-fade-in 1s 1s ease-in-out;
-  -o-animation: dishes-fade-in 1s 1s ease-in-out;
-  -moz-animation: dishes-fade-in 1s 1s ease-in-out;
-  -webkit-animation: dishes-fade-in 1s 1s ease-in-out;
-  animation: dishes-fade-in 1s 1s ease-in-out;
-}
-.menu #desserts {
-  -ms-animation: dishes-fade-in 1s 2s ease-in-out;
-  -o-animation: dishes-fade-in 1s 2s ease-in-out;
-  -moz-animation: dishes-fade-in 1s 2s ease-in-out;
-  -webkit-animation: dishes-fade-in 1s 2s ease-in-out;
-  animation: dishes-fade-in 1s 2s ease-in-out;
-}
-.menu .line {
-  width: 40px;
-  height: 3px;
-  background-color: #99e2d0;
-}
-.menu .menu-left {
-  margin-left: 4vw;
-}
-.menu .menu-item {
-  cursor: pointer;
-  margin: 12.5px 15px;
-  background-color: white;
-  border-radius: 15px;
-  box-shadow: 0 8px 4px rgba(0, 0, 0, 0.1);
-  display: flex;
-  flex-direction: column;
-  overflow: hidden;
-}
-.menu .menu-item .row-check {
-  display: flex;
-  justify-content: space-between;
-  align-items: stretch;
-}
-.menu .menu-item .row-check .dish-content {
-  flex-grow: 1;
-  padding: 15px 0 15px 15px;
-  transition: width 0.5s ease-in-out, opacity 0.5s ease-in-out;
-  overflow: hidden;
-}
-.menu .menu-item .row-check .dish-content h4,
-.menu .menu-item .row-check .dish-content span {
-  display: inline;
-}
-.menu .menu-item .row-check .dish-content h4 {
-  margin-top: 0;
-  margin-bottom: 5px;
-}
-.menu .menu-item .row-check .dish-content .align-price {
-  display: flex;
-  justify-content: space-between;
-  align-items: flex-end;
-}
-.menu .menu-item .row-check .dish-check-background {
-  width: 15px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background-color: white;
-  transform: translateX(100%);
-  transition: transform 0.5s ease-in-out, background-color 0.5s ease-in-out, width 0.5s ease-in-out;
-}
-.menu .menu-item .row-check .dish-check-background .fa-circle-check {
-  color: white;
-  font-size: 1.5rem;
-}
-.menu .menu-item .row-check:hover .dish-check-background,
-.menu .menu-item .row-check:active .dish-check-background {
-  width: 60px;
-  margin-left: 15px;
-  transform: translateX(0);
-  background-color: #99e2d0;
-}
-.menu .menu-item .row-check:hover .dish-check-background .dish-content,
-.menu .menu-item .row-check:active .dish-check-background .dish-content {
-  width: calc(100% - 60px);
-}
-.menu .menu-item .row-check:hover .dish-check-background .ellipsis,
-.menu .menu-item .row-check:active .dish-check-background .ellipsis {
-  white-space: nowrap;
-  overflow: hidden;
-  text-overflow: ellipsis;
-}
-
-/****** media queries ******/
-/****** small mobile devices ******/
-/****** restaurant page ******/
-@media (max-width: 374px) {
-  .img-cover {
-    flex-direction: column;
-  }
-}
 /****** medium devices ******/
 @media (min-width: 768px) {
   .fonctionnement {
@@ -599,19 +375,6 @@ header .title-h1h4 {
   }
   .restaurants h2 {
     margin: 0 6%;
-  }
-  /****** restaurant page ******/
-  .menu-width {
-    width: 75.5%;
-  }
-  .page-img-container .img-cover {
-    width: 75.5%;
-    padding-left: 13px;
-    display: flex;
-    justify-content: center;
-  }
-  .page-img-container .img-cover .title-h2h3__restaurant-name {
-    margin-right: 2%;
   }
 }
 /***** large devices *****/
@@ -685,7 +448,7 @@ header .title-h1h4 {
     height: 30.5vh;
     box-sizing: border-box;
   }
-  .restaurants .restaurant-cards .restaurant-card img {
+  .restaurants .restaurant-cards .restaurant-card .index-image {
     height: 65%;
     object-fit: cover;
     object-position: 50% 60%;
@@ -696,46 +459,6 @@ header .title-h1h4 {
   }
   .restaurants .restaurant-cards .restaurant-card .card-content .text-left {
     padding-left: 1.2vw;
-  }
-  /****** end landing page ******/
-  /***** restaurant page ******/
-  .menu .menu-left {
-    margin-left: 16.5%;
-    margin-right: 16.5%;
-  }
-  .menu .menu-item {
-    margin-left: 16.5%;
-    margin-right: 16.5%;
-  }
-}
-@media (prefers-reduced-motion) {
-  .loaded {
-    -ms-animation: spin 6s both;
-    -o-animation: spin 6s both;
-    -moz-animation: spin 6s both;
-    -webkit-animation: spin 6s both;
-    animation: spin 6s both;
-  }
-  .menu #entrees {
-    -ms-animation: dishes-fade-in 6s ease-in-out;
-    -o-animation: dishes-fade-in 6s ease-in-out;
-    -moz-animation: dishes-fade-in 6s ease-in-out;
-    -webkit-animation: dishes-fade-in 6s ease-in-out;
-    animation: dishes-fade-in 6s ease-in-out;
-  }
-  .menu #plats {
-    -ms-animation: dishes-fade-in 6s 6s ease-in-out;
-    -o-animation: dishes-fade-in 6s 6s ease-in-out;
-    -moz-animation: dishes-fade-in 6s 6s ease-in-out;
-    -webkit-animation: dishes-fade-in 6s 6s ease-in-out;
-    animation: dishes-fade-in 6s 6s ease-in-out;
-  }
-  .menu #desserts {
-    -ms-animation: dishes-fade-in 6s 12s ease-in-out;
-    -o-animation: dishes-fade-in 6s 12s ease-in-out;
-    -moz-animation: dishes-fade-in 6s 12s ease-in-out;
-    -webkit-animation: dishes-fade-in 6s 12s ease-in-out;
-    animation: dishes-fade-in 6s 12s ease-in-out;
   }
 }
 /****** Explorer nos restaurants ******
@@ -748,20 +471,32 @@ header .title-h1h4 {
   margin-bottom: 0;
 }
 
+/****** for your information
+in case of modification 
+in the HTML 
+of below classes 
+application limited to 4 classes per element
+the readability decision I followed is:
+-> 1 whitespace on the right before new line
+-> tabulations on the left to indent as a first technical try
+******/
 .button-explore-command {
   border-radius: 20px;
   border: none;
   box-shadow: 0 8px 4px rgba(0, 0, 0, 0.1);
 }
 
-.button-explore-size {
-  width: 218px;
+.button-explore-command-height {
   height: 50px;
 }
 
-.button-command-size {
+.button-explore-width {
+  width: 218px;
+}
+
+.button-command-width-vertical-margin {
   width: 186px;
-  margin: 22px 0 32px 0;
+  margin: 27px 0 39px 0;
 }
 
 .button-explore-command:hover {
@@ -843,20 +578,21 @@ header .title-h1h4 {
 }
 .heart-container {
   position: relative;
-  top: -10px;
+  bottom: 15px;
   /****** media queries ******/
   /****** small mobile devices ******/
   /****** restaurant page ******/
   /****** medium devices ******/
   /***** large devices ******/
 }
-.heart-container #white, .heart-container #gradient,
-.heart-container #white1, .heart-container #white2, .heart-container #white3, .heart-container #white4,
-.heart-container #gradient1, .heart-container #gradient2, .heart-container #gradient3, .heart-container #gradient4 {
+.heart-container .heart {
   position: absolute;
-  right: 25px;
+  height: 21px;
   width: 22px;
   transition: opacity 0.5s ease-in-out;
+}
+.heart-container .heart-x {
+  right: 7vw;
 }
 .heart-container #white,
 .heart-container #white1, .heart-container #white2, .heart-container #white3, .heart-container #white4 {
@@ -867,41 +603,47 @@ header .title-h1h4 {
   opacity: 0;
 }
 .heart-container:hover #white,
-.heart-container:hover #white1, .heart-container:hover #white2, .heart-container:hover #white3, .heart-container:hover #white4 {
+.heart-container:hover #white1, .heart-container:hover #white2, .heart-container:hover #white3, .heart-container:hover #white4, .heart-container:active #white,
+.heart-container:active #white1, .heart-container:active #white2, .heart-container:active #white3, .heart-container:active #white4 {
   opacity: 0;
 }
 .heart-container:hover #gradient,
-.heart-container:hover #gradient1, .heart-container:hover #gradient2, .heart-container:hover #gradient3, .heart-container:hover #gradient4 {
+.heart-container:hover #gradient1, .heart-container:hover #gradient2, .heart-container:hover #gradient3, .heart-container:hover #gradient4, .heart-container:active #gradient,
+.heart-container:active #gradient1, .heart-container:active #gradient2, .heart-container:active #gradient3, .heart-container:active #gradient4 {
   opacity: 1;
 }
 @media (max-width: 374px) {
   .heart-container #white, .heart-container #gradient {
-    left: -11px;
+    left: -1.1vw;
+    top: 25px;
   }
 }
 @media (min-width: 768px) {
   .heart-container #white, .heart-container #gradient {
-    left: 15px;
+    left: 1.5vw;
   }
 }
 @media (min-width: 1024px) {
   .heart-container {
     /****** landing page ******/
-    /****** restaurant page ******/
   }
-  .heart-container .card-content #white1, .heart-container .card-content #white2, .heart-container .card-content #white3, .heart-container .card-content #white4,
-  .heart-container .card-content #gradient1, .heart-container .card-content #gradient2, .heart-container .card-content #gradient3, .heart-container .card-content #gradient4 {
-    right: 5%;
-  }
-  .heart-container .img-cover #white, .heart-container .img-cover #gradient {
-    right: 30%;
+  .heart-container .heart-x {
+    right: 1.75vw;
   }
 }
 
+/* This file, 
+the title and some exceptions apart,
+is a vw and eventually vh use test.
+In order to answer to 
+changing customer's requirements 
+other than 375 and 1440 wide screens provided
+it can be useful.
+*/
 footer {
   background-color: #353535;
   color: white;
-  padding: 3vh 0 2vh 7vw;
+  padding: 2.8vh 0 2vh 6vw;
 }
 footer h4 {
   margin-bottom: 3vh;
@@ -919,7 +661,7 @@ footer .footer-container .footer-icons i {
   font-size: 15px;
 }
 footer .footer-container .footer-icons .paragraph__button {
-  margin-left: 3vw;
+  margin-left: 9px;
 }
 footer a {
   padding-left: 0;
@@ -958,15 +700,14 @@ footer a:last-child {
   footer {
     display: flex;
     flex-direction: row-reverse;
-    justify-content: flex-end;
     align-items: center;
     padding: 0;
   }
   footer .title-h1h4 {
     margin-bottom: 0;
-    margin-top: 3vh;
-    margin-left: 6.5vw;
-    margin-right: 4.75vw;
+    margin-top: 25px;
+    margin-left: 90px;
+    margin-right: 67px;
   }
   footer .footer-container {
     width: 100vw;
@@ -980,20 +721,328 @@ footer a:last-child {
     margin-bottom: 0.5vh;
   }
   footer .footer-container .footer-icons {
-    gap: 0 0.5vw;
+    gap: 0 5px;
   }
   footer .footer-container .footer-icons .paragraph__button {
     margin-left: 0;
   }
   footer a {
-    padding-left: 2.5vw;
+    padding-left: 10px;
   }
-  footer #devenezPartenaire {
-    padding-left: 0.75vw;
+  footer a:nth-child(3) {
+    padding-left: 44px;
   }
   footer a:last-child {
     margin-top: 0;
-    padding-left: 1.25vw;
+    padding-left: 16px;
+  }
+}
+/****** DRY is violated 
+for reading and 
+maintenability speed ******/
+* {
+  margin: 0;
+  padding: 0;
+}
+* main {
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  z-index: 0;
+  overflow-x: hidden;
+}
+* main a {
+  padding-left: 0;
+}
+* a {
+  text-decoration: none;
+  color: inherit;
+}
+* button:hover {
+  cursor: pointer;
+}
+
+/****** end of DRY violation ******/
+/****** header ******/
+.header-page {
+  display: flex;
+  align-items: center;
+  padding: 1vh;
+}
+.header-page a {
+  padding-left: 2vw;
+}
+.header-page a i {
+  font-size: 30px;
+}
+.header-page h1 {
+  display: flex;
+  justify-content: center;
+  flex: 1;
+  margin-top: 0.7vh;
+  margin-bottom: -0.3vh;
+  margin-right: 10.5vw;
+}
+
+.page-img-container {
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.page-img-container picture {
+  width: 100%;
+}
+.page-img-container picture .resto-image {
+  width: 100%;
+  height: 275px;
+  object-fit: cover;
+  object-position: 50% 60%;
+}
+.page-img-container .img-cover {
+  background-color: #f6f6f6;
+  width: 100%;
+  margin-top: -65px;
+  padding-top: 32px;
+  padding-bottom: 12px;
+  border-top-left-radius: 40px;
+  border-top-right-radius: 40px;
+  padding-left: 5vw;
+  padding-right: 2.6vw;
+  box-sizing: border-box;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  object-fit: cover;
+  object-position: 50% 60%;
+  position: relative;
+}
+.page-img-container .img-cover h1 {
+  margin: 0;
+}
+
+@-ms-keyframes dishes-fade-in {
+  0% {
+    opacity: 0;
+    transform: translateY(50%);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+@-o-keyframes dishes-fade-in {
+  0% {
+    opacity: 0;
+    transform: translateY(50%);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+@-moz-keyframes dishes-fade-in {
+  0% {
+    opacity: 0;
+    transform: translateY(50%);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+@-webkit-keyframes dishes-fade-in {
+  0% {
+    opacity: 0;
+    transform: translateY(50%);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+@keyframes dishes-fade-in {
+  0% {
+    opacity: 0;
+    transform: translateY(50%);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+.menu-width {
+  width: 100vw;
+}
+
+.menu {
+  background-color: #f6f6f6;
+}
+.menu .paragraph__menu {
+  margin-bottom: 4px;
+}
+.menu .paragraph__menu__entrees {
+  margin-top: 15px;
+}
+.menu #entrees {
+  -ms-animation: dishes-fade-in 1s ease-in-out;
+  -o-animation: dishes-fade-in 1s ease-in-out;
+  -moz-animation: dishes-fade-in 1s ease-in-out;
+  -webkit-animation: dishes-fade-in 1s ease-in-out;
+  animation: dishes-fade-in 1s ease-in-out;
+}
+.menu #plats {
+  -ms-animation: dishes-fade-in 1s 1s ease-in-out;
+  -o-animation: dishes-fade-in 1s 1s ease-in-out;
+  -moz-animation: dishes-fade-in 1s 1s ease-in-out;
+  -webkit-animation: dishes-fade-in 1s 1s ease-in-out;
+  animation: dishes-fade-in 1s 1s ease-in-out;
+}
+.menu #desserts {
+  -ms-animation: dishes-fade-in 1s 2s ease-in-out;
+  -o-animation: dishes-fade-in 1s 2s ease-in-out;
+  -moz-animation: dishes-fade-in 1s 2s ease-in-out;
+  -webkit-animation: dishes-fade-in 1s 2s ease-in-out;
+  animation: dishes-fade-in 1s 2s ease-in-out;
+}
+.menu .line {
+  width: 40px;
+  height: 3px;
+  background-color: #99e2d0;
+}
+.menu .menu-left {
+  margin-left: 4vw;
+}
+.menu .menu-item {
+  cursor: pointer;
+  margin: 12.5px 15px;
+  background-color: white;
+  border-radius: 15px;
+  box-shadow: 0 8px 4px rgba(0, 0, 0, 0.05);
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+}
+.menu .menu-item .row-check {
+  display: flex;
+  justify-content: space-between;
+  align-items: stretch;
+}
+.menu .menu-item .row-check .dish-content {
+  flex-grow: 1;
+  padding: 15px 0 15px 15px;
+  transition: width 0.5s ease-in-out, opacity 0.5s ease-in-out;
+  overflow: hidden;
+}
+.menu .menu-item .row-check .dish-content h4,
+.menu .menu-item .row-check .dish-content span {
+  display: inline;
+}
+.menu .menu-item .row-check .dish-content h4 {
+  margin-top: 0;
+  margin-bottom: 5px;
+}
+.menu .menu-item .row-check .dish-content .align-price {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+}
+.menu .menu-item .row-check .dish-check-background {
+  width: 15px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: white;
+  transform: translateX(100%);
+  transition: transform 0.5s ease-in-out, background-color 0.5s ease-in-out, width 0.5s ease-in-out;
+}
+.menu .menu-item .row-check .dish-check-background .fa-circle-check {
+  color: white;
+  font-size: 1.5rem;
+}
+.menu .menu-item .row-check:hover .dish-check-background,
+.menu .menu-item .row-check:active .dish-check-background {
+  width: 60px;
+  margin-left: 15px;
+  transform: translateX(0);
+  background-color: #99e2d0;
+}
+.menu .menu-item .row-check:hover .dish-check-background .dish-content,
+.menu .menu-item .row-check:active .dish-check-background .dish-content {
+  width: calc(100% - 60px);
+}
+.menu .menu-item .row-check:hover .dish-check-background .ellipsis,
+.menu .menu-item .row-check:active .dish-check-background .ellipsis {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+/****** media queries ******/
+/****** small mobile devices ******/
+/****** restaurant page ******/
+@media (max-width: 374px) {
+  .img-cover {
+    flex-direction: column;
+  }
+}
+/****** medium devices ******/
+@media (min-width: 768px) {
+  /****** restaurant page ******/
+  .menu-width {
+    width: 75.5%;
+  }
+  .page-img-container .img-cover {
+    width: 75.5%;
+    padding-left: 13px;
+    display: flex;
+    justify-content: center;
+  }
+  .page-img-container .img-cover .title-h2h3__restaurant-name {
+    margin-right: 2%;
+  }
+}
+/****** large devices ******/
+@media (min-width: 1024px) {
+  /***** restaurant page ******/
+  .menu .menu-left {
+    margin-left: 14.5vw;
+    margin-right: 14.5vw;
+  }
+  .menu .menu-item {
+    margin-left: 14.5vw;
+    margin-right: 14.5vw;
+  }
+}
+@media (prefers-reduced-motion) {
+  .loaded {
+    -ms-animation: spin 6s both;
+    -o-animation: spin 6s both;
+    -moz-animation: spin 6s both;
+    -webkit-animation: spin 6s both;
+    animation: spin 6s both;
+  }
+  .menu #entrees {
+    -ms-animation: dishes-fade-in 6s ease-in-out;
+    -o-animation: dishes-fade-in 6s ease-in-out;
+    -moz-animation: dishes-fade-in 6s ease-in-out;
+    -webkit-animation: dishes-fade-in 6s ease-in-out;
+    animation: dishes-fade-in 6s ease-in-out;
+  }
+  .menu #plats {
+    -ms-animation: dishes-fade-in 6s 6s ease-in-out;
+    -o-animation: dishes-fade-in 6s 6s ease-in-out;
+    -moz-animation: dishes-fade-in 6s 6s ease-in-out;
+    -webkit-animation: dishes-fade-in 6s 6s ease-in-out;
+    animation: dishes-fade-in 6s 6s ease-in-out;
+  }
+  .menu #desserts {
+    -ms-animation: dishes-fade-in 6s 12s ease-in-out;
+    -o-animation: dishes-fade-in 6s 12s ease-in-out;
+    -moz-animation: dishes-fade-in 6s 12s ease-in-out;
+    -webkit-animation: dishes-fade-in 6s 12s ease-in-out;
+    animation: dishes-fade-in 6s 12s ease-in-out;
   }
 }
 

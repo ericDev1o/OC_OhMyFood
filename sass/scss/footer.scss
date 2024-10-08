@@ -1,7 +1,15 @@
+/* This file, 
+the title and some exceptions apart,
+is a vw and eventually vh use test.
+In order to answer to 
+changing customer's requirements 
+other than 375 and 1440 wide screens provided
+it can be useful.
+*/
 footer {
     background-color: #353535;
     color: white;
-    padding: 3vh 0 2vh 7vw;
+    padding: 2.8vh 0 2vh 6vw;
 
     h4 {
         margin-bottom: 3vh;
@@ -21,7 +29,7 @@ footer {
             }
 
             .paragraph__button {
-                margin-left: 3vw;
+                margin-left: 9px;
             }
         }
     }
@@ -72,15 +80,14 @@ footer {
     footer {
         display: flex;
         flex-direction: row-reverse;
-        justify-content: flex-end;
         align-items: center;
         padding: 0;
 
         .title-h1h4 {
             margin-bottom: 0;
-            margin-top: 3vh;
-            margin-left: 6.5vw;
-            margin-right: 4.75vw;
+            margin-top: 25px;
+            margin-left: 90px;
+            margin-right: 67px;
         }
     
         .footer-container {
@@ -99,21 +106,23 @@ footer {
                     margin-left: 0;
                 }
 
-                gap: 0 0.5vw;
+                gap: 0 5px;
             }
         }
 
         a {
-            padding-left: 2.5vw;
+            padding-left: 10px;
         }
 
-        #devenezPartenaire {
-            padding-left: 0.75vw;
+        // Mentions l.
+        a:nth-child(3) {
+            padding-left: 44px;
         }
 
+        // Contact
         a:last-child {
             margin-top: 0;
-            padding-left: 1.25vw;
+            padding-left: 16px;
         }
     }
 }

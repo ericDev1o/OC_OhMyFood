@@ -2,13 +2,15 @@
     position: relative;
     bottom: 15px;
 
-    #white, #gradient,
-    #white1, #white2, #white3, #white4,
-    #gradient1, #gradient2, #gradient3, #gradient4 {
+    .heart {
         position: absolute;
-        right: 7vw;
+        height: 21px;
         width: 22px;
         transition: opacity 0.5s ease-in-out;
+    }
+
+    .heart-x {
+        right: 7vw;
     }
 
     #white, 
@@ -21,7 +23,7 @@
         opacity: 0;
     }
 
-    &:hover {
+    &:hover, &:active {
         #white, 
         #white1, #white2, #white3, #white4 {
             opacity: 0;
@@ -37,32 +39,23 @@
     /****** restaurant page ******/
     @media (max-width: 374px) {
         #white, #gradient {
-            left: -11px;
+            left: -1.1vw;
+            top: 25px;
         }
     }
 
     /****** medium devices ******/
     @media (min-width: 768px) {
         #white, #gradient {
-            left: 15px;
+            left: 1.5vw;
         }
     }
     
      /***** large devices ******/
     @media (min-width: 1024px) {
         /****** landing page ******/
-        .card-content {
-            #white1, #white2, #white3, #white4,
-            #gradient1, #gradient2, #gradient3, #gradient4 {
-                right: 5%
-            }
-        }
-
-        /****** restaurant page ******/
-        .img-cover {
-            #white, #gradient {
-                right: 30%;
-            }
+        .heart-x {
+            right: 1.75vw;
         }
     }
 }
