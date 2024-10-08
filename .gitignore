@@ -6,3 +6,4 @@ package-lock.json
 *.ts
 node_modules*
 main.scssc
+style.css

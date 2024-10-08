@@ -1,12 +1,12 @@
 .heart-container {
     position: relative;
-    top: -10px;
+    bottom: 15px;
 
     #white, #gradient,
     #white1, #white2, #white3, #white4,
     #gradient1, #gradient2, #gradient3, #gradient4 {
         position: absolute;
-        right: 25px;
+        right: 7vw;
         width: 22px;
         transition: opacity 0.5s ease-in-out;
     }
