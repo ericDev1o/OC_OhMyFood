@@ -1,10 +1,10 @@
 @import "variables.scss";
-@import "mixins.scss";
-@import "placeholders";
+@import "anim/mixi/mixins.scss";
+@import "anim/placeh/placeholders.scss";
 @import "fonts.scss";
 @import "main.scss";
-@import "explore-command-button.scss";
-@import "choose-button.scss";
-@import "heart.scss";
+@import "buttons/explore-command-button.scss";
+@import "buttons/choose-button.scss";
+@import "anim/heart.scss";
 @import "footer.scss";
 @import "pages/restaurant-page.scss"

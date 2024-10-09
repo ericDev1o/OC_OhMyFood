@@ -1,0 +1,114 @@
+@-ms-keyframes spin {
+    0% {
+        transform: rotate(0deg);
+        width: 100vw;
+        height: 100vh;
+        opacity: 1;
+    }
+    50% {
+        transform: rotate(180deg);
+        width: 60vw;
+        height: 60vh;
+        opacity: 0.6;
+    }
+    100% {
+        transform: rotate(360deg);
+        width: 10vw;
+        height: 10vh;
+        opacity: 0;
+    }
+}
+
+@-o-keyframes spin {
+    0% {
+        transform: rotate(0deg);
+        width: 100vw;
+        height: 100vh;
+        opacity: 1;
+    }
+    50% {
+        transform: rotate(180deg);
+        width: 60vw;
+        height: 60vh;
+        opacity: 0.6;
+    }
+    100% {
+        transform: rotate(360deg);
+        width: 10vw;
+        height: 10vh;
+        opacity: 0;
+    }
+}
+
+@-moz-keyframes spin {
+    0% {
+        transform: rotate(0deg);
+        width: 100vw;
+        height: 100vh;
+        opacity: 1;
+    }
+    50% {
+        transform: rotate(180deg);
+        width: 60vw;
+        height: 60vh;
+        opacity: 0.6;
+    }
+    100% {
+        transform: rotate(360deg);
+        width: 10vw;
+        height: 10vh;
+        opacity: 0;
+    }
+}
+
+@-webkit-keyframes spin {
+    0% {
+        transform: rotate(0deg);
+        width: 100vw;
+        height: 100vh;
+        opacity: 1;
+    }
+    50% {
+        transform: rotate(180deg);
+        width: 60vw;
+        height: 60vh;
+        opacity: 0.6;
+    }
+    100% {
+        transform: rotate(360deg);
+        width: 10vw;
+        height: 10vh;
+        opacity: 0;
+    }
+}
+
+@keyframes spin {
+    0% {
+        transform: rotate(0deg);
+        width: 100vw;
+        height: 100vh;
+        opacity: 1;
+    }
+    50% {
+        transform: rotate(180deg);
+        width: 60vw;
+        height: 60vh;
+        opacity: 0.6;
+    }
+    100% {
+        transform: rotate(360deg);
+        width: 10vw;
+        height: 10vh;
+        opacity: 0;
+    }
+}
+
+@media (prefers-reduced-motion) {
+    .loaded {
+        -ms-animation: spin 6s forwards;
+        -o-animation: spin 6s forwards;
+        -moz-animation: spin 6s forwards;
+        -webkit-animation: spin 6s forwards;
+        animation: spin 6s forwards;
+    }
+}
