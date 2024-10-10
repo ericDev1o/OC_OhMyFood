@@ -38,20 +38,16 @@
     position: fixed;
 }
 
-/****** header ******/
 header {
     text-align: center;
 
     .title-h1h4 {
-        margin-top: 8%;
-        margin-bottom: 12%;
+        margin-top: 1.7%;
+        margin-bottom: 1.7%;
     }
 }
 
-/****** localisation ******/
 .localisation-reservation {
-    width: 100%;
-
     .localisation {
         height: 50px;
         background-color: #eaeaea;
@@ -72,7 +68,6 @@ header {
         }
     }
 
-/****** reservation ******/
     .reservation {
         text-align: center;
         background-color: $main-backgrd-color;
@@ -88,9 +83,8 @@ header {
     }
 }
 
-/****** fonctionnement *****/
 .fonctionnement {
-    width: 100%;
+    width: 100vw;
     padding: 45px 7vw 65px 25vw;
 
     h2 {
@@ -107,9 +101,8 @@ header {
     }
 }
 
-/****** restaurants ******/
 .restaurants {
-    width: 100%;
+    width: 100vw;
     background-color: $main-backgrd-color;
     padding: 6vh 0;
 
@@ -129,7 +122,7 @@ header {
             position: relative;
 
             .index-image {
-                width: 100%;
+                width: 100vw;
                 height: 70%;
                 border-radius: 15px 15px 0 0;
                 object-fit: cover;
@@ -168,7 +161,6 @@ header {
                 .text-left h3 {
                     margin-top: -5%;
                     margin-bottom: 0;
-                    width: 100%;
                 }
 
                 .paragraph__card {
@@ -181,7 +173,6 @@ header {
     }
 }
 
-/****** medium devices ******/
 @media (min-width: 768px) {
     .fonctionnement {
         padding: 45px 21vw 65px 29vw;
@@ -202,13 +193,13 @@ header {
         }
     }
 }
-/***** large devices *****/
+
 @media (min-width: 1024px) {
     /****** landing page ******/
     .load img {
         margin: 2.4% 0;
     }
-    /****** reservation ******/
+
     .localisation-reservation {
         .localisation {
             height: 55px;
@@ -235,7 +226,6 @@ header {
         }
     }
   
-    /****** fonctionnement ******/
     .fonctionnement {
         position: relative;
         padding: 43px 0 154px 14vw;
@@ -245,7 +235,6 @@ header {
         }
 
         .function-buttons {
-            width: 100%;
             display: flex;
             margin-left: 22vw;
             margin-top: 21px;
@@ -255,9 +244,7 @@ header {
         }
     }
     
-    /****** restaurants ******/
     .restaurants {
-        width: 100%;
         padding: 3.3vh 0 3.3vh 7vw;
         box-sizing: border-box;
         display: flex;
@@ -271,7 +258,6 @@ header {
         }
 
         .restaurant-cards {
-            width: 100%;
             margin: 4.4vh 5vw 0 5vw;
             display: flex;
             flex-direction: row;

@@ -1,6 +1,7 @@
 /****** DRY is violated 
 for reading and 
-maintenability speed ******/
+maintenability speed. 
+The need per line will be inspected as soon as possible ******/
 * {
     @extend %font-base;
     margin: 0;
@@ -48,8 +49,6 @@ maintenability speed ******/
         display: flex;
         justify-content: center;
         flex: 1;
-        margin-top: 0.7vh;
-        margin-bottom: -0.3vh;
         margin-right: 10.5vw;
     }
 }
@@ -61,10 +60,10 @@ maintenability speed ******/
     align-items: center;
 
     picture {
-        width: 100%;
+        width: 100vw;
 
         .resto-image {
-            width: 100%;
+            width: 100vw;
             height: 275px;
             object-fit: cover;
             object-position: 50% 60%
@@ -73,7 +72,7 @@ maintenability speed ******/
 
     .img-cover {
         background-color: $main-backgrd-color;
-        width: 100%;
+        width: 100vw;
         margin-top: -65px;
         padding-top: 32px;
         padding-bottom: 12px;
@@ -290,12 +289,12 @@ maintenability speed ******/
 @media (min-width: 768px) {
     /****** restaurant page ******/
     .menu-width {
-        width: 75.5%;
+        width: 75.5vw;
     }
 
     .page-img-container {
         .img-cover {
-            width: 75.5%;
+            width: 75.5vw;
             padding-left: 13px;
             display: flex;
             justify-content: center;
