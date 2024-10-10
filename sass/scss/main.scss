@@ -27,123 +27,14 @@
     }
 }
 
-@-ms-keyframes spin {
-    0% {
-        transform: rotate(0deg);
-        width: 100vw;
-        height: 100vh;
-        opacity: 1;
-    }
-    50% {
-        transform: rotate(180deg);
-        width: 60vw;
-        height: 60vh;
-        opacity: 0.6;
-    }
-    100% {
-        transform: rotate(360deg);
-        width: 10vw;
-        height: 10vh;
-        opacity: 0;
-    }
-}
-
-@-o-keyframes spin {
-    0% {
-        transform: rotate(0deg);
-        width: 100vw;
-        height: 100vh;
-        opacity: 1;
-    }
-    50% {
-        transform: rotate(180deg);
-        width: 60vw;
-        height: 60vh;
-        opacity: 0.6;
-    }
-    100% {
-        transform: rotate(360deg);
-        width: 10vw;
-        height: 10vh;
-        opacity: 0;
-    }
-}
-
-@-moz-keyframes spin {
-    0% {
-        transform: rotate(0deg);
-        width: 100vw;
-        height: 100vh;
-        opacity: 1;
-    }
-    50% {
-        transform: rotate(180deg);
-        width: 60vw;
-        height: 60vh;
-        opacity: 0.6;
-    }
-    100% {
-        transform: rotate(360deg);
-        width: 10vw;
-        height: 10vh;
-        opacity: 0;
-    }
-}
-
-@-webkit-keyframes spin {
-    0% {
-        transform: rotate(0deg);
-        width: 100vw;
-        height: 100vh;
-        opacity: 1;
-    }
-    50% {
-        transform: rotate(180deg);
-        width: 60vw;
-        height: 60vh;
-        opacity: 0.6;
-    }
-    100% {
-        transform: rotate(360deg);
-        width: 10vw;
-        height: 10vh;
-        opacity: 0;
-    }
-}
-
-@keyframes spin {
-    0% {
-        transform: rotate(0deg);
-        width: 100vw;
-        height: 100vh;
-        opacity: 1;
-    }
-    50% {
-        transform: rotate(180deg);
-        width: 60vw;
-        height: 60vh;
-        opacity: 0.6;
-    }
-    100% {
-        transform: rotate(360deg);
-        width: 10vw;
-        height: 10vh;
-        opacity: 0;
-    }
-}
-
 .loaded {
     display: flex;
     justify-content: center;
     width: 100vw;
     height: 100vh;
     z-index: 1;
-    -ms-animation: spin 3s both;
-    -o-animation: spin 3s both;
-    -moz-animation: spin 3s both;
-    -webkit-animation: spin 3s both;
-    animation: spin 3s both;
-    overflow-y: hidden;
+    animation: spin 3s forwards;
+    overflow: hidden;
     position: fixed;
 }
 
@@ -409,15 +300,5 @@ header {
                 }
             }
         }
-    }
-}
-
-@media (prefers-reduced-motion) {
-    .loaded {
-        -ms-animation: spin 6s forwards;
-        -o-animation: spin 6s forwards;
-        -moz-animation: spin 6s forwards;
-        -webkit-animation: spin 6s forwards;
-        animation: spin 6s forwards;
     }
 }
