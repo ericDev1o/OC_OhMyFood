@@ -48,7 +48,9 @@ header {
 }
 
 .localisation-reservation {
+    width: 100vw;
     .localisation {
+        width: 100vw;
         height: 50px;
         background-color: #eaeaea;
         display: flex;
@@ -69,6 +71,7 @@ header {
     }
 
     .reservation {
+        width: 100vw;
         text-align: center;
         background-color: $main-backgrd-color;
         padding: 38px 15px 55px 15px;
@@ -111,12 +114,14 @@ header {
     }
 
     .restaurant-cards {
+        width: 100vw;
         margin: 5vw 5vw 0 5vw;
         display: flex;
         flex-direction: column;
         gap: 11px 0;
 
         .restaurant-card {
+            width: 100vw;
             margin-bottom: 13px;
             height: 30.25vh;
             position: relative;
@@ -174,7 +179,9 @@ header {
 }
 
 @media (min-width: 768px) {
+    .localisation-reservation
     .fonctionnement {
+        width: 100vw;
         padding: 45px 21vw 65px 29vw;
 
         h2 {
@@ -201,7 +208,9 @@ header {
     }
 
     .localisation-reservation {
+        width: 100vw;
         .localisation {
+            width: 100vw;
             height: 55px;
             padding-bottom: 0;
 
@@ -211,6 +220,7 @@ header {
         }
 
         .reservation {
+            width: 100vw;
             padding: 38px 15px 27px 15px;
 
             h2 {
@@ -245,6 +255,7 @@ header {
     }
     
     .restaurants {
+        width: 100vw;
         padding: 3.3vh 0 3.3vh 7vw;
         box-sizing: border-box;
         display: flex;
@@ -258,6 +269,7 @@ header {
         }
 
         .restaurant-cards {
+            width: 100vw;
             margin: 4.4vh 5vw 0 5vw;
             display: flex;
             flex-direction: row;
@@ -265,12 +277,13 @@ header {
             gap: 5vh 6.3vw;
 
             .restaurant-card {
-                margin-bottom: 0;
                 width: 35vw;
                 height: 30.5vh;
                 box-sizing: border-box;
+                margin-bottom: 0;
 
                 .index-image {
+                    //width: 100vw;
                     height: 65%;
                     object-fit: cover;
                     object-position: 50% 60%;
