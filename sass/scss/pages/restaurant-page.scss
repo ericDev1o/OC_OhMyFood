@@ -94,61 +94,6 @@ The need per line will be inspected as soon as possible ******/
     }
 }
 
-@-ms-keyframes dishes-fade-in {
-    0% {
-        opacity: 0;
-        transform: translateY(+50%);
-    }
-    100% {
-        opacity: 1;
-        transform: translateY(0);
-    }
-}
-
-@-o-keyframes dishes-fade-in {
-    0% {
-        opacity: 0;
-        transform: translateY(+50%);
-    }
-    100% {
-        opacity: 1;
-        transform: translateY(0);
-    }
-}
-
-@-moz-keyframes dishes-fade-in {
-    0% {
-        opacity: 0;
-        transform: translateY(+50%);
-    }
-    100% {
-        opacity: 1;
-        transform: translateY(0);
-    }
-}
-
-@-webkit-keyframes dishes-fade-in {
-    0% {
-        opacity: 0;
-        transform: translateY(+50%);
-    }
-    100% {
-        opacity: 1;
-        transform: translateY(0);
-    }
-}
-
-@keyframes dishes-fade-in {
-    0% {
-        opacity: 0;
-        transform: translateY(+50%);
-    }
-    100% {
-        opacity: 1;
-        transform: translateY(0);
-    }
-}
-
 .menu-width {
     width: 100vw;
 }
@@ -162,30 +107,6 @@ The need per line will be inspected as soon as possible ******/
 
     .paragraph__menu__entrees {
         margin-top: 15px;
-    }
-
-    #entrees {
-        -ms-animation: dishes-fade-in 1s ease-in-out;
-        -o-animation: dishes-fade-in 1s ease-in-out;
-        -moz-animation: dishes-fade-in 1s ease-in-out;
-        -webkit-animation: dishes-fade-in 1s ease-in-out;
-        animation: dishes-fade-in 1s ease-in-out;
-    }
-
-    #plats {
-        -ms-animation: dishes-fade-in 1s 1s ease-in-out;
-        -o-animation: dishes-fade-in 1s 1s ease-in-out;
-        -moz-animation: dishes-fade-in 1s 1s ease-in-out;
-        -webkit-animation: dishes-fade-in 1s 1s ease-in-out;
-        animation: dishes-fade-in 1s 1s ease-in-out;
-    }
-
-    #desserts {
-        -ms-animation: dishes-fade-in 1s 2s ease-in-out;
-        -o-animation: dishes-fade-in 1s 2s ease-in-out;
-        -moz-animation: dishes-fade-in 1s 2s ease-in-out;
-        -webkit-animation: dishes-fade-in 1s 2s ease-in-out;
-        animation: dishes-fade-in 1s 2s ease-in-out;
     }
 
     .line {
@@ -276,16 +197,13 @@ The need per line will be inspected as soon as possible ******/
         }
     }
 }
-/****** media queries ******/
-/****** small mobile devices ******/
-/****** restaurant page ******/
+
 @media (max-width: 374px) {
     .img-cover{
         flex-direction: column;
     }
 }
 
-/****** medium devices ******/
 @media (min-width: 768px) {
     /****** restaurant page ******/
     .menu-width {
@@ -307,7 +225,6 @@ The need per line will be inspected as soon as possible ******/
     }
 }
 
-/****** large devices ******/
 @media (min-width: 1024px) {
     /***** restaurant page ******/
     .menu {
@@ -319,41 +236,6 @@ The need per line will be inspected as soon as possible ******/
         .menu-item {
             margin-left: 14.5vw;
             margin-right: 14.5vw;
-        }
-    }
-}
-
-@media (prefers-reduced-motion) {
-    .loaded {
-        -ms-animation: spin 6s forwards;
-        -o-animation: spin 6s forwards;
-        -moz-animation: spin 6s forwards;
-        -webkit-animation: spin 6s forwards;
-        animation: spin 6s forwards;
-    }
-    .menu {
-        #entrees {
-            -ms-animation: dishes-fade-in 6s ease-in-out;
-            -o-animation: dishes-fade-in 6s ease-in-out;
-            -moz-animation: dishes-fade-in 6s ease-in-out;
-            -webkit-animation: dishes-fade-in 6s ease-in-out;
-            animation: dishes-fade-in 6s ease-in-out;
-        }
-
-        #plats {
-            -ms-animation: dishes-fade-in 6s 6s ease-in-out;
-            -o-animation: dishes-fade-in 6s 6s ease-in-out;
-            -moz-animation: dishes-fade-in 6s 6s ease-in-out;
-            -webkit-animation: dishes-fade-in 6s 6s ease-in-out;
-            animation: dishes-fade-in 6s 6s ease-in-out;
-        }
-
-        #desserts {
-            -ms-animation: dishes-fade-in 6s 12s ease-in-out;
-            -o-animation: dishes-fade-in 6s 12s ease-in-out;
-            -moz-animation: dishes-fade-in 6s 12s ease-in-out;
-            -webkit-animation: dishes-fade-in 6s 12s ease-in-out;
-            animation: dishes-fade-in 6s 12s ease-in-out;
         }
     }
 }

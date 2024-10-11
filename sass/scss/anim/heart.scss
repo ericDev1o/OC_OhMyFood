@@ -34,8 +34,6 @@
         }
     }
 
-    /****** media queries ******/
-    /****** small mobile devices ******/
     /****** restaurant page ******/
     @media (max-width: 374px) {
         #white, #gradient {
@@ -44,14 +42,12 @@
         }
     }
 
-    /****** medium devices ******/
     @media (min-width: 768px) {
         #white, #gradient {
             left: 1.5vw;
         }
     }
     
-     /***** large devices ******/
     @media (min-width: 1024px) {
         /****** landing page ******/
         .heart-x {
