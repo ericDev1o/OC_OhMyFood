@@ -47,8 +47,7 @@
 .button-choose-width {
     width: 86vw;
 }
-/****** media queries ******/
-/***** medium devices ******/
+
 @media (min-width: 768px) {
     .button-choose {
         gap: 0 2vw;
@@ -59,7 +58,7 @@
         width: 15vw;
     }
 }
-/***** large devices ******/
+
 @media (min-width: 1024px){
     .button-choose {
         margin-top: 4px;

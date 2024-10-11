@@ -1,5 +1,15 @@
+@import "variables_colors-fonts.scss";
+@import "fonts.scss";
+@import "buttons/explore-command-button.scss";
+@import "buttons/choose-button.scss";
+@import "anim/heart.scss";
+@import "anim/keyframes/fade-in_dishes.scss";
+@import "anim/keyframes/loader_spin.scss";
+@import "footer.scss";
+@import "pages/restaurant-page.scss";
+@import "pages/restaurant-page.scss";
 /****** general landing page styling ******/
-/****** see footer.scss for vh use ******/
+/****** see footer.scss for current vh use ******/
 * {
     @extend %font-base;
     margin: 0;
@@ -51,10 +61,14 @@ header {
 .localisation-reservation {
     width: 100vw;
     display: flex;
-    align-items: center;
+    flex-direction: column;
     justify-content: center;
+    align-items: center;
 
     .localisation {
+        display: flex;
+        justify-content: center;
+        align-items: center;
         width: 100vw;
         height: 50px;
         background-color: #eaeaea;
@@ -73,6 +87,7 @@ header {
     }
 
     .reservation {
+        text-align: center;
         width: 100vw;
         background-color: $main-backgrd-color;
         padding: 38px 15px 55px 15px;
@@ -89,18 +104,21 @@ header {
 
 .fonctionnement {
     width: 100vw;
-    padding: 45px 7vw 65px 25vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 5.5vh;
 
     h2 {
-        margin-left: -4vw;
+        margin-right: 53vw;
     }
 
     .function-buttons {
+        width: 100vw;
         display: flex;
         flex-direction: column;
-        width: 100vw;
-        margin-top: 30px;
-        margin-right: 15vw;
+        align-items: center;
+        margin: 3vh 0 8.5vh 0;
 
         .paragraph__button {
             color: black;
@@ -109,8 +127,9 @@ header {
 }
 
 .restaurants {
+    background-color: aqua;
     width: 100vw;
-    background-color: $main-backgrd-color;
+    //background-color: $main-backgrd-color;
 
     h2 {
         margin: 6vw 0 6vw 5vw;
@@ -121,6 +140,8 @@ header {
         margin: 0 5vw;
         display: flex;
         flex-direction: column;
+        align-items: center;
+        justify-content: center;
         gap: 11px 0;
 
         .restaurant-card {
