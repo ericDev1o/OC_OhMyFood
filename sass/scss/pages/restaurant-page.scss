@@ -2,7 +2,7 @@
 for reading and 
 maintenability speed. 
 The need per line will be inspected as soon as possible ******/
-* {
+/* {
     @extend %font-base;
     margin: 0;
     padding: 0;
@@ -28,7 +28,7 @@ The need per line will be inspected as soon as possible ******/
     button:hover {
         cursor: pointer;
     }
-}
+}*/
 /****** end of DRY violation ******/
 /****** header ******/
 // h1 is a test in case customer's needs or device changes
@@ -203,7 +203,7 @@ The need per line will be inspected as soon as possible ******/
         margin: 12.5px 15px;
         background-color: white;
         border-radius: 15px;
-        box-shadow: 0 8px 4px rgba(0, 0, 0, 0.05);
+        box-shadow: 0 8px 4px rgba(0, 0, 0, .05);
         display: flex;
         flex-direction: column;
         overflow: hidden;

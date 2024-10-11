@@ -1,5 +1,4 @@
 .button-choose {
-    display: block;
     box-sizing: border-box;
     position: relative;
     display: flex;
@@ -11,7 +10,7 @@
     text-overflow: ellipsis;
 
     &:not(:last-child) {
-        margin-bottom: 7%;
+        margin-bottom: 6vh;
     }
 
     &:hover {
@@ -45,12 +44,19 @@
     height: 50px;
 }
 
+.button-choose-width {
+    width: 86vw;
+}
 /****** media queries ******/
 /***** medium devices ******/
 @media (min-width: 768px) {
     .button-choose {
         gap: 0 2vw;
         padding: 38px 4vw;
+    }
+
+    .button-choose-width {
+        width: 15vw;
     }
 }
 /***** large devices ******/

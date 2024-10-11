@@ -1,4 +1,5 @@
 /****** general landing page styling ******/
+/****** see footer.scss for vh use ******/
 * {
     @extend %font-base;
     margin: 0;
@@ -95,6 +96,9 @@ header {
     }
 
     .function-buttons {
+        display: flex;
+        flex-direction: column;
+        width: 100vw;
         margin-top: 30px;
         margin-right: 15vw;
 
@@ -189,7 +193,7 @@ header {
         }
 
         .function-buttons {
-            padding: 0 4%;
+            padding: 0 4vw;
             margin-right: 5vw;
         }
     }

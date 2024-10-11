@@ -1,3 +1,8 @@
+# technical fact
+## <meta name="viewport">
+### % or vw and even vh use
+See the footer.scss: The use of vh will possibly increase in a future release to match customer and designer needs.
+
 # OC_OhMyFood
 ## Marque
 ### Identité
