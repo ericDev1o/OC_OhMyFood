@@ -101,6 +101,14 @@ header {
         }
     }
 }
+/*
+.flex-direction.x {
+    flex-direction: row;
+}
+
+.flex-direction.y {
+    flex-direction: column;
+}*/
 
 .fonctionnement {
     width: 100vw;
@@ -108,22 +116,23 @@ header {
     flex-direction: column;
     align-items: center;
     padding-top: 5.5vh;
+    position: relative;
 
     h2 {
         margin-right: 53vw;
     }
 
-    .function-buttons {
-        width: 100vw;
+    /*.function-buttons {
+        width: 90vw;
         display: flex;
         flex-direction: column;
         align-items: center;
         margin: 3vh 0 8.5vh 0;
-
-        .paragraph__button {
-            color: black;
-        }
+    */
+    .paragraph__button {
+        color: black;
     }
+    //}
 }
 
 .restaurants {
