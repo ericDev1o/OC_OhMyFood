@@ -50,25 +50,12 @@
         gap: 0 2vw;
         padding: 38px 4vw;
     }
-
-    .button-choose-width {
-        width: 15vw;
-    }
 }
 
 @media (min-width: 1024px){
     .button-choose {
-        margin-top: 4px;
 
         gap: 0 1.3vw;
         padding: 38px 2.5vw;
-
-        &:not(:last-child) {
-            margin-bottom: 0;
-        }
-    }
-
-    .button-choose-width {
-        width: 22.5vw;
     }
 }
