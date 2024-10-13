@@ -10,10 +10,6 @@
     white-space: nowrap;
     text-overflow: ellipsis;
 
-    &:not(:last-child) {
-        margin-bottom: 6vh;
-    }
-
     &:hover {
         background: $main-backgrd-color-light;
     }

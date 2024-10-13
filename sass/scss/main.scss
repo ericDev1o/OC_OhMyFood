@@ -7,7 +7,6 @@
 @import "anim/keyframes/loader_spin.scss";
 @import "footer.scss";
 @import "pages/restaurant-page.scss";
-@import "pages/restaurant-page.scss";
 /****** general landing page styling ******/
 /****** see footer.scss for current vh use ******/
 * {
@@ -107,11 +106,15 @@ header {
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding-top: 5.5vh;
+    padding-top: 12.75vh;
+    padding-bottom: 8vh;
     position: relative;
+    gap: 2.75vh;
 
     h2 {
-        margin-right: 53vw;
+        position: absolute;
+        left: 6vw;
+        top: 46px;
     }
 
     .paragraph__button {
@@ -120,9 +123,8 @@ header {
 }
 
 .restaurants {
-    background-color: aqua;
     width: 100vw;
-    //background-color: $main-backgrd-color;
+    background-color: $main-backgrd-color;
 
     h2 {
         margin: 6vw 0 6vw 5vw;
