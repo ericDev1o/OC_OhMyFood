@@ -199,9 +199,6 @@ header {
 
 @media (min-width: 768px) {
     .localisation-reservation
-    .fonctionnement {
-        background-color: brown;
-    }
 
     .restaurants {
         h2 {
@@ -243,11 +240,17 @@ header {
   
     .fonctionnement {
         flex-direction: row;
-        .function-buttons {
-            display: flex;
-            position: absolute;
-            left: -5.2%;
-            gap: 2%;
+        gap: 0 2.75vw;
+        padding-top: 12.5dvh;
+        padding-bottom: 6dvh;
+
+        h2 {
+            top: 6dvh;
+            left: 12.5dvw;
+        }
+
+        #first-left-fonc-button {
+            margin-left: 13.2dvw;
         }
     }
     

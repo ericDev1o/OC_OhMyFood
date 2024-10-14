@@ -54,8 +54,11 @@
 
 @media (min-width: 1024px){
     .button-choose {
-
         gap: 0 1.3vw;
         padding: 38px 2.5vw;
+    }
+
+    .button-choose-width {
+        width: 22.5dvw;
     }
 }
