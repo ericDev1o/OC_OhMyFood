@@ -113,7 +113,7 @@ header {
 
     h2 {
         position: absolute;
-        left: 6vw;
+        left: 5.2vw;
         top: 46px;
     }
 
@@ -242,7 +242,7 @@ header {
     }
   
     .fonctionnement {
-
+        flex-direction: row;
         .function-buttons {
             display: flex;
             position: absolute;
