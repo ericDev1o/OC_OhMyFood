@@ -102,7 +102,7 @@ header {
 }
 
 .fonctionnement {
-    width: 100vw;
+    width: 100dvw;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -125,17 +125,21 @@ header {
 .restaurants {
     width: 100dvw;
     background-color: $main-backgrd-color;
-    padding-top: 6.25dvh;
-    padding-bottom: 6dvh;
+    padding-top: 12.25dvh;
+    padding-bottom: 7.8dvh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
 
     h2 {
-        margin-left: 5.5dvw;
-        margin-bottom: 2.75dvh;
+        left: 5.2dvw;
+        top: 6.5dvh;
+        position: absolute;
     }
 
     .restaurant-cards {
-        width: 100vw;
-        margin: 0 4.5vw;
+        width: 100dvw;
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -143,8 +147,8 @@ header {
         gap: 11px 0;
 
         .restaurant-card {
-            width: 100vw;
-            margin-bottom: 13px;
+            width: 100dvw;
+            margin: 0 4.5dvw 0.8dvh 4.5dvw;
             height: 30.25vh;
             position: relative;
 
