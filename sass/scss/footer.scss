@@ -1,18 +1,10 @@
-/* This file, 
-the title and some exceptions apart,
-is a vw and eventually vh use test.
-In order to answer to 
-changing customer's requirements 
-other than 375 and 1440 wide screens provided
-it can be useful.
-*/
 footer {
     background-color: #353535;
     color: white;
-    padding: 2.8vh 0 2vh 6vw;
+    padding: 2.5dvh 0 2dvh 6.5dvw;
 
     h4 {
-        margin-bottom: 3vh;
+        margin-bottom: 2.5dvh;
     }
 
     .footer-container {
@@ -46,7 +38,7 @@ footer {
 
 @media (min-width: 768px) {
     footer {
-        padding: 2.75vh 0 1.5vh 3.2vw;
+        padding: 2.75dvh 0 1.5dvh 3.2dvw;
 
         h4 {
             margin-bottom: 2.5vh;
