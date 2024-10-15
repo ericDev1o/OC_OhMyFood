@@ -125,11 +125,12 @@ header {
 .restaurants {
     width: 100dvw;
     background-color: $main-backgrd-color;
-    padding: 6dvh 0;
+    padding-top: 6.25dvh;
+    padding-bottom: 6dvh;
 
     h2 {
         margin-left: 5.5dvw;
-        margin-bottom: 2.5dvh;
+        margin-bottom: 2.75dvh;
     }
 
     .restaurant-cards {
