@@ -87,7 +87,6 @@ header {
 
     .reservation {
         text-align: center;
-        width: 100vw;
         background-color: $main-backgrd-color;
         padding: 38px 15px 55px 15px;
 
@@ -145,10 +144,14 @@ header {
         align-items: center;
         justify-content: center;
         gap: 11px 0;
+        /*
+        margin-left: 4.5dvw;
+        margin-right: 4.5dvw;
+        */
 
         .restaurant-card {
             width: 100dvw;
-            margin: 0 4.5dvw 0.8dvh 4.5dvw;
+            margin-bottom: .8dvh;
             height: 30.25vh;
             position: relative;
 
