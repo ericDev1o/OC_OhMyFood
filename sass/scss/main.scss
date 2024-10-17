@@ -13,28 +13,28 @@
     @extend %font-base;
     margin: 0;
     padding: 0;
+}
 
-    main {
-        width: 100vw;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        z-index: 0;
-        overflow-x: hidden;
-
-        a {
-            padding-left: 0;
-        }
-    }
+main {
+    width: 100dvw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    z-index: 0;
+    overflow-x: hidden;
 
     a {
-        text-decoration: none;
-        color: inherit;
+        padding-left: 0;
     }
+}
 
-    button:hover {
-        cursor: pointer;
-    }
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+button:hover {
+    cursor: pointer;
 }
 
 .loaded {
@@ -124,39 +124,37 @@ header {
 .restaurants {
     width: 100dvw;
     background-color: $main-backgrd-color;
-    padding-top: 12.25dvh;
-    padding-bottom: 7.8dvh;
+    padding: 12.25dvh 4.5dvw 7.8dvh;
     display: flex;
     flex-direction: column;
     align-items: center;
     position: relative;
 
     h2 {
-        left: 5.2dvw;
+        left: 9.5dvw;
         top: 6.5dvh;
         position: absolute;
     }
 
     .restaurant-cards {
-        width: 100dvw;
+        width: 100%;
         display: flex;
         flex-direction: column;
         align-items: center;
         justify-content: center;
         gap: 11px 0;
-        /*
-        margin-left: 4.5dvw;
-        margin-right: 4.5dvw;
-        */
 
         .restaurant-card {
-            width: 100dvw;
-            margin-bottom: .8dvh;
+            width: 100%;
+            //margin: 0 4.5dvw .8dvh 4.5dvw;
             height: 30.25vh;
             position: relative;
+            box-sizing: border-box;
+            margin-bottom: .8dvh;
+            overflow: hidden;
 
             .index-image {
-                width: 100vw;
+                width: 100%;
                 height: 70%;
                 border-radius: 15px 15px 0 0;
                 object-fit: cover;
@@ -193,7 +191,6 @@ header {
                 }
 
                 .text-left h3 {
-                    margin-top: -5%;
                     margin-bottom: 0;
                 }
 
