@@ -1,6 +1,5 @@
 .heart-container {
     position: relative;
-    bottom: 15px;
 
     .heart {
         position: absolute;
@@ -10,7 +9,11 @@
     }
 
     .heart-x {
-        right: 7vw;
+        right: 7dvw;
+    }
+
+    .heart-y {
+        top: -1.25dvh
     }
 
     #white, 
