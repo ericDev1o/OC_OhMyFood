@@ -1,8 +1,3 @@
-# technical fact
-## <meta name="viewport">
-### % or vw and even vh use
-See the footer.scss: The use of vh will possibly increase in a future release to match customer and designer needs.
-
 # OC_OhMyFood
 ## Marque
 ### Identité
@@ -135,3 +130,25 @@ sur desktop au lieu du clic. Si l’intitulé du plat est trop long, il devra ê
 des points de suspension.
 ## Organisation interne du projet
 Circuit de validation : toutes les étapes du projet seront validées par Paul.
+
+## choix commercial
+### loader
+La page restaurant en est munie aussi pour rétention des client.e.s au chargement lent de cette page.
+
+Ce choix découle d'une ambiguïté liée à l'usage du mot "menu" dans la description ci-dessus du loader.
+Un menu étant techniquement une page plus volumineuse et longue à charger.
+Ce volume pourrait aussi être dû à
+● plus de contenu en plats ou
+● une lenteur réseau.
+
+## choix techniques
+### rétro-compatibilité avec les anciennes versions de navigateurs
+#### exemple du loader
+    -ms-animation: spin 6s forwards;
+    -o-animation: spin 6s forwards; 
+    -moz-animation: spin 6s forwards;
+    -webkit-animation: spin 6s forwards;
+Les anciennes versions de navigateurs ne sont pas supportées par défaut. Ce site internet fonctionnera mieux en 
+● accessibilité
+● sécurité
+avec les dernières versions des navigateurs.

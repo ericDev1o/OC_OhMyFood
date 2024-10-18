@@ -8,7 +8,6 @@
 @import "footer.scss";
 @import "pages/restaurant-page.scss";
 /****** general landing page styling ******/
-/****** see footer.scss for current vh use ******/
 * {
     @extend %font-base;
     margin: 0;
@@ -103,7 +102,6 @@ header {
 }
 
 .fonctionnement {
-    background-color: aqua;
     width: 100dvw;
     display: flex;
     flex-direction: column;
@@ -126,7 +124,7 @@ header {
 
 .restaurants {
     width: 100dvw;
-    background-color: violet;//$main-backgrd-color;
+    background-color: $main-backgrd-color;
     padding: 12.25dvh 0 7.8dvh;
     display: flex;
     flex-direction: column;
@@ -186,7 +184,7 @@ header {
             }
 
             .card-content {
-                height: 30%;
+                height: 60px;
                 background-color: white;
                 border-radius: 0 0 15px 15px;
                 display: flex;
@@ -263,16 +261,13 @@ header {
     
     .restaurants {
         width: 100dvw;
-        padding: 3.3dvh 0 3.3dvh 7dvw;
-        box-sizing: border-box;
+        padding: 5.8dvh 0 3.4dvh;
         display: flex;
         flex-direction: column;
-        justify-content: center;
-        align-items: flex-start;
 
         h2 {
-            margin-left: 80px;
-            margin-bottom: -1vh;
+            top: 3.25dvh;
+            left: 12.5dvw;
         }
 
         .restaurant-cards {
@@ -281,10 +276,10 @@ header {
             display: flex;
             flex-direction: row;
             flex-wrap: wrap;
-            gap: 5dvh 6.3dvw;
+            gap: 6dvh 7dvw;
 
             .restaurant-card {
-                width: 35dvw;
+                width: 34dvw;
                 height: 30.5dvh;
                 box-sizing: border-box;
                 margin-bottom: 0;

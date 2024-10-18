@@ -8,8 +8,14 @@
         transition: opacity 0.5s ease-in-out;
     }
 
-    .heart-x {
+    // Landing page horizontal heart position in the card
+    .heart-x-lp {
         right: 7dvw;
+    }
+
+    // Restaurant page horizontal heart position
+    .heart-x-rp {
+        right: 8dvw
     }
 
     .heart-y {
@@ -46,15 +52,20 @@
     }
 
     @media (min-width: 768px) {
-        #white, #gradient {
-            left: 1.5vw;
+        .heart-x-rp {
+            right: 0;
+            left: 1.5dvw;
         }
     }
     
     @media (min-width: 1024px) {
         /****** landing page ******/
-        .heart-x {
-            right: 1.75vw;
+        .heart-x-lp {
+            right: 1.75dvw;
+        }
+
+        .heart-x-rp {
+            left: 0.5dvw;
         }
     }
 }
