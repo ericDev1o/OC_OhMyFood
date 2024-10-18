@@ -37,10 +37,10 @@ button:hover {
 }
 
 .loaded {
+    width: 100dvw;
+    height: 100dvh;
     display: flex;
     justify-content: center;
-    width: 100vw;
-    height: 100vh;
     z-index: 1;
     animation: spin 3s forwards;
     overflow: hidden;
@@ -69,7 +69,6 @@ header {
         display: flex;
         justify-content: center;
         align-items: center;
-        
         background-color: #eaeaea;
         
         p {
@@ -88,8 +87,8 @@ header {
     .reservation {
         width: 100%;
         text-align: center;
-        background-color: $main-backgrd-color;
         padding: 38px 15px 55px 15px;
+        background-color: $main-backgrd-color;
 
         h2 {
             margin-bottom: 13px;
@@ -108,8 +107,8 @@ header {
     align-items: center;
     padding-top: 12.75dvh;
     padding-bottom: 8dvh;
-    position: relative;
     gap: 2.75vh;
+    position: relative;
 
     h2 {
         position: absolute;
@@ -124,17 +123,17 @@ header {
 
 .restaurants {
     width: 100dvw;
-    background-color: $main-backgrd-color;
-    padding: 12.25dvh 0 7.8dvh;
     display: flex;
     flex-direction: column;
     align-items: center;
+    padding: 12.25dvh 0 7.8dvh;
     position: relative;
+    background-color: $main-backgrd-color;
 
     h2 {
+        position: absolute;
         left: 5.25dvw;
         top: 6.5dvh;
-        position: absolute;
     }
 
     .restaurant-cards {
@@ -150,12 +149,12 @@ header {
         .restaurant-card {
             width: 100%;
             height: auto;
-            position: relative;
             overflow: hidden;
             box-sizing: border-box;
             border-radius: 15px;
             aspect-ratio: 4/3;
             margin-bottom: .8dvh;
+            position: relative;
 
             .index-image {
                 width: 100%;
@@ -169,30 +168,30 @@ header {
             }
 
             .new-container {
-                position: absolute;
-                display: flex;
-                justify-content: center;
-                align-items: center;
                 top: 25px;
                 right: 15px;
                 width: 80px;
                 height: 29px;
+                position: absolute;
+                display: flex;
+                justify-content: center;
+                align-items: center;
                 padding-top: 3px;
-                color: $new-color;
                 border-radius: 2px;
+                color: $new-color;
                 background-color: $tertiary-color;
             }
 
             .card-content {
+                top: -5px;
                 height: 60px;
-                background-color: white;
                 border-radius: 0 0 15px 15px;
                 display: flex;
                 justify-content: space-between;
                 align-items: baseline;
-                position: relative;
-                top: -5px;
                 padding-top: 1.85dvh;
+                position: relative;
+                background-color: white;
 
                 .text-left {
                     padding-left: 4vw;
@@ -261,9 +260,9 @@ header {
     
     .restaurants {
         width: 100dvw;
-        padding: 5.8dvh 0 3.4dvh;
         display: flex;
         flex-direction: column;
+        padding: 5.8dvh 0 3.4dvh;
 
         h2 {
             top: 3.25dvh;
@@ -272,10 +271,10 @@ header {
 
         .restaurant-cards {
             width: 100%;
-            margin: 4.4dvh 5dvw 0 5dvw;
             display: flex;
             flex-direction: row;
             flex-wrap: wrap;
+            margin: 4.4dvh 5dvw 0 5dvw;
             gap: 6dvh 7dvw;
 
             .restaurant-card {

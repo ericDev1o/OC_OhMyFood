@@ -131,15 +131,16 @@ des points de suspension.
 ## Organisation interne du projet
 Circuit de validation : toutes les étapes du projet seront validées par Paul.
 
-## choix commercial
+## choix commercial possible
 ### loader
-La page restaurant en est munie aussi pour rétention des client.e.s au chargement lent de cette page.
+La page restaurant pourrait en être munie aussi pour rétention des client.e.s au chargement possiblement lent de cette page.
 
-Ce choix découle d'une ambiguïté liée à l'usage du mot "menu" dans la description ci-dessus du loader.
-Un menu étant techniquement une page plus volumineuse et longue à charger.
+Cette idée découle d'une ambiguïté liée à l'usage du mot "menu" dans la description ci-dessus du loader, même si c'est dans le paragraphe à propos de la page d'accueil.
+
+Un menu par exemple "hamburger" étant techniquement une complication rendant la page plus volumineuse et longue à charger.
 Ce volume pourrait aussi être dû à
 ● plus de contenu en plats ou
-● une lenteur réseau.
+● une cause technique telle qu'une lenteur réseau.
 
 ## choix techniques
 ### rétro-compatibilité avec les anciennes versions de navigateurs
@@ -148,7 +149,7 @@ Ce volume pourrait aussi être dû à
     -o-animation: spin 6s forwards; 
     -moz-animation: spin 6s forwards;
     -webkit-animation: spin 6s forwards;
-Les anciennes versions de navigateurs ne sont pas supportées par défaut. Ce site internet fonctionnera mieux en 
+Les anciennes versions de navigateurs ne sont pas supportées par défaut. Ce site internet fonctionne mieux en 
 ● accessibilité
 ● sécurité
 avec les dernières versions des navigateurs.

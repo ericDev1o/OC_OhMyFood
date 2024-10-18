@@ -45,8 +45,10 @@ main {
     }
 
     .img-cover {
-        background-color: $main-backgrd-color;
         width: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
         margin-top: -65px;
         padding-top: 32px;
         padding-bottom: 12px;
@@ -55,12 +57,10 @@ main {
         padding-left: 5vw;
         padding-right: 2.6vw;
         box-sizing: border-box;
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
         object-fit: cover;
         object-position: center;
         position: relative;
+        background-color: $main-backgrd-color;
 
         h1 {
             margin: 0;
@@ -96,12 +96,12 @@ main {
     .menu-item {
         cursor: pointer;
         margin: 12.5px 15px;
-        background-color: white;
         border-radius: 15px;
         box-shadow: 0 8px 4px rgba(0, 0, 0, .05);
         display: flex;
         flex-direction: column;
         overflow: hidden;
+        background-color: white;
 
         .row-check {
             display: flex;
@@ -146,8 +146,8 @@ main {
                     width 0.5s ease-in-out;
 
                 .fa-circle-check {
-                    color: white;
                     font-size: 1.5rem;
+                    color: white;
                 }
             }
         }
@@ -187,10 +187,9 @@ main {
     .page-img-container {
         .img-cover {
             width: 75.5vw;
-            padding-left: 13px;
             display: flex;
             justify-content: center;
-            
+            padding-left: 13px;
 
             .title-h2h3__restaurant-name {
                 margin-right: 2%;
