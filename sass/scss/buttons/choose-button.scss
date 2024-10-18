@@ -7,7 +7,7 @@
     padding: 38px 9vw;
     gap: 0 4vw;
     background: $main-backgrd-color;
-    white-space: nowrap;
+    white-space: wrap;
     text-overflow: ellipsis;
 
     &:hover {
@@ -59,6 +59,6 @@
     }
 
     .button-choose-width {
-        width: 22.5dvw;
+        width: 21.5dvw;
     }
 }
