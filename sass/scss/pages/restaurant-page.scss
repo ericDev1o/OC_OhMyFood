@@ -1,7 +1,7 @@
 body {
     width: 100dvw;
 }
-/****** header ******/
+
 .header-page {
     display: flex;
     align-items: center;
@@ -170,7 +170,7 @@ main {
         }
     }
 }
-
+/****** restaurant page ******/
 @media (max-width: 374px) {
     .img-cover{
         flex-direction: column;
@@ -178,7 +178,6 @@ main {
 }
 
 @media (min-width: 768px) {
-    /****** restaurant page ******/
     .menu-width {
         width: 75.5dvw;
     }

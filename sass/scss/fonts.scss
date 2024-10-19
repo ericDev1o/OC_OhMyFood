@@ -1,3 +1,4 @@
+/****** Shrikhand font family ******/
 .title-h1h4 {
     @extend %font-title;
     font-weight: 400;
@@ -22,6 +23,7 @@
     }
 }
 
+/****** Roboto font-family ******/
 .title-h2h3 {
     @extend %font-bold;
 

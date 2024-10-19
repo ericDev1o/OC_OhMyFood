@@ -154,3 +154,12 @@ Les anciennes versions de navigateurs ne sont pas supportées par défaut en pre
 ● accessibilité
 ● sécurité
 avec les dernières versions des navigateurs.
+
+# accessibilité
+## achecker
+## pa11y
+### page restaurant
+#### contraste
+##### case à cocher
+Le ratio de contraste attendu est 3:1 pour ce type d'élément.
+Pour l'atteindre il est suggéré de changer la couleur de texte en #949494.
