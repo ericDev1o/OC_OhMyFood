@@ -1,11 +1,3 @@
-body {
-    width: 100dvw;
-}
-
-main {
-    width: 100%;
-}
-
 .page-img-container {
     width: 100%;
     display: flex;
@@ -36,14 +28,7 @@ main {
         padding-left: 5vw;
         padding-right: 2.6vw;
         box-sizing: border-box;
-        object-fit: cover;
-        object-position: center;
-        position: relative;
         background-color: $main-backgrd-color;
-
-        h1 {
-            margin: 0;
-        }
     }
 }
 
@@ -69,23 +54,20 @@ main {
     }
 
     .menu-left {
-        margin-left: 4vw;
+        margin-left: 4dvw;
     }
 
     .menu-item {
         cursor: pointer;
-        margin: 12.5px 15px;
+        margin: 12.5px 4dvw;
         border-radius: 15px;
         box-shadow: 0 8px 4px rgba(0, 0, 0, .05);
-        display: flex;
         flex-direction: column;
         overflow: hidden;
         background-color: white;
 
         .row-check {
             display: flex;
-            justify-content: space-between;
-            align-items: stretch;
 
             .dish-content {
                 flex-grow: 1;
@@ -93,7 +75,6 @@ main {
                 transition: 
                     width 0.5s ease-in-out,
                     opacity 0.5s ease-in-out;
-                overflow: hidden;
 
                 h4,
                 span {
@@ -153,6 +134,7 @@ main {
 /****** restaurant page ******/
 @media (max-width: 374px) {
     .img-cover{
+        display: flex;
         flex-direction: column;
     }
 }
@@ -165,7 +147,6 @@ main {
     .page-img-container {
         .img-cover {
             width: 75.5dvw;
-            display: flex;
             justify-content: center;
             padding-left: 13px;
 
@@ -180,13 +161,13 @@ main {
     /***** restaurant page ******/
     .menu {
         .menu-left {
-            margin-left: 14.5vw;
-            margin-right: 14.5vw;
+            margin-left: 14.5dvw;
+            margin-right: 14.5dvw;
         }
 
         .menu-item {
-            margin-left: 14.5vw;
-            margin-right: 14.5vw;
+            margin-left: 14.5dvw;
+            margin-right: 14.5dvw;
         }
     }
 }
