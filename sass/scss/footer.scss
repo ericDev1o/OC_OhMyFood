@@ -1,7 +1,7 @@
 footer {
     background-color: #353535;
     color: white;
-    padding: 2.75dvh 0 3.5dvh 6.5dvw;
+    padding: 2.75dvh 0 2.25dvh 6.5dvw;
 
     h4 {
         margin-bottom: 2.5dvh;
@@ -28,11 +28,11 @@ footer {
     
     a {
         padding-left: 0;
-        margin-bottom: 0.6vh;
+        margin-bottom: 0.6dvh;
     }
 
     a:last-child {
-        margin-top: 0.4vh;
+        margin-top: 0.4dvh;
     }
 }
 
@@ -40,28 +40,23 @@ footer {
     footer {
         padding: 2.75dvh 0 1.5dvh 3.2dvw;
 
-        h4 {
-            margin-bottom: 2.5vh;
-        }
-
         .footer-container {
             .footer-icons {
-                margin-bottom: 0.7vh;
+                margin-bottom: 0.7dvh;
 
                 .paragraph__button {
-                    margin-left: 1.5vw;
+                    margin-left: 1.5dvw;
                 }
             }
         }
 
         a {
-            padding-left: 0;
-            margin-bottom: 0.25vh;
+            margin-bottom: 0.25dvh;
         }
     
         a:last-child {
-            margin-top: 0.7vh;
-            margin-bottom: 3vh;
+            margin-top: 0.7dvh;
+            margin-bottom: 3dvh;
         }
     }
 }
@@ -81,13 +76,7 @@ footer {
         }
     
         .footer-container {
-            width: 100vw;
-            display: flex;
             flex-direction: row;
-            justify-content: flex-end;
-            white-space: nowrap;
-            text-overflow: ellipsis;
-            margin-left: 30vw;
             margin-top: 7.5vh;
             margin-bottom: 0.5vh;
 
