@@ -47,13 +47,13 @@ button:hover {
     position: fixed;
 }
 
-header {
+.header-welcome {
     text-align: center;
+}
 
-    .title-h1h4 {
-        margin-top: 1.7%;
-        margin-bottom: 1.7%;
-    }
+.title-h1h4 {
+    margin-top: 2.8dvh;
+    margin-bottom: 2.8dvh;
 }
 
 .localisation-reservation {
