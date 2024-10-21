@@ -15,13 +15,14 @@
     padding: 0;
 }
 
-main {
+body {
     width: 100dvw;
+}
+
+main {
     display: flex;
     flex-direction: column;
     align-items: center;
-    z-index: 0;
-    overflow-x: hidden;
 
     a {
         padding-left: 0;
@@ -44,15 +45,13 @@ button:hover {
     justify-content: center;
     z-index: 1;
     animation: spin 3s forwards;
-    overflow: hidden;
     position: fixed;
 }
 
 .localisation-reservation {
-    width: 100dvw;
+    width: 100%;
     display: flex;
     flex-direction: column;
-    justify-content: center;
     align-items: center;
 
     .localisation {
@@ -114,8 +113,6 @@ button:hover {
 }
 
 .restaurants {
-    width: 100dvw;
-    display: flex;
     flex-direction: column;
     align-items: center;
     padding: 12.25dvh 0 7.8dvh;
@@ -129,20 +126,10 @@ button:hover {
     }
 
     .restaurant-cards {
-        width: 100%;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-        gap: 11px 0;
         padding: 0 5dvw;
-        box-sizing: border-box;
 
         .restaurant-card {
-            width: 100%;
-            height: auto;
             overflow: hidden;
-            box-sizing: border-box;
             border-radius: 15px;
             aspect-ratio: 4/3;
             margin-bottom: .8dvh;
@@ -195,7 +182,6 @@ button:hover {
 
                 .paragraph__card {
                     line-height: 0;
-                    margin: 0;
                     margin-top: 8%;
                 }
             }
@@ -251,9 +237,7 @@ button:hover {
     }
     
     .restaurants {
-        width: 100dvw;
         display: flex;
-        flex-direction: column;
         padding: 5.8dvh 0 3.4dvh;
 
         h2 {
@@ -262,9 +246,9 @@ button:hover {
         }
 
         .restaurant-cards {
-            width: 100%;
             display: flex;
             flex-direction: row;
+            justify-content: center;
             flex-wrap: wrap;
             margin: 4.4dvh 5dvw 0 5dvw;
             gap: 6dvh 7dvw;
@@ -272,7 +256,6 @@ button:hover {
             .restaurant-card {
                 width: 34dvw;
                 height: 30.5dvh;
-                box-sizing: border-box;
                 margin-bottom: 0;
 
                 .index-image {
