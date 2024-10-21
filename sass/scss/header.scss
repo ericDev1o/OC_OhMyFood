@@ -1,0 +1,23 @@
+/****** landing page ******/
+header {
+    display: flex;
+    justify-content: center;
+    padding: 2.8dvh 0;
+}
+/****** restaurant page ******/
+.header-page {
+    a {
+        padding-left: 2dvw;
+
+        i {
+            font-size: 30px;
+        }
+    }
+
+    h1 {
+        display: flex;
+        justify-content: center;
+        flex: 1;
+        margin-right: 5.5dvw;
+    }
+}

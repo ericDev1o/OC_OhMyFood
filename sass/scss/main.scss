@@ -1,5 +1,6 @@
 @import "variables_colors-fonts.scss";
 @import "fonts.scss";
+@import "header.scss";
 @import "buttons/explore-command-button.scss";
 @import "buttons/choose-button.scss";
 @import "anim/heart.scss";
@@ -45,15 +46,6 @@ button:hover {
     animation: spin 3s forwards;
     overflow: hidden;
     position: fixed;
-}
-
-.header-welcome {
-    text-align: center;
-}
-
-.title-h1h4 {
-    margin-top: 2.8dvh;
-    margin-bottom: 2.8dvh;
 }
 
 .localisation-reservation {

@@ -2,26 +2,6 @@ body {
     width: 100dvw;
 }
 
-.header-page {
-    display: flex;
-    align-items: center;
-
-    a {
-        padding-left: 2dvw;
-
-        i {
-            font-size: 30px;
-        }
-    }
-
-    h1 {
-        display: flex;
-        justify-content: center;
-        flex: 1;
-        margin-right: 5.5dvw;
-    }
-}
-
 main {
     width: 100%;
 }
