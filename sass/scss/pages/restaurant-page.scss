@@ -112,12 +112,14 @@
             }
         }
 
-        .row-check:hover .dish-check-background,
-        .row-check:active .dish-check-background {
-            width: 60px;
-            margin-left: 15px;
-            transform: translateX(0);
-            background-color: $tertiary-color;
+        .row-check:hover,
+        .row-check:active {
+            .dish-check-background {
+                width: 60px;
+                margin-left: 15px;
+                transform: translateX(0);
+                background-color: $tertiary-color;
+            }
 
             .dish-content {
                 width: calc(100% - 60px);
