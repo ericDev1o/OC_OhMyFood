@@ -1,13 +1,15 @@
 @import "variables_colors-fonts.scss";
 @import "fonts.scss";
+@import "anim/keyframes/loader_spin.scss";
 @import "header.scss";
 @import "buttons/explore-command-button.scss";
 @import "buttons/choose-button.scss";
 @import "anim/heart.scss";
-@import "anim/keyframes/fade-in_dishes.scss";
-@import "anim/keyframes/loader_spin.scss";
 @import "footer.scss";
+/****** restaurant pages imports ******/
 @import "pages/restaurant-page.scss";
+@import "anim/keyframes/fade-in_dishes.scss";
+@import "anim/dish-selector.scss";
 /****** general landing page styling ******/
 * {
     @extend %font-base;
